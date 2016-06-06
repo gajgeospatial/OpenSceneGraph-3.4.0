@@ -1,0 +1,317 @@
+The system is: Windows - 6.2 - AMD64
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler:  
+Build flags: 
+Id flags: 
+
+The output was:
+0
+Microsoft (R) Build Engine version 12.0.40629.0
+[Microsoft .NET Framework, version 4.0.30319.42000]
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 7/20/2015 8:09:00 PM.
+Project "D:\Development\op3d_active\OpenSceneGraph-3.4.0-rc5\msvc\CMakeFiles\2.8.12.2\CompilerIdC\CompilerIdC.vcxproj" on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "Debug\".
+  Creating directory "Debug\CompilerIdC.tlog\".
+InitializeBuildStatus:
+  Creating "Debug\CompilerIdC.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /nologo /W0 /WX- /Od /Oy- /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TC /analyze- /errorReport:queue CMakeCCompilerId.c
+  CMakeCCompilerId.c
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:".\CompilerIdC.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\CompilerIdC.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\CompilerIdC.lib" /MACHINE:X86 /SAFESEH Debug\CMakeCCompilerId.obj
+  CompilerIdC.vcxproj -> D:\Development\op3d_active\OpenSceneGraph-3.4.0-rc5\msvc\CMakeFiles\2.8.12.2\CompilerIdC\.\CompilerIdC.exe
+PostBuildEvent:
+  for %%i in (cl.exe) do @echo CMAKE_C_COMPILER=%%~$PATH:i
+  :VCEnd
+  CMAKE_C_COMPILER=C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\cl.exe
+FinalizeBuildStatus:
+  Deleting file "Debug\CompilerIdC.tlog\unsuccessfulbuild".
+  Touching "Debug\CompilerIdC.tlog\CompilerIdC.lastbuildstate".
+Done Building Project "D:\Development\op3d_active\OpenSceneGraph-3.4.0-rc5\msvc\CMakeFiles\2.8.12.2\CompilerIdC\CompilerIdC.vcxproj" (default targets).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:00.59
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.exe"
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.vcxproj"
+
+The C compiler identification is MSVC, found in "D:/Development/op3d_active/OpenSceneGraph-3.4.0-rc5/msvc/CMakeFiles/2.8.12.2/CompilerIdC/CompilerIdC.exe"
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler:  
+Build flags: 
+Id flags: 
+
+The output was:
+0
+Microsoft (R) Build Engine version 12.0.40629.0
+[Microsoft .NET Framework, version 4.0.30319.42000]
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 7/20/2015 8:09:01 PM.
+Project "D:\Development\op3d_active\OpenSceneGraph-3.4.0-rc5\msvc\CMakeFiles\2.8.12.2\CompilerIdCXX\CompilerIdCXX.vcxproj" on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "Debug\".
+  Creating directory "Debug\CompilerIdCXX.tlog\".
+InitializeBuildStatus:
+  Creating "Debug\CompilerIdCXX.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /nologo /W0 /WX- /Od /Oy- /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:queue CMakeCXXCompilerId.cpp
+  CMakeCXXCompilerId.cpp
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:".\CompilerIdCXX.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\CompilerIdCXX.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\CompilerIdCXX.lib" /MACHINE:X86 /SAFESEH Debug\CMakeCXXCompilerId.obj
+  CompilerIdCXX.vcxproj -> D:\Development\op3d_active\OpenSceneGraph-3.4.0-rc5\msvc\CMakeFiles\2.8.12.2\CompilerIdCXX\.\CompilerIdCXX.exe
+PostBuildEvent:
+  for %%i in (cl.exe) do @echo CMAKE_CXX_COMPILER=%%~$PATH:i
+  :VCEnd
+  CMAKE_CXX_COMPILER=C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\cl.exe
+FinalizeBuildStatus:
+  Deleting file "Debug\CompilerIdCXX.tlog\unsuccessfulbuild".
+  Touching "Debug\CompilerIdCXX.tlog\CompilerIdCXX.lastbuildstate".
+Done Building Project "D:\Development\op3d_active\OpenSceneGraph-3.4.0-rc5\msvc\CMakeFiles\2.8.12.2\CompilerIdCXX\CompilerIdCXX.vcxproj" (default targets).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:00.50
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.exe"
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.vcxproj"
+
+The CXX compiler identification is MSVC, found in "D:/Development/op3d_active/OpenSceneGraph-3.4.0-rc5/msvc/CMakeFiles/2.8.12.2/CompilerIdCXX/CompilerIdCXX.exe"
+
+Determining if the C compiler works passed with the following output:
+Change Dir: D:/Development/op3d_active/OpenSceneGraph-3.4.0-rc5/msvc/CMakeFiles/CMakeTmp
+
+Run Build Command:C:\PROGRA~2\MSBuild\12.0\Bin\MSBuild.exe cmTryCompileExec3008490206.vcxproj /p:Configuration=Debug /p:VisualStudioVersion=12.0
+Microsoft (R) Build Engine version 12.0.40629.0
+[Microsoft .NET Framework, version 4.0.30319.42000]
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 7/20/2015 8:09:01 PM.
+Project "D:\Development\op3d_active\OpenSceneGraph-3.4.0-rc5\msvc\CMakeFiles\CMakeTmp\cmTryCompileExec3008490206.vcxproj" on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "cmTryCompileExec3008490206.dir\Debug\".
+  Creating directory "D:\Development\op3d_active\OpenSceneGraph-3.4.0-rc5\msvc\CMakeFiles\CMakeTmp\Debug\".
+  Creating directory "cmTryCompileExec3008490206.dir\Debug\cmTryCom.D06F43F9.tlog\".
+InitializeBuildStatus:
+  Creating "cmTryCompileExec3008490206.dir\Debug\cmTryCom.D06F43F9.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"cmTryCompileExec3008490206.dir\Debug\\" /Fd"cmTryCompileExec3008490206.dir\Debug\vc120.pdb" /Gd /TC /analyze- /errorReport:queue testCCompiler.c
+  Microsoft (R) C/C++ Optimizing Compiler Version 18.00.40629 for x86
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  cl /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"cmTryCompileExec3008490206.dir\Debug\\" /Fd"cmTryCompileExec3008490206.dir\Debug\vc120.pdb" /Gd /TC /analyze- /errorReport:queue testCCompiler.c
+  
+  testCCompiler.c
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:"D:\Development\op3d_active\OpenSceneGraph-3.4.0-rc5\msvc\CMakeFiles\CMakeTmp\Debug\cmTryCompileExec3008490206.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/Development/op3d_active/OpenSceneGraph-3.4.0-rc5/msvc/CMakeFiles/CMakeTmp/Debug/cmTryCompileExec3008490206.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:/Development/op3d_active/OpenSceneGraph-3.4.0-rc5/msvc/CMakeFiles/CMakeTmp/Debug/cmTryCompileExec3008490206.lib" /MACHINE:X86 /SAFESEH  /machine:X86 /debug cmTryCompileExec3008490206.dir\Debug\testCCompiler.obj
+  cmTryCompileExec3008490206.vcxproj -> D:\Development\op3d_active\OpenSceneGraph-3.4.0-rc5\msvc\CMakeFiles\CMakeTmp\Debug\cmTryCompileExec3008490206.exe
+FinalizeBuildStatus:
+  Deleting file "cmTryCompileExec3008490206.dir\Debug\cmTryCom.D06F43F9.tlog\unsuccessfulbuild".
+  Touching "cmTryCompileExec3008490206.dir\Debug\cmTryCom.D06F43F9.tlog\cmTryCompileExec3008490206.lastbuildstate".
+Done Building Project "D:\Development\op3d_active\OpenSceneGraph-3.4.0-rc5\msvc\CMakeFiles\CMakeTmp\cmTryCompileExec3008490206.vcxproj" (default targets).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:00.87
+
+
+Detecting C compiler ABI info compiled with the following output:
+Change Dir: D:/Development/op3d_active/OpenSceneGraph-3.4.0-rc5/msvc/CMakeFiles/CMakeTmp
+
+Run Build Command:C:\PROGRA~2\MSBuild\12.0\Bin\MSBuild.exe cmTryCompileExec4096378034.vcxproj /p:Configuration=Debug /p:VisualStudioVersion=12.0
+Microsoft (R) Build Engine version 12.0.40629.0
+[Microsoft .NET Framework, version 4.0.30319.42000]
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 7/20/2015 8:09:02 PM.
+Project "D:\Development\op3d_active\OpenSceneGraph-3.4.0-rc5\msvc\CMakeFiles\CMakeTmp\cmTryCompileExec4096378034.vcxproj" on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "cmTryCompileExec4096378034.dir\Debug\".
+  Creating directory "D:\Development\op3d_active\OpenSceneGraph-3.4.0-rc5\msvc\CMakeFiles\CMakeTmp\Debug\".
+  Creating directory "cmTryCompileExec4096378034.dir\Debug\cmTryCom.BCA425C2.tlog\".
+InitializeBuildStatus:
+  Creating "cmTryCompileExec4096378034.dir\Debug\cmTryCom.BCA425C2.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"cmTryCompileExec4096378034.dir\Debug\\" /Fd"cmTryCompileExec4096378034.dir\Debug\vc120.pdb" /Gd /TC /analyze- /errorReport:queue "C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeCCompilerABI.c"
+  Microsoft (R) C/C++ Optimizing Compiler Version 18.00.40629 for x86
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  cl /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"cmTryCompileExec4096378034.dir\Debug\\" /Fd"cmTryCompileExec4096378034.dir\Debug\vc120.pdb" /Gd /TC /analyze- /errorReport:queue "C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeCCompilerABI.c"
+  
+  CMakeCCompilerABI.c
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:"D:\Development\op3d_active\OpenSceneGraph-3.4.0-rc5\msvc\CMakeFiles\CMakeTmp\Debug\cmTryCompileExec4096378034.exe" /INCREMENTAL /NOLOGO /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/Development/op3d_active/OpenSceneGraph-3.4.0-rc5/msvc/CMakeFiles/CMakeTmp/Debug/cmTryCompileExec4096378034.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:/Development/op3d_active/OpenSceneGraph-3.4.0-rc5/msvc/CMakeFiles/CMakeTmp/Debug/cmTryCompileExec4096378034.lib" /MACHINE:X86 /SAFESEH  /machine:X86 /debug cmTryCompileExec4096378034.dir\Debug\CMakeCCompilerABI.obj
+  cmTryCompileExec4096378034.vcxproj -> D:\Development\op3d_active\OpenSceneGraph-3.4.0-rc5\msvc\CMakeFiles\CMakeTmp\Debug\cmTryCompileExec4096378034.exe
+FinalizeBuildStatus:
+  Deleting file "cmTryCompileExec4096378034.dir\Debug\cmTryCom.BCA425C2.tlog\unsuccessfulbuild".
+  Touching "cmTryCompileExec4096378034.dir\Debug\cmTryCom.BCA425C2.tlog\cmTryCompileExec4096378034.lastbuildstate".
+Done Building Project "D:\Development\op3d_active\OpenSceneGraph-3.4.0-rc5\msvc\CMakeFiles\CMakeTmp\cmTryCompileExec4096378034.vcxproj" (default targets).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:00.59
+
+
+Determining if the CXX compiler works passed with the following output:
+Change Dir: D:/Development/op3d_active/OpenSceneGraph-3.4.0-rc5/msvc/CMakeFiles/CMakeTmp
+
+Run Build Command:C:\PROGRA~2\MSBuild\12.0\Bin\MSBuild.exe cmTryCompileExec4286360700.vcxproj /p:Configuration=Debug /p:VisualStudioVersion=12.0
+Microsoft (R) Build Engine version 12.0.40629.0
+[Microsoft .NET Framework, version 4.0.30319.42000]
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 7/20/2015 8:09:03 PM.
+Project "D:\Development\op3d_active\OpenSceneGraph-3.4.0-rc5\msvc\CMakeFiles\CMakeTmp\cmTryCompileExec4286360700.vcxproj" on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "cmTryCompileExec4286360700.dir\Debug\".
+  Creating directory "D:\Development\op3d_active\OpenSceneGraph-3.4.0-rc5\msvc\CMakeFiles\CMakeTmp\Debug\".
+  Creating directory "cmTryCompileExec4286360700.dir\Debug\cmTryCom.2163E426.tlog\".
+InitializeBuildStatus:
+  Creating "cmTryCompileExec4286360700.dir\Debug\cmTryCom.2163E426.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"cmTryCompileExec4286360700.dir\Debug\\" /Fd"cmTryCompileExec4286360700.dir\Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:queue testCXXCompiler.cxx
+  Microsoft (R) C/C++ Optimizing Compiler Version 18.00.40629 for x86
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  cl /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"cmTryCompileExec4286360700.dir\Debug\\" /Fd"cmTryCompileExec4286360700.dir\Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:queue testCXXCompiler.cxx
+  
+  testCXXCompiler.cxx
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:"D:\Development\op3d_active\OpenSceneGraph-3.4.0-rc5\msvc\CMakeFiles\CMakeTmp\Debug\cmTryCompileExec4286360700.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/Development/op3d_active/OpenSceneGraph-3.4.0-rc5/msvc/CMakeFiles/CMakeTmp/Debug/cmTryCompileExec4286360700.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:/Development/op3d_active/OpenSceneGraph-3.4.0-rc5/msvc/CMakeFiles/CMakeTmp/Debug/cmTryCompileExec4286360700.lib" /MACHINE:X86 /SAFESEH  /machine:X86 /debug cmTryCompileExec4286360700.dir\Debug\testCXXCompiler.obj
+  cmTryCompileExec4286360700.vcxproj -> D:\Development\op3d_active\OpenSceneGraph-3.4.0-rc5\msvc\CMakeFiles\CMakeTmp\Debug\cmTryCompileExec4286360700.exe
+FinalizeBuildStatus:
+  Deleting file "cmTryCompileExec4286360700.dir\Debug\cmTryCom.2163E426.tlog\unsuccessfulbuild".
+  Touching "cmTryCompileExec4286360700.dir\Debug\cmTryCom.2163E426.tlog\cmTryCompileExec4286360700.lastbuildstate".
+Done Building Project "D:\Development\op3d_active\OpenSceneGraph-3.4.0-rc5\msvc\CMakeFiles\CMakeTmp\cmTryCompileExec4286360700.vcxproj" (default targets).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:00.57
+
+
+Detecting CXX compiler ABI info compiled with the following output:
+Change Dir: D:/Development/op3d_active/OpenSceneGraph-3.4.0-rc5/msvc/CMakeFiles/CMakeTmp
+
+Run Build Command:C:\PROGRA~2\MSBuild\12.0\Bin\MSBuild.exe cmTryCompileExec743170806.vcxproj /p:Configuration=Debug /p:VisualStudioVersion=12.0
+Microsoft (R) Build Engine version 12.0.40629.0
+[Microsoft .NET Framework, version 4.0.30319.42000]
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 7/20/2015 8:09:04 PM.
+Project "D:\Development\op3d_active\OpenSceneGraph-3.4.0-rc5\msvc\CMakeFiles\CMakeTmp\cmTryCompileExec743170806.vcxproj" on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "cmTryCompileExec743170806.dir\Debug\".
+  Creating directory "D:\Development\op3d_active\OpenSceneGraph-3.4.0-rc5\msvc\CMakeFiles\CMakeTmp\Debug\".
+  Creating directory "cmTryCompileExec743170806.dir\Debug\cmTryCom.67D2344E.tlog\".
+InitializeBuildStatus:
+  Creating "cmTryCompileExec743170806.dir\Debug\cmTryCom.67D2344E.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"cmTryCompileExec743170806.dir\Debug\\" /Fd"cmTryCompileExec743170806.dir\Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:queue "C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeCXXCompilerABI.cpp"
+  Microsoft (R) C/C++ Optimizing Compiler Version 18.00.40629 for x86
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  cl /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"cmTryCompileExec743170806.dir\Debug\\" /Fd"cmTryCompileExec743170806.dir\Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:queue "C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeCXXCompilerABI.cpp"
+  
+  CMakeCXXCompilerABI.cpp
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:"D:\Development\op3d_active\OpenSceneGraph-3.4.0-rc5\msvc\CMakeFiles\CMakeTmp\Debug\cmTryCompileExec743170806.exe" /INCREMENTAL /NOLOGO /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/Development/op3d_active/OpenSceneGraph-3.4.0-rc5/msvc/CMakeFiles/CMakeTmp/Debug/cmTryCompileExec743170806.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:/Development/op3d_active/OpenSceneGraph-3.4.0-rc5/msvc/CMakeFiles/CMakeTmp/Debug/cmTryCompileExec743170806.lib" /MACHINE:X86 /SAFESEH  /machine:X86 /debug cmTryCompileExec743170806.dir\Debug\CMakeCXXCompilerABI.obj
+  cmTryCompileExec743170806.vcxproj -> D:\Development\op3d_active\OpenSceneGraph-3.4.0-rc5\msvc\CMakeFiles\CMakeTmp\Debug\cmTryCompileExec743170806.exe
+FinalizeBuildStatus:
+  Deleting file "cmTryCompileExec743170806.dir\Debug\cmTryCom.67D2344E.tlog\unsuccessfulbuild".
+  Touching "cmTryCompileExec743170806.dir\Debug\cmTryCom.67D2344E.tlog\cmTryCompileExec743170806.lastbuildstate".
+Done Building Project "D:\Development\op3d_active\OpenSceneGraph-3.4.0-rc5\msvc\CMakeFiles\CMakeTmp\cmTryCompileExec743170806.vcxproj" (default targets).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:00.57
+
+
+Performing C++ SOURCE FILE Test _OPENTHREADS_ATOMIC_USE_WIN32_INTERLOCKED succeded with the following output:
+Change Dir: D:/Development/op3d_active/OpenSceneGraph-3.4.0-rc5/msvc/CMakeFiles/CMakeTmp
+
+Run Build Command:C:\PROGRA~2\MSBuild\12.0\Bin\MSBuild.exe cmTryCompileExec1387554958.vcxproj /p:Configuration=Debug /p:VisualStudioVersion=12.0
+Microsoft (R) Build Engine version 12.0.40629.0
+[Microsoft .NET Framework, version 4.0.30319.42000]
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 7/20/2015 8:09:09 PM.
+Project "D:\Development\op3d_active\OpenSceneGraph-3.4.0-rc5\msvc\CMakeFiles\CMakeTmp\cmTryCompileExec1387554958.vcxproj" on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "cmTryCompileExec1387554958.dir\Debug\".
+  Creating directory "D:\Development\op3d_active\OpenSceneGraph-3.4.0-rc5\msvc\CMakeFiles\CMakeTmp\Debug\".
+  Creating directory "cmTryCompileExec1387554958.dir\Debug\cmTryCom.0E0CFC06.tlog\".
+InitializeBuildStatus:
+  Creating "cmTryCompileExec1387554958.dir\Debug\cmTryCom.0E0CFC06.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /Zi /W4 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _OPENTHREADS_ATOMIC_USE_WIN32_INTERLOCKED /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"cmTryCompileExec1387554958.dir\Debug\\" /Fd"cmTryCompileExec1387554958.dir\Debug\vc120.pdb" /Gd /TP /wd4706 /wd4127 /wd4100 /analyze- /errorReport:queue src.cxx
+  Microsoft (R) C/C++ Optimizing Compiler Version 18.00.40629 for x86
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  cl /c /Zi /W4 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _OPENTHREADS_ATOMIC_USE_WIN32_INTERLOCKED /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"cmTryCompileExec1387554958.dir\Debug\\" /Fd"cmTryCompileExec1387554958.dir\Debug\vc120.pdb" /Gd /TP /wd4706 /wd4127 /wd4100 /analyze- /errorReport:queue src.cxx
+  
+  src.cxx
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:"D:\Development\op3d_active\OpenSceneGraph-3.4.0-rc5\msvc\CMakeFiles\CMakeTmp\Debug\cmTryCompileExec1387554958.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/Development/op3d_active/OpenSceneGraph-3.4.0-rc5/msvc/CMakeFiles/CMakeTmp/Debug/cmTryCompileExec1387554958.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:/Development/op3d_active/OpenSceneGraph-3.4.0-rc5/msvc/CMakeFiles/CMakeTmp/Debug/cmTryCompileExec1387554958.lib" /MACHINE:X86 /SAFESEH  /machine:X86 /debug cmTryCompileExec1387554958.dir\Debug\src.obj
+  cmTryCompileExec1387554958.vcxproj -> D:\Development\op3d_active\OpenSceneGraph-3.4.0-rc5\msvc\CMakeFiles\CMakeTmp\Debug\cmTryCompileExec1387554958.exe
+FinalizeBuildStatus:
+  Deleting file "cmTryCompileExec1387554958.dir\Debug\cmTryCom.0E0CFC06.tlog\unsuccessfulbuild".
+  Touching "cmTryCompileExec1387554958.dir\Debug\cmTryCom.0E0CFC06.tlog\cmTryCompileExec1387554958.lastbuildstate".
+Done Building Project "D:\Development\op3d_active\OpenSceneGraph-3.4.0-rc5\msvc\CMakeFiles\CMakeTmp\cmTryCompileExec1387554958.vcxproj" (default targets).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:00.96
+
+Return value: 1
+Source file was:
+
+       #include <windows.h>
+       #include <intrin.h>
+       #include <cstdlib>
+
+       #pragma intrinsic(_InterlockedAnd)
+       #pragma intrinsic(_InterlockedOr)
+       #pragma intrinsic(_InterlockedXor)
+
+       int main(int, const char**)
+       {
+          volatile long value = 0;
+          long data = 0;
+          long* volatile ptr = &data;
+
+          InterlockedIncrement(&value);
+          MemoryBarrier();
+          InterlockedDecrement(&value);
+
+          if (0 != InterlockedCompareExchange(&value, 1, 0))
+             return EXIT_FAILURE;
+
+          if (ptr != InterlockedCompareExchangePointer((PVOID volatile*)&ptr, (PVOID)ptr, (PVOID)ptr))
+             return EXIT_FAILURE;
+
+          return EXIT_SUCCESS;
+       }
+       

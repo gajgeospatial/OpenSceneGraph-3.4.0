@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LocalDebuggerCommandArguments>G:\Example_CDB\CDB_SOCOM\GTModel\500_GTModelGeometry\A_Culture\L_Misc_Feature\015_Building\D500_S001_T001_AL015_000_9c71e7b4.flt</LocalDebuggerCommandArguments>
+    <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LocalDebuggerCommandArguments>G:\Example_CDB\CDB_SOCOM\GTModel\500_GTModelGeometry\A_Culture\L_Misc_Feature\015_Building\D500_S001_T001_AL015_000_9c71e7b4.flt</LocalDebuggerCommandArguments>
+    <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LocalDebuggerCommandArguments>G:\Example_CDB\CDB_SOCOM\GTModel\500_GTModelGeometry\A_Culture\L_Misc_Feature\015_Building\D500_S001_T001_AL015_000_9c71e7b4.flt</LocalDebuggerCommandArguments>
+    <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
+  </PropertyGroup>
+</Project>
