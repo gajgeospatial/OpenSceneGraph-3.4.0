@@ -1,0 +1,507 @@
+Determining if files pthread.h exist failed with the following output:
+Change Dir: D:/Development/op3d_active/OpenSceneGraph-3.4.0-rc5/msvc/CMakeFiles/CMakeTmp
+
+Run Build Command:C:\PROGRA~2\MSBuild\12.0\Bin\MSBuild.exe cmTryCompileExec3481415433.vcxproj /p:Configuration=Debug /p:VisualStudioVersion=12.0
+Microsoft (R) Build Engine version 12.0.40629.0
+[Microsoft .NET Framework, version 4.0.30319.42000]
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 7/20/2015 8:09:05 PM.
+Project "D:\Development\op3d_active\OpenSceneGraph-3.4.0-rc5\msvc\CMakeFiles\CMakeTmp\cmTryCompileExec3481415433.vcxproj" on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "cmTryCompileExec3481415433.dir\Debug\".
+  Creating directory "D:\Development\op3d_active\OpenSceneGraph-3.4.0-rc5\msvc\CMakeFiles\CMakeTmp\Debug\".
+  Creating directory "cmTryCompileExec3481415433.dir\Debug\cmTryCom.0C75A644.tlog\".
+InitializeBuildStatus:
+  Creating "cmTryCompileExec3481415433.dir\Debug\cmTryCom.0C75A644.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"cmTryCompileExec3481415433.dir\Debug\\" /Fd"cmTryCompileExec3481415433.dir\Debug\vc120.pdb" /Gd /TC /analyze- /errorReport:queue CheckIncludeFiles.c
+  Microsoft (R) C/C++ Optimizing Compiler Version 18.00.40629 for x86
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  cl /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"cmTryCompileExec3481415433.dir\Debug\\" /Fd"cmTryCompileExec3481415433.dir\Debug\vc120.pdb" /Gd /TC /analyze- /errorReport:queue CheckIncludeFiles.c
+  
+  CheckIncludeFiles.c
+CheckIncludeFiles.c(2): fatal error C1083: Cannot open include file: 'pthread.h': No such file or directory [D:\Development\op3d_active\OpenSceneGraph-3.4.0-rc5\msvc\CMakeFiles\CMakeTmp\cmTryCompileExec3481415433.vcxproj]
+Done Building Project "D:\Development\op3d_active\OpenSceneGraph-3.4.0-rc5\msvc\CMakeFiles\CMakeTmp\cmTryCompileExec3481415433.vcxproj" (default targets) -- FAILED.
+
+Build FAILED.
+
+"D:\Development\op3d_active\OpenSceneGraph-3.4.0-rc5\msvc\CMakeFiles\CMakeTmp\cmTryCompileExec3481415433.vcxproj" (default target) (1) ->
+(ClCompile target) -> 
+  CheckIncludeFiles.c(2): fatal error C1083: Cannot open include file: 'pthread.h': No such file or directory [D:\Development\op3d_active\OpenSceneGraph-3.4.0-rc5\msvc\CMakeFiles\CMakeTmp\cmTryCompileExec3481415433.vcxproj]
+
+    0 Warning(s)
+    1 Error(s)
+
+Time Elapsed 00:00:00.32
+
+Source:
+/* */
+#include <pthread.h>
+
+
+int main(){return 0;}
+
+Performing C++ SOURCE FILE Test _OPENTHREADS_ATOMIC_USE_GCC_BUILTINS failed with the following output:
+Change Dir: D:/Development/op3d_active/OpenSceneGraph-3.4.0-rc5/msvc/CMakeFiles/CMakeTmp
+
+Run Build Command:C:\PROGRA~2\MSBuild\12.0\Bin\MSBuild.exe cmTryCompileExec683756822.vcxproj /p:Configuration=Debug /p:VisualStudioVersion=12.0
+Microsoft (R) Build Engine version 12.0.40629.0
+[Microsoft .NET Framework, version 4.0.30319.42000]
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 7/20/2015 8:09:07 PM.
+Project "D:\Development\op3d_active\OpenSceneGraph-3.4.0-rc5\msvc\CMakeFiles\CMakeTmp\cmTryCompileExec683756822.vcxproj" on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "cmTryCompileExec683756822.dir\Debug\".
+  Creating directory "D:\Development\op3d_active\OpenSceneGraph-3.4.0-rc5\msvc\CMakeFiles\CMakeTmp\Debug\".
+  Creating directory "cmTryCompileExec683756822.dir\Debug\cmTryCom.38962300.tlog\".
+InitializeBuildStatus:
+  Creating "cmTryCompileExec683756822.dir\Debug\cmTryCom.38962300.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /Zi /W4 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _OPENTHREADS_ATOMIC_USE_GCC_BUILTINS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"cmTryCompileExec683756822.dir\Debug\\" /Fd"cmTryCompileExec683756822.dir\Debug\vc120.pdb" /Gd /TP /wd4706 /wd4127 /wd4100 /analyze- /errorReport:queue src.cxx
+  Microsoft (R) C/C++ Optimizing Compiler Version 18.00.40629 for x86
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  cl /c /Zi /W4 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _OPENTHREADS_ATOMIC_USE_GCC_BUILTINS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"cmTryCompileExec683756822.dir\Debug\\" /Fd"cmTryCompileExec683756822.dir\Debug\vc120.pdb" /Gd /TP /wd4706 /wd4127 /wd4100 /analyze- /errorReport:queue src.cxx
+  
+  src.cxx
+src.cxx(8): error C3861: '__sync_add_and_fetch': identifier not found [D:\Development\op3d_active\OpenSceneGraph-3.4.0-rc5\msvc\CMakeFiles\CMakeTmp\cmTryCompileExec683756822.vcxproj]
+src.cxx(9): error C3861: '__sync_synchronize': identifier not found [D:\Development\op3d_active\OpenSceneGraph-3.4.0-rc5\msvc\CMakeFiles\CMakeTmp\cmTryCompileExec683756822.vcxproj]
+src.cxx(10): error C3861: '__sync_sub_and_fetch': identifier not found [D:\Development\op3d_active\OpenSceneGraph-3.4.0-rc5\msvc\CMakeFiles\CMakeTmp\cmTryCompileExec683756822.vcxproj]
+src.cxx(11): error C3861: '__sync_bool_compare_and_swap': identifier not found [D:\Development\op3d_active\OpenSceneGraph-3.4.0-rc5\msvc\CMakeFiles\CMakeTmp\cmTryCompileExec683756822.vcxproj]
+src.cxx(14): error C3861: '__sync_bool_compare_and_swap': identifier not found [D:\Development\op3d_active\OpenSceneGraph-3.4.0-rc5\msvc\CMakeFiles\CMakeTmp\cmTryCompileExec683756822.vcxproj]
+Done Building Project "D:\Development\op3d_active\OpenSceneGraph-3.4.0-rc5\msvc\CMakeFiles\CMakeTmp\cmTryCompileExec683756822.vcxproj" (default targets) -- FAILED.
+
+Build FAILED.
+
+"D:\Development\op3d_active\OpenSceneGraph-3.4.0-rc5\msvc\CMakeFiles\CMakeTmp\cmTryCompileExec683756822.vcxproj" (default target) (1) ->
+(ClCompile target) -> 
+  src.cxx(8): error C3861: '__sync_add_and_fetch': identifier not found [D:\Development\op3d_active\OpenSceneGraph-3.4.0-rc5\msvc\CMakeFiles\CMakeTmp\cmTryCompileExec683756822.vcxproj]
+  src.cxx(9): error C3861: '__sync_synchronize': identifier not found [D:\Development\op3d_active\OpenSceneGraph-3.4.0-rc5\msvc\CMakeFiles\CMakeTmp\cmTryCompileExec683756822.vcxproj]
+  src.cxx(10): error C3861: '__sync_sub_and_fetch': identifier not found [D:\Development\op3d_active\OpenSceneGraph-3.4.0-rc5\msvc\CMakeFiles\CMakeTmp\cmTryCompileExec683756822.vcxproj]
+  src.cxx(11): error C3861: '__sync_bool_compare_and_swap': identifier not found [D:\Development\op3d_active\OpenSceneGraph-3.4.0-rc5\msvc\CMakeFiles\CMakeTmp\cmTryCompileExec683756822.vcxproj]
+  src.cxx(14): error C3861: '__sync_bool_compare_and_swap': identifier not found [D:\Development\op3d_active\OpenSceneGraph-3.4.0-rc5\msvc\CMakeFiles\CMakeTmp\cmTryCompileExec683756822.vcxproj]
+
+    0 Warning(s)
+    5 Error(s)
+
+Time Elapsed 00:00:00.36
+
+Return value: 1
+Source file was:
+
+       #include <cstdlib>
+
+       int main()
+       {
+          unsigned value = 0;
+          void* ptr = &value;
+          __sync_add_and_fetch(&value, 1);
+          __sync_synchronize();
+          __sync_sub_and_fetch(&value, 1);
+          if (!__sync_bool_compare_and_swap(&value, 0, 1))
+             return EXIT_FAILURE;
+
+          if (!__sync_bool_compare_and_swap(&ptr, ptr, ptr))
+             return EXIT_FAILURE;
+
+          return EXIT_SUCCESS;
+       }
+       
+Performing C++ SOURCE FILE Test _OPENTHREADS_ATOMIC_USE_MIPOSPRO_BUILTINS failed with the following output:
+Change Dir: D:/Development/op3d_active/OpenSceneGraph-3.4.0-rc5/msvc/CMakeFiles/CMakeTmp
+
+Run Build Command:C:\PROGRA~2\MSBuild\12.0\Bin\MSBuild.exe cmTryCompileExec4281069598.vcxproj /p:Configuration=Debug /p:VisualStudioVersion=12.0
+Microsoft (R) Build Engine version 12.0.40629.0
+[Microsoft .NET Framework, version 4.0.30319.42000]
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 7/20/2015 8:09:08 PM.
+Project "D:\Development\op3d_active\OpenSceneGraph-3.4.0-rc5\msvc\CMakeFiles\CMakeTmp\cmTryCompileExec4281069598.vcxproj" on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "cmTryCompileExec4281069598.dir\Debug\".
+  Creating directory "D:\Development\op3d_active\OpenSceneGraph-3.4.0-rc5\msvc\CMakeFiles\CMakeTmp\Debug\".
+  Creating directory "cmTryCompileExec4281069598.dir\Debug\cmTryCom.8FFB8F65.tlog\".
+InitializeBuildStatus:
+  Creating "cmTryCompileExec4281069598.dir\Debug\cmTryCom.8FFB8F65.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /Zi /W4 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _OPENTHREADS_ATOMIC_USE_MIPOSPRO_BUILTINS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"cmTryCompileExec4281069598.dir\Debug\\" /Fd"cmTryCompileExec4281069598.dir\Debug\vc120.pdb" /Gd /TP /wd4706 /wd4127 /wd4100 /analyze- /errorReport:queue src.cxx
+  Microsoft (R) C/C++ Optimizing Compiler Version 18.00.40629 for x86
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  cl /c /Zi /W4 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _OPENTHREADS_ATOMIC_USE_MIPOSPRO_BUILTINS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"cmTryCompileExec4281069598.dir\Debug\\" /Fd"cmTryCompileExec4281069598.dir\Debug\vc120.pdb" /Gd /TP /wd4706 /wd4127 /wd4100 /analyze- /errorReport:queue src.cxx
+  
+  src.cxx
+src.cxx(8): error C3861: '__add_and_fetch': identifier not found [D:\Development\op3d_active\OpenSceneGraph-3.4.0-rc5\msvc\CMakeFiles\CMakeTmp\cmTryCompileExec4281069598.vcxproj]
+src.cxx(9): error C3861: '__synchronize': identifier not found [D:\Development\op3d_active\OpenSceneGraph-3.4.0-rc5\msvc\CMakeFiles\CMakeTmp\cmTryCompileExec4281069598.vcxproj]
+src.cxx(10): error C3861: '__sub_and_fetch': identifier not found [D:\Development\op3d_active\OpenSceneGraph-3.4.0-rc5\msvc\CMakeFiles\CMakeTmp\cmTryCompileExec4281069598.vcxproj]
+src.cxx(11): error C3861: '__compare_and_swap': identifier not found [D:\Development\op3d_active\OpenSceneGraph-3.4.0-rc5\msvc\CMakeFiles\CMakeTmp\cmTryCompileExec4281069598.vcxproj]
+src.cxx(14): error C3861: '__compare_and_swap': identifier not found [D:\Development\op3d_active\OpenSceneGraph-3.4.0-rc5\msvc\CMakeFiles\CMakeTmp\cmTryCompileExec4281069598.vcxproj]
+Done Building Project "D:\Development\op3d_active\OpenSceneGraph-3.4.0-rc5\msvc\CMakeFiles\CMakeTmp\cmTryCompileExec4281069598.vcxproj" (default targets) -- FAILED.
+
+Build FAILED.
+
+"D:\Development\op3d_active\OpenSceneGraph-3.4.0-rc5\msvc\CMakeFiles\CMakeTmp\cmTryCompileExec4281069598.vcxproj" (default target) (1) ->
+(ClCompile target) -> 
+  src.cxx(8): error C3861: '__add_and_fetch': identifier not found [D:\Development\op3d_active\OpenSceneGraph-3.4.0-rc5\msvc\CMakeFiles\CMakeTmp\cmTryCompileExec4281069598.vcxproj]
+  src.cxx(9): error C3861: '__synchronize': identifier not found [D:\Development\op3d_active\OpenSceneGraph-3.4.0-rc5\msvc\CMakeFiles\CMakeTmp\cmTryCompileExec4281069598.vcxproj]
+  src.cxx(10): error C3861: '__sub_and_fetch': identifier not found [D:\Development\op3d_active\OpenSceneGraph-3.4.0-rc5\msvc\CMakeFiles\CMakeTmp\cmTryCompileExec4281069598.vcxproj]
+  src.cxx(11): error C3861: '__compare_and_swap': identifier not found [D:\Development\op3d_active\OpenSceneGraph-3.4.0-rc5\msvc\CMakeFiles\CMakeTmp\cmTryCompileExec4281069598.vcxproj]
+  src.cxx(14): error C3861: '__compare_and_swap': identifier not found [D:\Development\op3d_active\OpenSceneGraph-3.4.0-rc5\msvc\CMakeFiles\CMakeTmp\cmTryCompileExec4281069598.vcxproj]
+
+    0 Warning(s)
+    5 Error(s)
+
+Time Elapsed 00:00:00.34
+
+Return value: 1
+Source file was:
+
+       #include <stdlib.h>
+
+       int main(int, const char**)
+       {
+          unsigned value = 0;
+          void* ptr = &value;
+          __add_and_fetch(&value, 1);
+          __synchronize(value);
+          __sub_and_fetch(&value, 1);
+          if (!__compare_and_swap(&value, 0, 1))
+             return EXIT_FAILURE;
+
+          if (!__compare_and_swap((unsigned long*)&ptr, (unsigned long)ptr, (unsigned long)ptr))
+             return EXIT_FAILURE;
+
+          return EXIT_SUCCESS;
+       }
+       
+Performing C++ SOURCE FILE Test _OPENTHREADS_ATOMIC_USE_SUN failed with the following output:
+Change Dir: D:/Development/op3d_active/OpenSceneGraph-3.4.0-rc5/msvc/CMakeFiles/CMakeTmp
+
+Run Build Command:C:\PROGRA~2\MSBuild\12.0\Bin\MSBuild.exe cmTryCompileExec855689103.vcxproj /p:Configuration=Debug /p:VisualStudioVersion=12.0
+Microsoft (R) Build Engine version 12.0.40629.0
+[Microsoft .NET Framework, version 4.0.30319.42000]
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 7/20/2015 8:09:08 PM.
+Project "D:\Development\op3d_active\OpenSceneGraph-3.4.0-rc5\msvc\CMakeFiles\CMakeTmp\cmTryCompileExec855689103.vcxproj" on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "cmTryCompileExec855689103.dir\Debug\".
+  Creating directory "D:\Development\op3d_active\OpenSceneGraph-3.4.0-rc5\msvc\CMakeFiles\CMakeTmp\Debug\".
+  Creating directory "cmTryCompileExec855689103.dir\Debug\cmTryCom.19C902F0.tlog\".
+InitializeBuildStatus:
+  Creating "cmTryCompileExec855689103.dir\Debug\cmTryCom.19C902F0.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /Zi /W4 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _OPENTHREADS_ATOMIC_USE_SUN /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"cmTryCompileExec855689103.dir\Debug\\" /Fd"cmTryCompileExec855689103.dir\Debug\vc120.pdb" /Gd /TP /wd4706 /wd4127 /wd4100 /analyze- /errorReport:queue src.cxx
+  Microsoft (R) C/C++ Optimizing Compiler Version 18.00.40629 for x86
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  cl /c /Zi /W4 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _OPENTHREADS_ATOMIC_USE_SUN /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"cmTryCompileExec855689103.dir\Debug\\" /Fd"cmTryCompileExec855689103.dir\Debug\vc120.pdb" /Gd /TP /wd4706 /wd4127 /wd4100 /analyze- /errorReport:queue src.cxx
+  
+  src.cxx
+src.cxx(2): fatal error C1083: Cannot open include file: 'atomic.h': No such file or directory [D:\Development\op3d_active\OpenSceneGraph-3.4.0-rc5\msvc\CMakeFiles\CMakeTmp\cmTryCompileExec855689103.vcxproj]
+Done Building Project "D:\Development\op3d_active\OpenSceneGraph-3.4.0-rc5\msvc\CMakeFiles\CMakeTmp\cmTryCompileExec855689103.vcxproj" (default targets) -- FAILED.
+
+Build FAILED.
+
+"D:\Development\op3d_active\OpenSceneGraph-3.4.0-rc5\msvc\CMakeFiles\CMakeTmp\cmTryCompileExec855689103.vcxproj" (default target) (1) ->
+(ClCompile target) -> 
+  src.cxx(2): fatal error C1083: Cannot open include file: 'atomic.h': No such file or directory [D:\Development\op3d_active\OpenSceneGraph-3.4.0-rc5\msvc\CMakeFiles\CMakeTmp\cmTryCompileExec855689103.vcxproj]
+
+    0 Warning(s)
+    1 Error(s)
+
+Time Elapsed 00:00:00.33
+
+Return value: 1
+Source file was:
+
+       #include <atomic.h>
+       #include <cstdlib>
+
+       int main(int, const char**)
+       {
+          uint_t value = 0;
+          void* ptr = &value;
+          atomic_inc_uint_nv(&value);
+          membar_consumer();
+          atomic_dec_uint_nv(&value);
+          if (0 != atomic_cas_uint(&value, 0, 1))
+             return EXIT_FAILURE;
+
+          if (ptr != atomic_cas_ptr(&ptr, ptr, ptr))
+             return EXIT_FAILURE;
+
+          return EXIT_SUCCESS;
+       }
+       
+Performing C++ SOURCE FILE Test _OPENTHREADS_ATOMIC_USE_BSD_ATOMIC failed with the following output:
+Change Dir: D:/Development/op3d_active/OpenSceneGraph-3.4.0-rc5/msvc/CMakeFiles/CMakeTmp
+
+Run Build Command:C:\PROGRA~2\MSBuild\12.0\Bin\MSBuild.exe cmTryCompileExec3244262570.vcxproj /p:Configuration=Debug /p:VisualStudioVersion=12.0
+Microsoft (R) Build Engine version 12.0.40629.0
+[Microsoft .NET Framework, version 4.0.30319.42000]
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 7/20/2015 8:09:10 PM.
+Project "D:\Development\op3d_active\OpenSceneGraph-3.4.0-rc5\msvc\CMakeFiles\CMakeTmp\cmTryCompileExec3244262570.vcxproj" on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "cmTryCompileExec3244262570.dir\Debug\".
+  Creating directory "D:\Development\op3d_active\OpenSceneGraph-3.4.0-rc5\msvc\CMakeFiles\CMakeTmp\Debug\".
+  Creating directory "cmTryCompileExec3244262570.dir\Debug\cmTryCom.D555E5F8.tlog\".
+InitializeBuildStatus:
+  Creating "cmTryCompileExec3244262570.dir\Debug\cmTryCom.D555E5F8.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /Zi /W4 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _OPENTHREADS_ATOMIC_USE_BSD_ATOMIC /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"cmTryCompileExec3244262570.dir\Debug\\" /Fd"cmTryCompileExec3244262570.dir\Debug\vc120.pdb" /Gd /TP /wd4706 /wd4127 /wd4100 /analyze- /errorReport:queue src.cxx
+  Microsoft (R) C/C++ Optimizing Compiler Version 18.00.40629 for x86
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  cl /c /Zi /W4 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _OPENTHREADS_ATOMIC_USE_BSD_ATOMIC /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"cmTryCompileExec3244262570.dir\Debug\\" /Fd"cmTryCompileExec3244262570.dir\Debug\vc120.pdb" /Gd /TP /wd4706 /wd4127 /wd4100 /analyze- /errorReport:queue src.cxx
+  
+  src.cxx
+src.cxx(2): fatal error C1083: Cannot open include file: 'libkern/OSAtomic.h': No such file or directory [D:\Development\op3d_active\OpenSceneGraph-3.4.0-rc5\msvc\CMakeFiles\CMakeTmp\cmTryCompileExec3244262570.vcxproj]
+Done Building Project "D:\Development\op3d_active\OpenSceneGraph-3.4.0-rc5\msvc\CMakeFiles\CMakeTmp\cmTryCompileExec3244262570.vcxproj" (default targets) -- FAILED.
+
+Build FAILED.
+
+"D:\Development\op3d_active\OpenSceneGraph-3.4.0-rc5\msvc\CMakeFiles\CMakeTmp\cmTryCompileExec3244262570.vcxproj" (default target) (1) ->
+(ClCompile target) -> 
+  src.cxx(2): fatal error C1083: Cannot open include file: 'libkern/OSAtomic.h': No such file or directory [D:\Development\op3d_active\OpenSceneGraph-3.4.0-rc5\msvc\CMakeFiles\CMakeTmp\cmTryCompileExec3244262570.vcxproj]
+
+    0 Warning(s)
+    1 Error(s)
+
+Time Elapsed 00:00:00.34
+
+Return value: 1
+Source file was:
+
+       #include <libkern/OSAtomic.h>
+
+       int main()
+       {
+         volatile int32_t value = 0;
+         long data = 0;
+         long * volatile ptr = &data;
+
+         OSAtomicIncrement32(&value);
+         OSMemoryBarrier();
+         OSAtomicDecrement32(&value);
+         OSAtomicCompareAndSwapInt(value, 1, &value);
+         OSAtomicCompareAndSwapPtr(ptr, ptr, (void * volatile *)&ptr);
+       }
+       
+Determining if the Q_WS_X11 exist failed with the following output:
+Change Dir: D:/Development/op3d_active/OpenSceneGraph-3.4.0-rc5/msvc/CMakeFiles/CMakeTmp
+
+Run Build Command:C:\PROGRA~2\MSBuild\12.0\Bin\MSBuild.exe cmTryCompileExec1296187836.vcxproj /p:Configuration=Debug /p:VisualStudioVersion=12.0
+Microsoft (R) Build Engine version 12.0.40629.0
+[Microsoft .NET Framework, version 4.0.30319.42000]
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 7/20/2015 9:06:18 PM.
+Project "D:\Development\op3d_active\OpenSceneGraph-3.4.0-rc5\msvc\CMakeFiles\CMakeTmp\cmTryCompileExec1296187836.vcxproj" on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "cmTryCompileExec1296187836.dir\Debug\".
+  Creating directory "D:\Development\op3d_active\OpenSceneGraph-3.4.0-rc5\msvc\CMakeFiles\CMakeTmp\Debug\".
+  Creating directory "cmTryCompileExec1296187836.dir\Debug\cmTryCom.F0DF7A85.tlog\".
+InitializeBuildStatus:
+  Creating "cmTryCompileExec1296187836.dir\Debug\cmTryCom.F0DF7A85.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I"D:\Development\op3d_active\qt-4.8.6\vc110\Win32\include" /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"cmTryCompileExec1296187836.dir\Debug\\" /Fd"cmTryCompileExec1296187836.dir\Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:queue CheckSymbolExists.cxx
+  Microsoft (R) C/C++ Optimizing Compiler Version 18.00.40629 for x86
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  cl /c /I"D:\Development\op3d_active\qt-4.8.6\vc110\Win32\include" /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"cmTryCompileExec1296187836.dir\Debug\\" /Fd"cmTryCompileExec1296187836.dir\Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:queue CheckSymbolExists.cxx
+  
+  CheckSymbolExists.cxx
+D:\Development\op3d_active\qt-4.8.6\vc110\Win32\include\QtCore/qglobal.h(1): fatal error C1083: Cannot open include file: '../../src/corelib/global/qglobal.h': No such file or directory [D:\Development\op3d_active\OpenSceneGraph-3.4.0-rc5\msvc\CMakeFiles\CMakeTmp\cmTryCompileExec1296187836.vcxproj]
+Done Building Project "D:\Development\op3d_active\OpenSceneGraph-3.4.0-rc5\msvc\CMakeFiles\CMakeTmp\cmTryCompileExec1296187836.vcxproj" (default targets) -- FAILED.
+
+Build FAILED.
+
+"D:\Development\op3d_active\OpenSceneGraph-3.4.0-rc5\msvc\CMakeFiles\CMakeTmp\cmTryCompileExec1296187836.vcxproj" (default target) (1) ->
+(ClCompile target) -> 
+  D:\Development\op3d_active\qt-4.8.6\vc110\Win32\include\QtCore/qglobal.h(1): fatal error C1083: Cannot open include file: '../../src/corelib/global/qglobal.h': No such file or directory [D:\Development\op3d_active\OpenSceneGraph-3.4.0-rc5\msvc\CMakeFiles\CMakeTmp\cmTryCompileExec1296187836.vcxproj]
+
+    0 Warning(s)
+    1 Error(s)
+
+Time Elapsed 00:00:00.41
+
+File D:/Development/op3d_active/OpenSceneGraph-3.4.0-rc5/msvc/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:
+/* */
+#include <QtCore/qglobal.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef Q_WS_X11
+  return ((int*)(&Q_WS_X11))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the Q_WS_WIN exist failed with the following output:
+Change Dir: D:/Development/op3d_active/OpenSceneGraph-3.4.0-rc5/msvc/CMakeFiles/CMakeTmp
+
+Run Build Command:C:\PROGRA~2\MSBuild\12.0\Bin\MSBuild.exe cmTryCompileExec1516365049.vcxproj /p:Configuration=Debug /p:VisualStudioVersion=12.0
+Microsoft (R) Build Engine version 12.0.40629.0
+[Microsoft .NET Framework, version 4.0.30319.42000]
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 7/20/2015 9:06:18 PM.
+Project "D:\Development\op3d_active\OpenSceneGraph-3.4.0-rc5\msvc\CMakeFiles\CMakeTmp\cmTryCompileExec1516365049.vcxproj" on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "cmTryCompileExec1516365049.dir\Debug\".
+  Creating directory "D:\Development\op3d_active\OpenSceneGraph-3.4.0-rc5\msvc\CMakeFiles\CMakeTmp\Debug\".
+  Creating directory "cmTryCompileExec1516365049.dir\Debug\cmTryCom.52ED960A.tlog\".
+InitializeBuildStatus:
+  Creating "cmTryCompileExec1516365049.dir\Debug\cmTryCom.52ED960A.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I"D:\Development\op3d_active\qt-4.8.6\vc110\Win32\include" /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"cmTryCompileExec1516365049.dir\Debug\\" /Fd"cmTryCompileExec1516365049.dir\Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:queue CheckSymbolExists.cxx
+  Microsoft (R) C/C++ Optimizing Compiler Version 18.00.40629 for x86
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  cl /c /I"D:\Development\op3d_active\qt-4.8.6\vc110\Win32\include" /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"cmTryCompileExec1516365049.dir\Debug\\" /Fd"cmTryCompileExec1516365049.dir\Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:queue CheckSymbolExists.cxx
+  
+  CheckSymbolExists.cxx
+D:\Development\op3d_active\qt-4.8.6\vc110\Win32\include\QtCore/qglobal.h(1): fatal error C1083: Cannot open include file: '../../src/corelib/global/qglobal.h': No such file or directory [D:\Development\op3d_active\OpenSceneGraph-3.4.0-rc5\msvc\CMakeFiles\CMakeTmp\cmTryCompileExec1516365049.vcxproj]
+Done Building Project "D:\Development\op3d_active\OpenSceneGraph-3.4.0-rc5\msvc\CMakeFiles\CMakeTmp\cmTryCompileExec1516365049.vcxproj" (default targets) -- FAILED.
+
+Build FAILED.
+
+"D:\Development\op3d_active\OpenSceneGraph-3.4.0-rc5\msvc\CMakeFiles\CMakeTmp\cmTryCompileExec1516365049.vcxproj" (default target) (1) ->
+(ClCompile target) -> 
+  D:\Development\op3d_active\qt-4.8.6\vc110\Win32\include\QtCore/qglobal.h(1): fatal error C1083: Cannot open include file: '../../src/corelib/global/qglobal.h': No such file or directory [D:\Development\op3d_active\OpenSceneGraph-3.4.0-rc5\msvc\CMakeFiles\CMakeTmp\cmTryCompileExec1516365049.vcxproj]
+
+    0 Warning(s)
+    1 Error(s)
+
+Time Elapsed 00:00:00.32
+
+File D:/Development/op3d_active/OpenSceneGraph-3.4.0-rc5/msvc/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:
+/* */
+#include <QtCore/qglobal.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef Q_WS_WIN
+  return ((int*)(&Q_WS_WIN))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the Q_WS_QWS exist failed with the following output:
+Change Dir: D:/Development/op3d_active/OpenSceneGraph-3.4.0-rc5/msvc/CMakeFiles/CMakeTmp
+
+Run Build Command:C:\PROGRA~2\MSBuild\12.0\Bin\MSBuild.exe cmTryCompileExec3464638088.vcxproj /p:Configuration=Debug /p:VisualStudioVersion=12.0
+Microsoft (R) Build Engine version 12.0.40629.0
+[Microsoft .NET Framework, version 4.0.30319.42000]
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 7/20/2015 9:06:19 PM.
+Project "D:\Development\op3d_active\OpenSceneGraph-3.4.0-rc5\msvc\CMakeFiles\CMakeTmp\cmTryCompileExec3464638088.vcxproj" on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "cmTryCompileExec3464638088.dir\Debug\".
+  Creating directory "D:\Development\op3d_active\OpenSceneGraph-3.4.0-rc5\msvc\CMakeFiles\CMakeTmp\Debug\".
+  Creating directory "cmTryCompileExec3464638088.dir\Debug\cmTryCom.3FD8220F.tlog\".
+InitializeBuildStatus:
+  Creating "cmTryCompileExec3464638088.dir\Debug\cmTryCom.3FD8220F.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I"D:\Development\op3d_active\qt-4.8.6\vc110\Win32\include" /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"cmTryCompileExec3464638088.dir\Debug\\" /Fd"cmTryCompileExec3464638088.dir\Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:queue CheckSymbolExists.cxx
+  Microsoft (R) C/C++ Optimizing Compiler Version 18.00.40629 for x86
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  cl /c /I"D:\Development\op3d_active\qt-4.8.6\vc110\Win32\include" /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"cmTryCompileExec3464638088.dir\Debug\\" /Fd"cmTryCompileExec3464638088.dir\Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:queue CheckSymbolExists.cxx
+  
+  CheckSymbolExists.cxx
+D:\Development\op3d_active\qt-4.8.6\vc110\Win32\include\QtCore/qglobal.h(1): fatal error C1083: Cannot open include file: '../../src/corelib/global/qglobal.h': No such file or directory [D:\Development\op3d_active\OpenSceneGraph-3.4.0-rc5\msvc\CMakeFiles\CMakeTmp\cmTryCompileExec3464638088.vcxproj]
+Done Building Project "D:\Development\op3d_active\OpenSceneGraph-3.4.0-rc5\msvc\CMakeFiles\CMakeTmp\cmTryCompileExec3464638088.vcxproj" (default targets) -- FAILED.
+
+Build FAILED.
+
+"D:\Development\op3d_active\OpenSceneGraph-3.4.0-rc5\msvc\CMakeFiles\CMakeTmp\cmTryCompileExec3464638088.vcxproj" (default target) (1) ->
+(ClCompile target) -> 
+  D:\Development\op3d_active\qt-4.8.6\vc110\Win32\include\QtCore/qglobal.h(1): fatal error C1083: Cannot open include file: '../../src/corelib/global/qglobal.h': No such file or directory [D:\Development\op3d_active\OpenSceneGraph-3.4.0-rc5\msvc\CMakeFiles\CMakeTmp\cmTryCompileExec3464638088.vcxproj]
+
+    0 Warning(s)
+    1 Error(s)
+
+Time Elapsed 00:00:00.32
+
+File D:/Development/op3d_active/OpenSceneGraph-3.4.0-rc5/msvc/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:
+/* */
+#include <QtCore/qglobal.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef Q_WS_QWS
+  return ((int*)(&Q_WS_QWS))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the Q_WS_MAC exist failed with the following output:
+Change Dir: D:/Development/op3d_active/OpenSceneGraph-3.4.0-rc5/msvc/CMakeFiles/CMakeTmp
+
+Run Build Command:C:\PROGRA~2\MSBuild\12.0\Bin\MSBuild.exe cmTryCompileExec384132811.vcxproj /p:Configuration=Debug /p:VisualStudioVersion=12.0
+Microsoft (R) Build Engine version 12.0.40629.0
+[Microsoft .NET Framework, version 4.0.30319.42000]
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 7/20/2015 9:06:19 PM.
+Project "D:\Development\op3d_active\OpenSceneGraph-3.4.0-rc5\msvc\CMakeFiles\CMakeTmp\cmTryCompileExec384132811.vcxproj" on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "cmTryCompileExec384132811.dir\Debug\".
+  Creating directory "D:\Development\op3d_active\OpenSceneGraph-3.4.0-rc5\msvc\CMakeFiles\CMakeTmp\Debug\".
+  Creating directory "cmTryCompileExec384132811.dir\Debug\cmTryCom.9C4A55FD.tlog\".
+InitializeBuildStatus:
+  Creating "cmTryCompileExec384132811.dir\Debug\cmTryCom.9C4A55FD.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I"D:\Development\op3d_active\qt-4.8.6\vc110\Win32\include" /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"cmTryCompileExec384132811.dir\Debug\\" /Fd"cmTryCompileExec384132811.dir\Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:queue CheckSymbolExists.cxx
+  Microsoft (R) C/C++ Optimizing Compiler Version 18.00.40629 for x86
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  cl /c /I"D:\Development\op3d_active\qt-4.8.6\vc110\Win32\include" /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"cmTryCompileExec384132811.dir\Debug\\" /Fd"cmTryCompileExec384132811.dir\Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:queue CheckSymbolExists.cxx
+  
+  CheckSymbolExists.cxx
+D:\Development\op3d_active\qt-4.8.6\vc110\Win32\include\QtCore/qglobal.h(1): fatal error C1083: Cannot open include file: '../../src/corelib/global/qglobal.h': No such file or directory [D:\Development\op3d_active\OpenSceneGraph-3.4.0-rc5\msvc\CMakeFiles\CMakeTmp\cmTryCompileExec384132811.vcxproj]
+Done Building Project "D:\Development\op3d_active\OpenSceneGraph-3.4.0-rc5\msvc\CMakeFiles\CMakeTmp\cmTryCompileExec384132811.vcxproj" (default targets) -- FAILED.
+
+Build FAILED.
+
+"D:\Development\op3d_active\OpenSceneGraph-3.4.0-rc5\msvc\CMakeFiles\CMakeTmp\cmTryCompileExec384132811.vcxproj" (default target) (1) ->
+(ClCompile target) -> 
+  D:\Development\op3d_active\qt-4.8.6\vc110\Win32\include\QtCore/qglobal.h(1): fatal error C1083: Cannot open include file: '../../src/corelib/global/qglobal.h': No such file or directory [D:\Development\op3d_active\OpenSceneGraph-3.4.0-rc5\msvc\CMakeFiles\CMakeTmp\cmTryCompileExec384132811.vcxproj]
+
+    0 Warning(s)
+    1 Error(s)
+
+Time Elapsed 00:00:00.33
+
+File D:/Development/op3d_active/OpenSceneGraph-3.4.0-rc5/msvc/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:
+/* */
+#include <QtCore/qglobal.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef Q_WS_MAC
+  return ((int*)(&Q_WS_MAC))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+

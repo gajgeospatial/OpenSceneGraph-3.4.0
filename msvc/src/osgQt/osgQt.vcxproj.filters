@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\..\..\src\osgQt\GraphicsWindowQt.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\osgQt\QFontImplementation.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\osgQt\QGraphicsViewAdapter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\osgQt\QWidgetImage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="__\__\include\osgQt\moc_QGraphicsViewAdapter.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\CMakeFiles\e9c247c8657226249fb0e3e08b9dd10c\moc_QGraphicsViewAdapter.cxx.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\include\osgQt\Export">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="..\..\..\include\osgQt\GraphicsWindowQt">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="..\..\..\include\osgQt\QFontImplementation">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="..\..\..\include\osgQt\QGraphicsViewAdapter">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="..\..\..\include\osgQt\QWidgetImage">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="..\..\..\include\osgQt\QWebViewImage">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="..\..\include\osgQt\Version">
+      <Filter>Header Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\..\PlatformSpecifics\Windows\OpenSceneGraphVersionInfo.rc">
+      <Filter>Source Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{958EDEA2-8182-4160-90A0-EBD010445353}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{4DAE4354-830F-4BB8-9394-40EEB6F76CF8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{75EFDB54-0632-45C1-8F3A-A611D21BA727}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

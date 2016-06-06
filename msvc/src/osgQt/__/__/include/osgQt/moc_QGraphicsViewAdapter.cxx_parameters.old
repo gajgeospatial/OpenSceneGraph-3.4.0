@@ -1,0 +1,9 @@
+-ID:/Development/op3d_active/OpenSceneGraph-3.4.0-rc5/include
+-ID:/Development/op3d_active/OpenSceneGraph-3.4.0-rc5/msvc/include
+-D_SCL_SECURE_NO_WARNINGS
+-D_CRT_SECURE_NO_DEPRECATE
+-DOSGQT_LIBRARY
+-f
+-o
+D:/Development/op3d_active/OpenSceneGraph-3.4.0-rc5/msvc/src/osgQt/__/__/include/osgQt/moc_QGraphicsViewAdapter.cxx
+D:/Development/op3d_active/OpenSceneGraph-3.4.0-rc5/include/osgQt/QGraphicsViewAdapter

@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\..\..\src\osgVolume\FixedFunctionTechnique.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\osgVolume\Layer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\osgVolume\Locator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\osgVolume\MultipassTechnique.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\osgVolume\Property.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\osgVolume\RayTracedTechnique.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\osgVolume\Version.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\osgVolume\Volume.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\osgVolume\VolumeScene.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\osgVolume\VolumeSettings.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\osgVolume\VolumeTechnique.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\osgVolume\VolumeTile.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\include\osgVolume\Export">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="..\..\..\include\osgVolume\FixedFunctionTechnique">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="..\..\..\include\osgVolume\Layer">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="..\..\..\include\osgVolume\Locator">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="..\..\..\include\osgVolume\MultipassTechnique">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="..\..\..\include\osgVolume\Property">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="..\..\..\include\osgVolume\RayTracedTechnique">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="..\..\..\include\osgVolume\Version">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="..\..\..\include\osgVolume\Volume">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="..\..\..\include\osgVolume\VolumeScene">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="..\..\..\include\osgVolume\VolumeSettings">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="..\..\..\include\osgVolume\VolumeTechnique">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="..\..\..\include\osgVolume\VolumeTile">
+      <Filter>Header Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\..\PlatformSpecifics\Windows\OpenSceneGraphVersionInfo.rc">
+      <Filter>Source Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{958EDEA2-8182-4160-90A0-EBD010445353}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{4DAE4354-830F-4BB8-9394-40EEB6F76CF8}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

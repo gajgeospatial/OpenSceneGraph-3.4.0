@@ -1,0 +1,15 @@
+# CMake generation dependency list for this directory.
+D:/Development/op3d_active/OpenSceneGraph-3.4.0-rc5/src/OpenThreads/CMakeLists.txt
+D:/Development/op3d_active/OpenSceneGraph-3.4.0-rc5/CMakeModules/CheckAtomicOps.cmake
+C:/Program Files (x86)/CMake 2.8/share/cmake-2.8/Modules/CheckCXXSourceRuns.cmake
+D:/Development/op3d_active/OpenSceneGraph-3.4.0-rc5/src/OpenThreads/common/Config.in
+D:/Development/op3d_active/OpenSceneGraph-3.4.0-rc5/src/OpenThreads/common/Version.in
+D:/Development/op3d_active/OpenSceneGraph-3.4.0-rc5/PlatformSpecifics/Windows/OpenThreadsVersionInfo.rc.in
+C:/Program Files (x86)/CMake 2.8/share/cmake-2.8/Modules/FindThreads.cmake
+C:/Program Files (x86)/CMake 2.8/share/cmake-2.8/Modules/CheckIncludeFiles.cmake
+C:/Program Files (x86)/CMake 2.8/share/cmake-2.8/Modules/CheckLibraryExists.cmake
+C:/Program Files (x86)/CMake 2.8/share/cmake-2.8/Modules/CheckSymbolExists.cmake
+C:/Program Files (x86)/CMake 2.8/share/cmake-2.8/Modules/FindPackageHandleStandardArgs.cmake
+C:/Program Files (x86)/CMake 2.8/share/cmake-2.8/Modules/FindPackageMessage.cmake
+C:/Program Files (x86)/CMake 2.8/share/cmake-2.8/Modules/CMakeParseArguments.cmake
+D:/Development/op3d_active/OpenSceneGraph-3.4.0-rc5/packaging/pkgconfig/openthreads.pc.in
