@@ -641,12 +641,23 @@ static LRESULT CALLBACK WindowProc( HWND hwnd, UINT uMsg, WPARAM wParam, LPARAM 
 
 Win32WindowingSystem::OpenGLContext::~OpenGLContext()
 {
-    if (_restorePreviousOnExit && _previousHglrc!=_hglrc && !::wglMakeCurrent(_previousHdc, _previousHglrc))
-    {
-        reportError("Win32WindowingSystem::OpenGLContext() - Unable to restore current OpenGL rendering context", ::GetLastError());
-    }
-
-    _previousHdc   = 0;
+	if (_restorePreviousOnExit && _previousHglrc != _hglrc)
+	{
+		if (_previousHglrc)
+		{
+			if (!::wglMakeCurrent(_previousHdc, _previousHglrc))
+			{
+				reportError("Win32WindowingSystem::OpenGLContext() - Unable to restore current OpenGL rendering context", ::GetLastError());
+			}
+		}
+	}
+#if 0
+	if (_restorePreviousOnExit && _previousHglrc != _hglrc && !::wglMakeCurrent(_previousHdc, _previousHglrc))
+	{
+		reportError("Win32WindowingSystem::OpenGLContext() - Unable to restore current OpenGL rendering context", ::GetLastError());
+	}
+#endif
+	_previousHdc   = 0;
     _previousHglrc = 0;
 
     if (_hglrc)

@@ -66,9 +66,9 @@ void addDrawableAndReverseWindingOrder( osg::Geode* geode )
     // Replace double sided polygons by duplicating the drawables and inverting the normals.
     std::vector<osg::Geometry*> new_drawables;
 
-    for (size_t i=0; i<geode->getNumDrawables(); ++i)
+    for (size_t j=0; j<geode->getNumDrawables(); ++j)
     {
-        const osg::Geometry* geometry = dynamic_cast<const osg::Geometry*>(geode->getDrawable(i));
+        const osg::Geometry* geometry = dynamic_cast<const osg::Geometry*>(geode->getDrawable(j));
         if(geometry)
         {
             osg::Geometry* geom = new osg::Geometry(*geometry
@@ -96,9 +96,9 @@ void addDrawableAndReverseWindingOrder( osg::Geode* geode )
                         if( normals )
                         {
                             // First, invert the direction of the normals.
-                            for( GLint i = first; i < last; ++i )
+                            for( GLint k = first; k < last; ++k )
                             {
-                                (*normals)[i] = -(*normals)[i];
+                                (*normals)[k] = -(*normals)[k];
                             }
                             reverseWindingOrder( normals, drawarray->getMode(), first, last );
                         }
@@ -113,9 +113,9 @@ void addDrawableAndReverseWindingOrder( osg::Geode* geode )
                         }
                     }
 
-                    for( size_t i = 0; i < geom->getNumTexCoordArrays(); ++i )
+                    for( size_t ij = 0; ij < geom->getNumTexCoordArrays(); ++ij )
                     {
-                        osg::Vec2Array* UVs = dynamic_cast<osg::Vec2Array*>(geom->getTexCoordArray(i));
+                        osg::Vec2Array* UVs = dynamic_cast<osg::Vec2Array*>(geom->getTexCoordArray(ij));
                         if( UVs )
                         {
                             reverseWindingOrder( UVs, drawarray->getMode(), first, last );
@@ -433,12 +433,14 @@ protected:
                     _primaryColor = document.getColorPool()->getColor(primaryNameIndex);
 
                 else // >= VERSION_15_1
-                    _primaryColor = document.getColorPool()->getColor(primaryColorIndex);
+					_primaryColor = osg::Vec4(1, 1, 1, 1);
+//				_primaryColor = document.getColorPool()->getColor(primaryColorIndex);
             }
         }
 
         // Lighting
-        stateset->setMode(GL_LIGHTING, isLit() ? osg::StateAttribute::ON : osg::StateAttribute::OFF);
+		bool lit = isLit();
+        stateset->setMode(GL_LIGHTING, lit ? osg::StateAttribute::ON : osg::StateAttribute::OFF);
 
         // Material
         if (isLit() || materialIndex>=0)
@@ -447,25 +449,35 @@ protected:
             // http://www.multigen-paradigm.com/ubb/Forum1/HTML/000228.html
             osg::Vec4 col = _primaryColor;
             col.a() = 1.0f - getTransparency();
+#if 0
+			if (materialIndex < 0)
+			{
+				if (document.getOrCreateMaterialPool()->size() > 0)
+					materialIndex = 0;
+			}
+#endif
             osg::Material* material = document.getOrCreateMaterialPool()->getOrCreateMaterial(materialIndex,col);
             stateset->setAttribute(material);
         }
 
         // IRColor (IRC)
-        if (document.getPreserveNonOsgAttrsAsUserData() && 0 != IRColor)
-        {
+//      if (document.getPreserveNonOsgAttrsAsUserData() && 0 != IRColor)
+		if(0 != IRColor)
+		{
           _geometry->setUserValue("<UA:IRC>", IRColor);
-        }
+		}
 
         // surface (SMC)
-        if (document.getPreserveNonOsgAttrsAsUserData() && 0 != surface)
-        {
+//      if (document.getPreserveNonOsgAttrsAsUserData() && 0 != surface)
+		if (0 != surface)
+		{
           _geometry->setUserValue("<UA:SMC>", surface);
         }
 
         // feature (FID)
-        if (document.getPreserveNonOsgAttrsAsUserData() && 0 != feature)
-        {
+//		if (document.getPreserveNonOsgAttrsAsUserData() && 0 != feature)
+		if (0 != feature)
+		{
           _geometry->setUserValue("<UA:FID>", feature);
         }
 
@@ -524,6 +536,17 @@ protected:
         if (_parent.valid())
             _parent->addChild(*_geode);
     }
+
+	//The following module forces the linker to not have udefines for these functions in exportGeometryRecoreds
+	virtual void noRecord()
+	{
+		_geometry = new osg::Geometry;
+		int32 IRColor;
+		_geometry->getUserValue("<UA:IRC>", IRColor);
+		int16 Surface;
+		_geometry->getUserValue("<UA:SMC>", Surface);
+
+	}
 
     osg::PrimitiveSet::Mode getPrimitiveSetMode(int numVertices)
     {

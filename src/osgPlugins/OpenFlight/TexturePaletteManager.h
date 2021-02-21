@@ -59,6 +59,8 @@ protected:
 
 	std::string Get_CDB_Res_String(const osg::Image *image) const;
 
+	std::string Strip2nth(std::string item, std::string path, int count) const;
+
 };
 
 

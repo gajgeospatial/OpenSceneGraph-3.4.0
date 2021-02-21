@@ -498,6 +498,9 @@ protected:
 		float64 transitionRange = in.readFloat64();
 		float64 significatSize = in.readFloat64();
 
+		if (significatSize > 0.0)
+			document.setCDBModel_Has_Sigsize(true);
+
 		if (switchInDistance == 0.0 && switchOutDistance == 0.0)
 		{
 //			switchInDistance = 30000.0;

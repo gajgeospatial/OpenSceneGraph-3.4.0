@@ -159,6 +159,11 @@ static rawImageRec *RawImageOpen(std::istream& fin)
     } endianTest;
     rawImageRec *raw;
     int x;
+	//Determine the file size
+	fin.seekg(0, fin.end);
+	size_t stream_length = fin.tellg();
+	fin.seekg(0, fin.beg);
+
 
     raw = new rawImageRec;
     if (raw == NULL)
@@ -193,6 +198,18 @@ static rawImageRec *RawImageOpen(std::istream& fin)
     raw->rowStart = 0;
     raw->rowSize = 0;
     raw->bpc = (raw->type & 0x00FF);
+
+	//Verify that the file size matches the bytes needed otherwise we will end up with a
+	//memory exception
+	bool rle = (raw->type & 0xFF00) == 0x0100;
+	if (!rle)
+	{
+		size_t streamsizeneeded = (raw->sizeX * raw->sizeY * raw->sizeZ * raw->bpc) + 512;
+		if (streamsizeneeded > stream_length)
+		{
+			return NULL;
+		}
+	}
 
     raw->tmp = new unsigned char [raw->sizeX*256*raw->bpc];
     if (raw->tmp == NULL )
@@ -239,7 +256,7 @@ static rawImageRec *RawImageOpen(std::istream& fin)
         }
     }
 
-    if ((raw->type & 0xFF00) == 0x0100)
+    if (rle)
     {
         unsigned int ybyz = raw->sizeY * raw->sizeZ;
         if ( (raw->rowStart = new GLuint [ybyz]) == NULL )
@@ -257,7 +274,12 @@ static rawImageRec *RawImageOpen(std::istream& fin)
         }
         x = ybyz * sizeof(GLuint);
         raw->rleEnd = 512 + (2 * x);
-                fin.seekg(512,std::ios::beg);
+		if (raw->rleEnd > stream_length)
+		{
+			return NULL;
+		}
+
+        fin.seekg(512,std::ios::beg);
         fin.read((char*)raw->rowStart,x);
         fin.read((char*)raw->rowSize,x);
         if (raw->swapFlag)
@@ -265,6 +287,13 @@ static rawImageRec *RawImageOpen(std::istream& fin)
             ConvertLong(raw->rowStart, (long) (x/sizeof(GLuint)));
             ConvertLong((GLuint *)raw->rowSize, (long) (x/sizeof(GLint)));
         }
+		size_t streamsizeneeded = raw->rowStart[ybyz-1] +
+								  raw->rowSize[ybyz-1];
+		if (streamsizeneeded > stream_length)
+		{
+			return NULL;
+		}
+
     }
     return raw;
 }

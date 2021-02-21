@@ -6,6 +6,7 @@
 
 #include <sstream>
 #include "ZipArchive.h"
+#include <cdbGlobals/cdbGlobals>
 
 class ReaderWriterZIP : public osgDB::ReaderWriter
 {
@@ -26,6 +27,15 @@ class ReaderWriterZIP : public osgDB::ReaderWriter
             std::string ext = osgDB::getLowerCaseFileExtension(file);
             if (!acceptsExtension(ext)) return ReadResult::FILE_NOT_HANDLED;
 
+			if (file.substr(0, 5) == "gpkg:")
+			{
+				CDB_Global * gbls = CDB_Global::getInstance();
+				std::stringstream fin;
+				if (gbls->Get_Media(file, fin))
+				{
+					return openArchive(fin, options);
+				}
+			}
             std::string fileName = osgDB::findDataFile(file, options);
             if (fileName.empty())
             {
