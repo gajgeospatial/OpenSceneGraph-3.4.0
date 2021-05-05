@@ -432,6 +432,7 @@ struct CDB_Model_Runtime_Class
 		inst_bbw_index = -1;
 		inst_bbh_index = -1;
 		inst_bbl_index = -1;
+		inst_ahgt_index = -1;
 		have_indexes = false;
 	}
 
@@ -493,13 +494,14 @@ struct CDB_Model_Runtime_Class
 			}
 
 			inst_ahgt_index = poFDefn->GetFieldIndex("AHGT");
+
 			have_indexes = true;
 		}
 
 		return set_class(f, inst_KeyIndex, inst_Model_Base_Index, inst_FACC_index, inst_FSC_index, inst_bsr_index, inst_bbw_index, inst_bbl_index, inst_bbh_index, inst_ahgt_index);
 	}
 
-	std::string set_class(OGRFeature * f, int key_index, int Model_Base_Index, int FACC_Index, int FSC_Index, int bsr_Index, int bbw_Index, int bbl_Index, int bbh_Index, int ahgt_Index)
+	std::string set_class(OGRFeature * f, int key_index, int Model_Base_Index, int FACC_Index, int FSC_Index, int bsr_Index, int bbw_Index, int bbl_Index, int bbh_Index, int ahgt_index)
 	{
 		std::string cnam = f->GetFieldAsString(key_index);
 		Model_Base_Name = f->GetFieldAsString(Model_Base_Index);
@@ -517,8 +519,8 @@ struct CDB_Model_Runtime_Class
 		bbw = f->GetFieldAsDouble(bbw_Index);
 		bbl = f->GetFieldAsDouble(bbl_Index);
 		bbh = f->GetFieldAsDouble(bbh_Index);
-		if (ahgt_Index >= 0)
-			ahgt = f->GetFieldAsInteger(ahgt_Index);
+		if (ahgt_index >= 0)
+			ahgt = f->GetFieldAsInteger(ahgt_index);
 		return cnam;
 	}
 
