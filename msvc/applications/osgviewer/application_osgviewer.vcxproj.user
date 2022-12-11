@@ -16,6 +16,10 @@
     <LocalDebuggerCommandArguments>"G:\3dModel\samples\M2 Bradley\rt1293.flt"</LocalDebuggerCommandArguments>
     <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">
+    <LocalDebuggerCommandArguments>"G:\3dModel\samples\M2 Bradley\rt1293.flt"</LocalDebuggerCommandArguments>
+    <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
+  </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='vs2015_Debug|Win32'">
     <LocalDebuggerCommandArguments>"g:\3dModel\samples\M2 Bradley\rt1293.flt" --window 100 100 500 500</LocalDebuggerCommandArguments>
     <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
@@ -28,6 +32,10 @@
     <LocalDebuggerCommandArguments>"g:\3dModel\samples\M2 Bradley\rt1293.flt" --window 100 100 500 500</LocalDebuggerCommandArguments>
     <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|Win32'">
+    <LocalDebuggerCommandArguments>"g:\3dModel\samples\M2 Bradley\rt1293.flt" --window 100 100 500 500</LocalDebuggerCommandArguments>
+    <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
+  </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='vs2015_Debug|x64'">
     <LocalDebuggerCommandArguments>--window 0 0 1920 1080 f:\Geospatial_Source\Data\USA\CONUS\Lidar\Florida\Tampa\LID2007_070601_W.las</LocalDebuggerCommandArguments>
     <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
@@ -37,6 +45,10 @@
     <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">
+    <LocalDebuggerCommandArguments>--window 0 0 1920 1080 G:\OtherCDB\N35W84_25Sept_CDB\GTModel\500_GTModelGeometry\E_Vegetation\C_Woodland\030_Trees\D500_S001_T001_EC030_000_cherry_tree_blossom.flt</LocalDebuggerCommandArguments>
+    <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">
     <LocalDebuggerCommandArguments>--window 0 0 1920 1080 G:\OtherCDB\N35W84_25Sept_CDB\GTModel\500_GTModelGeometry\E_Vegetation\C_Woodland\030_Trees\D500_S001_T001_EC030_000_cherry_tree_blossom.flt</LocalDebuggerCommandArguments>
     <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
   </PropertyGroup>
