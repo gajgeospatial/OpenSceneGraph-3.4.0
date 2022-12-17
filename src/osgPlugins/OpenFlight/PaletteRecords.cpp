@@ -332,8 +332,14 @@ protected:
     osg::StateSet* readTexture(const std::string& filename, Document& document) const
     {
 		osg::ref_ptr<osg::Image> image;
-		if (document.getTextureInArchive())
-			image = document.readArchiveImage(filename);
+        if (document.getTextureInArchive())
+        {
+            image = document.readArchiveImage(filename);
+            if (image == NULL)
+            {
+                image = osgDB::readRefImageFile(filename, document.getOptions());
+            }
+        }
 		else
 			image = osgDB::readRefImageFile(filename, document.getOptions());
         if (!image) return NULL;
@@ -348,8 +354,11 @@ protected:
         texture->setImage(image.get());
         stateset->setTextureAttributeAndModes(0, texture, osg::StateAttribute::ON);
 
-        // Read attribute file
+        // Since the .attr file is optional according to the OpenFlight spec, check to see
+        // if the file exists before reading it, to avoid printing an unnecessary warning.
         std::string attrname = filename + ".attr";
+        if (!osgDB::fileExists(attrname))
+            return stateset;
         osg::ref_ptr<AttrData> attr = dynamic_cast<AttrData*>(osgDB::readObjectFile(attrname,document.getOptions()));
         if (attr.valid())
         {
