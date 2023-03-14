@@ -35,14 +35,11 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGUID>{1180A2A0-3085-4249-ACBA-BEB182A0693D}</ProjectGUID>
+    <ProjectGUID>{21F902DE-C0AC-43D9-826C-9AE68C41F9D0}</ProjectGUID>
     <Keyword>Win32Proj</Keyword>
     <Platform>Win32</Platform>
     <ProjectName>Plugins zip</ProjectName>
-    <SccProjectName>SAK</SccProjectName>
-    <SccAuxPath>SAK</SccAuxPath>
-    <SccLocalPath>SAK</SccLocalPath>
-    <SccProvider>SAK</SccProvider>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -75,18 +72,6 @@
     <CharacterSet>MultiByte</CharacterSet>
     <PlatformToolset>v143</PlatformToolset>
   </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='vs2012_Debug|Win32'" Label="Configuration">
-    <ConfigurationType>DynamicLibrary</ConfigurationType>
-    <UseOfMfc>false</UseOfMfc>
-    <CharacterSet>MultiByte</CharacterSet>
-    <PlatformToolset>v110</PlatformToolset>
-  </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='vs2010_Debug|Win32'" Label="Configuration">
-    <ConfigurationType>DynamicLibrary</ConfigurationType>
-    <UseOfMfc>false</UseOfMfc>
-    <CharacterSet>MultiByte</CharacterSet>
-    <PlatformToolset>v100</PlatformToolset>
-  </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
     <ConfigurationType>DynamicLibrary</ConfigurationType>
     <UseOfMfc>false</UseOfMfc>
@@ -116,18 +101,6 @@
     <UseOfMfc>false</UseOfMfc>
     <CharacterSet>MultiByte</CharacterSet>
     <PlatformToolset>v143</PlatformToolset>
-  </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='vs2012_Debug|x64'" Label="Configuration">
-    <ConfigurationType>DynamicLibrary</ConfigurationType>
-    <UseOfMfc>false</UseOfMfc>
-    <CharacterSet>MultiByte</CharacterSet>
-    <PlatformToolset>v110</PlatformToolset>
-  </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='vs2010_Debug|x64'" Label="Configuration">
-    <ConfigurationType>DynamicLibrary</ConfigurationType>
-    <UseOfMfc>false</UseOfMfc>
-    <CharacterSet>MultiByte</CharacterSet>
-    <PlatformToolset>v100</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
     <ConfigurationType>DynamicLibrary</ConfigurationType>
@@ -159,18 +132,6 @@
     <CharacterSet>MultiByte</CharacterSet>
     <PlatformToolset>v143</PlatformToolset>
   </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='vs2012_Release|Win32'" Label="Configuration">
-    <ConfigurationType>DynamicLibrary</ConfigurationType>
-    <UseOfMfc>false</UseOfMfc>
-    <CharacterSet>MultiByte</CharacterSet>
-    <PlatformToolset>v110</PlatformToolset>
-  </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='vs2010_Release|Win32'" Label="Configuration">
-    <ConfigurationType>DynamicLibrary</ConfigurationType>
-    <UseOfMfc>false</UseOfMfc>
-    <CharacterSet>MultiByte</CharacterSet>
-    <PlatformToolset>v100</PlatformToolset>
-  </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
     <ConfigurationType>DynamicLibrary</ConfigurationType>
     <UseOfMfc>false</UseOfMfc>
@@ -201,18 +162,6 @@
     <CharacterSet>MultiByte</CharacterSet>
     <PlatformToolset>v143</PlatformToolset>
   </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='vs2012_Release|x64'" Label="Configuration">
-    <ConfigurationType>DynamicLibrary</ConfigurationType>
-    <UseOfMfc>false</UseOfMfc>
-    <CharacterSet>MultiByte</CharacterSet>
-    <PlatformToolset>v110</PlatformToolset>
-  </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='vs2010_Release|x64'" Label="Configuration">
-    <ConfigurationType>DynamicLibrary</ConfigurationType>
-    <UseOfMfc>false</UseOfMfc>
-    <CharacterSet>MultiByte</CharacterSet>
-    <PlatformToolset>v100</PlatformToolset>
-  </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
   <ImportGroup Label="ExtensionSettings">
   </ImportGroup>
@@ -227,178 +176,130 @@
     <OutDir Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|Win32'">$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</OutDir>
     <OutDir Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|Win32'">$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</OutDir>
     <OutDir Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|Win32'">$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</OutDir>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='vs2012_Debug|Win32'">$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</OutDir>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='vs2010_Debug|Win32'">$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</OutDir>
     <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</OutDir>
     <OutDir Condition="'$(Configuration)|$(Platform)'=='vs2015_Debug|x64'">$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</OutDir>
     <OutDir Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|x64'">$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</OutDir>
     <OutDir Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</OutDir>
     <OutDir Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</OutDir>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='vs2012_Debug|x64'">$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</OutDir>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='vs2010_Debug|x64'">$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='vs2015_Debug|Win32'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|Win32'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|Win32'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|Win32'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
-    <IntDir Condition="'$(Configuration)|$(Platform)'=='vs2012_Debug|Win32'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
-    <IntDir Condition="'$(Configuration)|$(Platform)'=='vs2010_Debug|Win32'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='vs2015_Debug|x64'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|x64'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
-    <IntDir Condition="'$(Configuration)|$(Platform)'=='vs2012_Debug|x64'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
-    <IntDir Condition="'$(Configuration)|$(Platform)'=='vs2010_Debug|x64'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">osgdb_zipd</TargetName>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='vs2015_Debug|Win32'">osgdb_zipd</TargetName>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|Win32'">osgdb_zipd</TargetName>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|Win32'">osgdb_zipd</TargetName>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|Win32'">osgdb_zipd</TargetName>
-    <TargetName Condition="'$(Configuration)|$(Platform)'=='vs2012_Debug|Win32'">osgdb_zipd</TargetName>
-    <TargetName Condition="'$(Configuration)|$(Platform)'=='vs2010_Debug|Win32'">osgdb_zipd</TargetName>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">osgdb_zipd</TargetName>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='vs2015_Debug|x64'">osgdb_zipd</TargetName>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|x64'">osgdb_zipd</TargetName>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">osgdb_zipd</TargetName>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">osgdb_zipd</TargetName>
-    <TargetName Condition="'$(Configuration)|$(Platform)'=='vs2012_Debug|x64'">osgdb_zipd</TargetName>
-    <TargetName Condition="'$(Configuration)|$(Platform)'=='vs2010_Debug|x64'">osgdb_zipd</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.dll</TargetExt>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='vs2015_Debug|Win32'">.dll</TargetExt>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|Win32'">.dll</TargetExt>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|Win32'">.dll</TargetExt>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|Win32'">.dll</TargetExt>
-    <TargetExt Condition="'$(Configuration)|$(Platform)'=='vs2012_Debug|Win32'">.dll</TargetExt>
-    <TargetExt Condition="'$(Configuration)|$(Platform)'=='vs2010_Debug|Win32'">.dll</TargetExt>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.dll</TargetExt>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='vs2015_Debug|x64'">.dll</TargetExt>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|x64'">.dll</TargetExt>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">.dll</TargetExt>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">.dll</TargetExt>
-    <TargetExt Condition="'$(Configuration)|$(Platform)'=='vs2012_Debug|x64'">.dll</TargetExt>
-    <TargetExt Condition="'$(Configuration)|$(Platform)'=='vs2010_Debug|x64'">.dll</TargetExt>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='vs2015_Debug|Win32'">true</LinkIncremental>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|Win32'">true</LinkIncremental>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|Win32'">true</LinkIncremental>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|Win32'">true</LinkIncremental>
-    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='vs2012_Debug|Win32'">true</LinkIncremental>
-    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='vs2010_Debug|Win32'">true</LinkIncremental>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='vs2015_Debug|x64'">true</LinkIncremental>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|x64'">true</LinkIncremental>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">true</LinkIncremental>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">true</LinkIncremental>
-    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='vs2012_Debug|x64'">true</LinkIncremental>
-    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='vs2010_Debug|x64'">true</LinkIncremental>
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</GenerateManifest>
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='vs2015_Debug|Win32'">true</GenerateManifest>
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|Win32'">true</GenerateManifest>
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|Win32'">true</GenerateManifest>
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|Win32'">true</GenerateManifest>
-    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='vs2012_Debug|Win32'">true</GenerateManifest>
-    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='vs2010_Debug|Win32'">true</GenerateManifest>
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='vs2015_Debug|x64'">true</GenerateManifest>
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|x64'">true</GenerateManifest>
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">true</GenerateManifest>
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">true</GenerateManifest>
-    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='vs2012_Debug|x64'">true</GenerateManifest>
-    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='vs2010_Debug|x64'">true</GenerateManifest>
     <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</OutDir>
     <OutDir Condition="'$(Configuration)|$(Platform)'=='vs2015_Release|Win32'">$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</OutDir>
     <OutDir Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|Win32'">$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</OutDir>
     <OutDir Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|Win32'">$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</OutDir>
     <OutDir Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|Win32'">$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</OutDir>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='vs2012_Release|Win32'">$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</OutDir>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='vs2010_Release|Win32'">$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</OutDir>
     <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</OutDir>
     <OutDir Condition="'$(Configuration)|$(Platform)'=='vs2015_Release|x64'">$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</OutDir>
     <OutDir Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|x64'">$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</OutDir>
     <OutDir Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</OutDir>
     <OutDir Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</OutDir>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='vs2012_Release|x64'">$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</OutDir>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='vs2010_Release|x64'">$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='vs2015_Release|Win32'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|Win32'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|Win32'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|Win32'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
-    <IntDir Condition="'$(Configuration)|$(Platform)'=='vs2012_Release|Win32'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
-    <IntDir Condition="'$(Configuration)|$(Platform)'=='vs2010_Release|Win32'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='vs2015_Release|x64'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|x64'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
-    <IntDir Condition="'$(Configuration)|$(Platform)'=='vs2012_Release|x64'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
-    <IntDir Condition="'$(Configuration)|$(Platform)'=='vs2010_Release|x64'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">osgdb_zip</TargetName>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='vs2015_Release|Win32'">osgdb_zip</TargetName>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|Win32'">osgdb_zip</TargetName>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|Win32'">osgdb_zip</TargetName>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|Win32'">osgdb_zip</TargetName>
-    <TargetName Condition="'$(Configuration)|$(Platform)'=='vs2012_Release|Win32'">osgdb_zip</TargetName>
-    <TargetName Condition="'$(Configuration)|$(Platform)'=='vs2010_Release|Win32'">osgdb_zip</TargetName>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">osgdb_zip</TargetName>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='vs2015_Release|x64'">osgdb_zip</TargetName>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|x64'">osgdb_zip</TargetName>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">osgdb_zip</TargetName>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">osgdb_zip</TargetName>
-    <TargetName Condition="'$(Configuration)|$(Platform)'=='vs2012_Release|x64'">osgdb_zip</TargetName>
-    <TargetName Condition="'$(Configuration)|$(Platform)'=='vs2010_Release|x64'">osgdb_zip</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.dll</TargetExt>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='vs2015_Release|Win32'">.dll</TargetExt>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|Win32'">.dll</TargetExt>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|Win32'">.dll</TargetExt>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|Win32'">.dll</TargetExt>
-    <TargetExt Condition="'$(Configuration)|$(Platform)'=='vs2012_Release|Win32'">.dll</TargetExt>
-    <TargetExt Condition="'$(Configuration)|$(Platform)'=='vs2010_Release|Win32'">.dll</TargetExt>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.dll</TargetExt>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='vs2015_Release|x64'">.dll</TargetExt>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|x64'">.dll</TargetExt>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">.dll</TargetExt>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">.dll</TargetExt>
-    <TargetExt Condition="'$(Configuration)|$(Platform)'=='vs2012_Release|x64'">.dll</TargetExt>
-    <TargetExt Condition="'$(Configuration)|$(Platform)'=='vs2010_Release|x64'">.dll</TargetExt>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='vs2015_Release|Win32'">false</LinkIncremental>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|Win32'">false</LinkIncremental>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|Win32'">false</LinkIncremental>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|Win32'">false</LinkIncremental>
-    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='vs2012_Release|Win32'">false</LinkIncremental>
-    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='vs2010_Release|Win32'">false</LinkIncremental>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='vs2015_Release|x64'">false</LinkIncremental>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|x64'">false</LinkIncremental>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">false</LinkIncremental>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">false</LinkIncremental>
-    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='vs2012_Release|x64'">false</LinkIncremental>
-    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='vs2010_Release|x64'">false</LinkIncremental>
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</GenerateManifest>
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='vs2015_Release|Win32'">true</GenerateManifest>
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|Win32'">true</GenerateManifest>
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|Win32'">true</GenerateManifest>
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|Win32'">true</GenerateManifest>
-    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='vs2012_Release|Win32'">true</GenerateManifest>
-    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='vs2010_Release|Win32'">true</GenerateManifest>
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='vs2015_Release|x64'">true</GenerateManifest>
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|x64'">true</GenerateManifest>
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">true</GenerateManifest>
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">true</GenerateManifest>
-    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='vs2012_Release|x64'">true</GenerateManifest>
-    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='vs2010_Release|x64'">true</GenerateManifest>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
-      <AdditionalIncludeDirectories>..\..\..\..\include;..\..\..\include;..\..\..\..\..\$(GDAL_DIR)\frmts;..\..\..\..\..\$(GDAL_DIR)\alg;..\..\..\..\..\$(GDAL_DIR)\gcore;..\..\..\..\..\$(GDAL_DIR)\port;..\..\..\..\..\$(GDAL_DIR)\ogr;..\..\..\..\..\$(GDAL_DIR)\ogr\ogrsf_frmts;..\..\..\..\..\$(GDAL_DIR)\frmts\vrt;..\..\..\..\..\$(GDAL_DIR)\ogr\ogrsf_frmts\gpkg;..\..\..\..\..\$(GDAL_DIR)\ogr\ogrsf_frmts\sqlite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..\..\include;..\..\..\..\include;..\..\..\..\..\$(LIBZIP_DIR)\lib;..\..\..\..\..\$(LIBZIP_DIR)\msvc;..\..\..\..\..\$(GDAL_DIR)\frmts;..\..\..\..\..\$(GDAL_DIR)\alg;..\..\..\..\..\$(GDAL_DIR)\gcore;..\..\..\..\..\$(GDAL_DIR)\port;..\..\..\..\..\$(GDAL_DIR)\ogr;..\..\..\..\..\$(GDAL_DIR)\ogr\ogrsf_frmts;..\..\..\..\..\$(GDAL_DIR)\frmts\vrt;..\..\..\..\..\$(GDAL_DIR)\ogr\ogrsf_frmts\gpkg;..\..\..\..\..\$(GDAL_DIR)\ogr\ogrsf_frmts\sqlite;..\..\..\..\..\$(SQLITE3_DIR);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <CompileAs>CompileAsCpp</CompileAs>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
-      <DisableSpecificWarnings>4706;4127;4100</DisableSpecificWarnings>
+      <DisableSpecificWarnings>4589;4706;4127;4100</DisableSpecificWarnings>
       <ExceptionHandling>Sync</ExceptionHandling>
       <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
       <Optimization>Disabled</Optimization>
@@ -406,15 +307,15 @@
       <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
       <WarningLevel>Level4</WarningLevel>
-      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;ZIP_STD;CMAKE_INTDIR="Debug";osgdb_zip_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>_WIN32;_WINDOWS;_DEBUG;_WIN32_WINNT=0x0602;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;ZIP_STD;CMAKE_INTDIR="Debug";osgdb_zip_EXPORTS;%(PreprocessorDefinitions);</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
     </ClCompile>
     <ResourceCompile>
-      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;ZIP_STD;CMAKE_INTDIR=\"Debug\";osgdb_zip_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>..\..\..\..\include;..\..\..\include;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_WIN32;_WINDOWS;_DEBUG;_WIN32_WINNT=0x0602;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;ZIP_STD;CMAKE_INTDIR=\"Debug\";osgdb_zip_EXPORTS;%(PreprocessorDefinitions);</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\include;..\..\..\..\include;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>..\..\..\..\include;..\..\..\include;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..\..\include;..\..\..\..\include;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
       <OutputDirectory>$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -423,8 +324,8 @@
     </Midl>
     <Link>
       <AdditionalOptions> /machine:X86 /debug %(AdditionalOptions)</AdditionalOptions>
-      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;cdbGlobalsd.lib;OpenThreadsd.lib;osgd.lib;osgDBd.lib;osgUtild.lib;opengl32.lib;gdal_i.lib;zlib.lib</AdditionalDependencies>
-      <AdditionalLibraryDirectories>$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(GDAL_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(ZLIB_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);%(AdditionalLibraryDirectories);</AdditionalLibraryDirectories>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;cdbGlobalsd.lib;OpenThreadsd.lib;osgd.lib;osgDBd.lib;osgUtild.lib;opengl32.lib;osgd.lib;OpenThreadsd.lib;zlib.lib;opengl32.lib;</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(LIBZIP_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(GDAL_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(ZLIB_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <ImportLibrary>$(OutDir)osgdb_zipd.lib</ImportLibrary>
       <ProgramDataBaseFile>$(OutDir)$(TargetName).pdb</ProgramDataBaseFile>
@@ -438,12 +339,12 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='vs2015_Debug|Win32'">
     <ClCompile>
-      <AdditionalIncludeDirectories>..\..\..\..\include;..\..\..\include;..\..\..\..\..\$(GDAL_DIR)\frmts;..\..\..\..\..\$(GDAL_DIR)\alg;..\..\..\..\..\$(GDAL_DIR)\gcore;..\..\..\..\..\$(GDAL_DIR)\port;..\..\..\..\..\$(GDAL_DIR)\ogr;..\..\..\..\..\$(GDAL_DIR)\ogr\ogrsf_frmts;..\..\..\..\..\$(GDAL_DIR)\frmts\vrt;..\..\..\..\..\$(GDAL_DIR)\ogr\ogrsf_frmts\gpkg;..\..\..\..\..\$(GDAL_DIR)\ogr\ogrsf_frmts\sqlite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..\..\include;..\..\..\..\include;..\..\..\..\..\$(LIBZIP_DIR)\lib;..\..\..\..\..\$(LIBZIP_DIR)\msvc;..\..\..\..\..\$(GDAL_DIR)\frmts;..\..\..\..\..\$(GDAL_DIR)\alg;..\..\..\..\..\$(GDAL_DIR)\gcore;..\..\..\..\..\$(GDAL_DIR)\port;..\..\..\..\..\$(GDAL_DIR)\ogr;..\..\..\..\..\$(GDAL_DIR)\ogr\ogrsf_frmts;..\..\..\..\..\$(GDAL_DIR)\frmts\vrt;..\..\..\..\..\$(GDAL_DIR)\ogr\ogrsf_frmts\gpkg;..\..\..\..\..\$(GDAL_DIR)\ogr\ogrsf_frmts\sqlite;..\..\..\..\..\$(SQLITE3_DIR);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <CompileAs>CompileAsCpp</CompileAs>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
-      <DisableSpecificWarnings>4706;4127;4100</DisableSpecificWarnings>
+      <DisableSpecificWarnings>4589;4706;4127;4100</DisableSpecificWarnings>
       <ExceptionHandling>Sync</ExceptionHandling>
       <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
       <Optimization>Disabled</Optimization>
@@ -451,15 +352,15 @@
       <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
       <WarningLevel>Level4</WarningLevel>
-      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;ZIP_STD;CMAKE_INTDIR="Debug";osgdb_zip_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>_WIN32;_WINDOWS;_DEBUG;_WIN32_WINNT=0x0602;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;ZIP_STD;CMAKE_INTDIR="Debug";osgdb_zip_EXPORTS;%(PreprocessorDefinitions);</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
     </ClCompile>
     <ResourceCompile>
-      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;ZIP_STD;CMAKE_INTDIR=\"Debug\";osgdb_zip_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>..\..\..\..\include;..\..\..\include;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_WIN32;_WINDOWS;_DEBUG;_WIN32_WINNT=0x0602;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;ZIP_STD;CMAKE_INTDIR=\"Debug\";osgdb_zip_EXPORTS;%(PreprocessorDefinitions);</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\include;..\..\..\..\include;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>..\..\..\..\include;..\..\..\include;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..\..\include;..\..\..\..\include;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
       <OutputDirectory>$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -468,8 +369,8 @@
     </Midl>
     <Link>
       <AdditionalOptions> /machine:X86 /debug %(AdditionalOptions)</AdditionalOptions>
-      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;cdbGlobalsd.lib;OpenThreadsd.lib;osgd.lib;osgDBd.lib;osgUtild.lib;opengl32.lib;gdal_i.lib;zlib.lib</AdditionalDependencies>
-      <AdditionalLibraryDirectories>$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(GDAL_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(ZLIB_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);%(AdditionalLibraryDirectories);</AdditionalLibraryDirectories>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;cdbGlobalsd.lib;OpenThreadsd.lib;osgd.lib;osgDBd.lib;osgUtild.lib;opengl32.lib;osgd.lib;OpenThreadsd.lib;zlib.lib;opengl32.lib;</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(LIBZIP_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(GDAL_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(ZLIB_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <ImportLibrary>$(OutDir)osgdb_zipd.lib</ImportLibrary>
       <ProgramDataBaseFile>$(OutDir)$(TargetName).pdb</ProgramDataBaseFile>
@@ -483,12 +384,12 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|Win32'">
     <ClCompile>
-      <AdditionalIncludeDirectories>..\..\..\..\include;..\..\..\include;..\..\..\..\..\$(GDAL_DIR)\frmts;..\..\..\..\..\$(GDAL_DIR)\alg;..\..\..\..\..\$(GDAL_DIR)\gcore;..\..\..\..\..\$(GDAL_DIR)\port;..\..\..\..\..\$(GDAL_DIR)\ogr;..\..\..\..\..\$(GDAL_DIR)\ogr\ogrsf_frmts;..\..\..\..\..\$(GDAL_DIR)\frmts\vrt;..\..\..\..\..\$(GDAL_DIR)\ogr\ogrsf_frmts\gpkg;..\..\..\..\..\$(GDAL_DIR)\ogr\ogrsf_frmts\sqlite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..\..\include;..\..\..\..\include;..\..\..\..\..\$(LIBZIP_DIR)\lib;..\..\..\..\..\$(LIBZIP_DIR)\msvc;..\..\..\..\..\$(GDAL_DIR)\frmts;..\..\..\..\..\$(GDAL_DIR)\alg;..\..\..\..\..\$(GDAL_DIR)\gcore;..\..\..\..\..\$(GDAL_DIR)\port;..\..\..\..\..\$(GDAL_DIR)\ogr;..\..\..\..\..\$(GDAL_DIR)\ogr\ogrsf_frmts;..\..\..\..\..\$(GDAL_DIR)\frmts\vrt;..\..\..\..\..\$(GDAL_DIR)\ogr\ogrsf_frmts\gpkg;..\..\..\..\..\$(GDAL_DIR)\ogr\ogrsf_frmts\sqlite;..\..\..\..\..\$(SQLITE3_DIR);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <CompileAs>CompileAsCpp</CompileAs>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
-      <DisableSpecificWarnings>4706;4127;4100</DisableSpecificWarnings>
+      <DisableSpecificWarnings>4589;4706;4127;4100</DisableSpecificWarnings>
       <ExceptionHandling>Sync</ExceptionHandling>
       <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
       <Optimization>Disabled</Optimization>
@@ -496,15 +397,15 @@
       <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
       <WarningLevel>Level4</WarningLevel>
-      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;ZIP_STD;CMAKE_INTDIR="Debug";osgdb_zip_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>_WIN32;_WINDOWS;_DEBUG;_WIN32_WINNT=0x0602;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;ZIP_STD;CMAKE_INTDIR="Debug";osgdb_zip_EXPORTS;%(PreprocessorDefinitions);</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
     </ClCompile>
     <ResourceCompile>
-      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;ZIP_STD;CMAKE_INTDIR=\"Debug\";osgdb_zip_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>..\..\..\..\include;..\..\..\include;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_WIN32;_WINDOWS;_DEBUG;_WIN32_WINNT=0x0602;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;ZIP_STD;CMAKE_INTDIR=\"Debug\";osgdb_zip_EXPORTS;%(PreprocessorDefinitions);</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\include;..\..\..\..\include;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>..\..\..\..\include;..\..\..\include;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..\..\include;..\..\..\..\include;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
       <OutputDirectory>$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -513,8 +414,8 @@
     </Midl>
     <Link>
       <AdditionalOptions> /machine:X86 /debug %(AdditionalOptions)</AdditionalOptions>
-      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;cdbGlobalsd.lib;OpenThreadsd.lib;osgd.lib;osgDBd.lib;osgUtild.lib;opengl32.lib;gdal_i.lib;zlib.lib</AdditionalDependencies>
-      <AdditionalLibraryDirectories>$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(GDAL_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(ZLIB_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);%(AdditionalLibraryDirectories);</AdditionalLibraryDirectories>
+      <AdditionalDependencies>zip.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;cdbGlobalsd.lib;OpenThreadsd.lib;osgd.lib;osgDBd.lib;osgUtild.lib;opengl32.lib;osgd.lib;OpenThreadsd.lib;zlib.lib;opengl32.lib;</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(LIBZIP_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(GDAL_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(ZLIB_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <ImportLibrary>$(OutDir)osgdb_zipd.lib</ImportLibrary>
       <ProgramDataBaseFile>$(OutDir)$(TargetName).pdb</ProgramDataBaseFile>
@@ -528,12 +429,12 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|Win32'">
     <ClCompile>
-      <AdditionalIncludeDirectories>..\..\..\..\include;..\..\..\include;..\..\..\..\..\$(GDAL_DIR)\frmts;..\..\..\..\..\$(GDAL_DIR)\alg;..\..\..\..\..\$(GDAL_DIR)\gcore;..\..\..\..\..\$(GDAL_DIR)\port;..\..\..\..\..\$(GDAL_DIR)\ogr;..\..\..\..\..\$(GDAL_DIR)\ogr\ogrsf_frmts;..\..\..\..\..\$(GDAL_DIR)\frmts\vrt;..\..\..\..\..\$(GDAL_DIR)\ogr\ogrsf_frmts\gpkg;..\..\..\..\..\$(GDAL_DIR)\ogr\ogrsf_frmts\sqlite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..\..\include;..\..\..\..\include;..\..\..\..\..\$(LIBZIP_DIR)\lib;..\..\..\..\..\$(LIBZIP_DIR)\msvc;..\..\..\..\..\$(GDAL_DIR)\frmts;..\..\..\..\..\$(GDAL_DIR)\alg;..\..\..\..\..\$(GDAL_DIR)\gcore;..\..\..\..\..\$(GDAL_DIR)\port;..\..\..\..\..\$(GDAL_DIR)\ogr;..\..\..\..\..\$(GDAL_DIR)\ogr\ogrsf_frmts;..\..\..\..\..\$(GDAL_DIR)\frmts\vrt;..\..\..\..\..\$(GDAL_DIR)\ogr\ogrsf_frmts\gpkg;..\..\..\..\..\$(GDAL_DIR)\ogr\ogrsf_frmts\sqlite;..\..\..\..\..\$(SQLITE3_DIR);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <CompileAs>CompileAsCpp</CompileAs>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
-      <DisableSpecificWarnings>4706;4127;4100</DisableSpecificWarnings>
+      <DisableSpecificWarnings>4589;4706;4127;4100</DisableSpecificWarnings>
       <ExceptionHandling>Sync</ExceptionHandling>
       <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
       <Optimization>Disabled</Optimization>
@@ -541,15 +442,15 @@
       <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
       <WarningLevel>Level4</WarningLevel>
-      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;ZIP_STD;CMAKE_INTDIR="Debug";osgdb_zip_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>_WIN32;_WINDOWS;_DEBUG;_WIN32_WINNT=0x0602;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;ZIP_STD;CMAKE_INTDIR="Debug";osgdb_zip_EXPORTS;%(PreprocessorDefinitions);</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
     </ClCompile>
     <ResourceCompile>
-      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;ZIP_STD;CMAKE_INTDIR=\"Debug\";osgdb_zip_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>..\..\..\..\include;..\..\..\include;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_WIN32;_WINDOWS;_DEBUG;_WIN32_WINNT=0x0602;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;ZIP_STD;CMAKE_INTDIR=\"Debug\";osgdb_zip_EXPORTS;%(PreprocessorDefinitions);</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\include;..\..\..\..\include;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>..\..\..\..\include;..\..\..\include;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..\..\include;..\..\..\..\include;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
       <OutputDirectory>$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -558,8 +459,8 @@
     </Midl>
     <Link>
       <AdditionalOptions> /machine:X86 /debug %(AdditionalOptions)</AdditionalOptions>
-      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;cdbGlobalsd.lib;OpenThreadsd.lib;osgd.lib;osgDBd.lib;osgUtild.lib;opengl32.lib;gdal_i.lib;zlib.lib</AdditionalDependencies>
-      <AdditionalLibraryDirectories>$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(GDAL_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(ZLIB_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);%(AdditionalLibraryDirectories);</AdditionalLibraryDirectories>
+      <AdditionalDependencies>zip.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;cdbGlobalsd.lib;OpenThreadsd.lib;osgd.lib;osgDBd.lib;osgUtild.lib;opengl32.lib;osgd.lib;OpenThreadsd.lib;zlib.lib;opengl32.lib;</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(LIBZIP_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(GDAL_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(ZLIB_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <ImportLibrary>$(OutDir)osgdb_zipd.lib</ImportLibrary>
       <ProgramDataBaseFile>$(OutDir)$(TargetName).pdb</ProgramDataBaseFile>
@@ -573,12 +474,12 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|Win32'">
     <ClCompile>
-      <AdditionalIncludeDirectories>..\..\..\..\include;..\..\..\include;..\..\..\..\..\$(GDAL_DIR)\frmts;..\..\..\..\..\$(GDAL_DIR)\alg;..\..\..\..\..\$(GDAL_DIR)\gcore;..\..\..\..\..\$(GDAL_DIR)\port;..\..\..\..\..\$(GDAL_DIR)\ogr;..\..\..\..\..\$(GDAL_DIR)\ogr\ogrsf_frmts;..\..\..\..\..\$(GDAL_DIR)\frmts\vrt;..\..\..\..\..\$(GDAL_DIR)\ogr\ogrsf_frmts\gpkg;..\..\..\..\..\$(GDAL_DIR)\ogr\ogrsf_frmts\sqlite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..\..\include;..\..\..\..\include;..\..\..\..\..\$(LIBZIP_DIR)\lib;..\..\..\..\..\$(LIBZIP_DIR)\msvc;..\..\..\..\..\$(GDAL_DIR)\frmts;..\..\..\..\..\$(GDAL_DIR)\alg;..\..\..\..\..\$(GDAL_DIR)\gcore;..\..\..\..\..\$(GDAL_DIR)\port;..\..\..\..\..\$(GDAL_DIR)\ogr;..\..\..\..\..\$(GDAL_DIR)\ogr\ogrsf_frmts;..\..\..\..\..\$(GDAL_DIR)\frmts\vrt;..\..\..\..\..\$(GDAL_DIR)\ogr\ogrsf_frmts\gpkg;..\..\..\..\..\$(GDAL_DIR)\ogr\ogrsf_frmts\sqlite;..\..\..\..\..\$(SQLITE3_DIR);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <CompileAs>CompileAsCpp</CompileAs>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
-      <DisableSpecificWarnings>4706;4127;4100</DisableSpecificWarnings>
+      <DisableSpecificWarnings>4589;4706;4127;4100</DisableSpecificWarnings>
       <ExceptionHandling>Sync</ExceptionHandling>
       <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
       <Optimization>Disabled</Optimization>
@@ -586,15 +487,15 @@
       <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
       <WarningLevel>Level4</WarningLevel>
-      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;ZIP_STD;CMAKE_INTDIR="Debug";osgdb_zip_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>_WIN32;_WINDOWS;_DEBUG;_WIN32_WINNT=0x0602;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;ZIP_STD;CMAKE_INTDIR="Debug";osgdb_zip_EXPORTS;%(PreprocessorDefinitions);</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
     </ClCompile>
     <ResourceCompile>
-      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;ZIP_STD;CMAKE_INTDIR=\"Debug\";osgdb_zip_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>..\..\..\..\include;..\..\..\include;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_WIN32;_WINDOWS;_DEBUG;_WIN32_WINNT=0x0602;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;ZIP_STD;CMAKE_INTDIR=\"Debug\";osgdb_zip_EXPORTS;%(PreprocessorDefinitions);</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\include;..\..\..\..\include;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>..\..\..\..\include;..\..\..\include;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..\..\include;..\..\..\..\include;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
       <OutputDirectory>$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -603,98 +504,8 @@
     </Midl>
     <Link>
       <AdditionalOptions> /machine:X86 /debug %(AdditionalOptions)</AdditionalOptions>
-      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;cdbGlobalsd.lib;OpenThreadsd.lib;osgd.lib;osgDBd.lib;osgUtild.lib;opengl32.lib;gdal_i.lib;zlib.lib</AdditionalDependencies>
-      <AdditionalLibraryDirectories>$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(GDAL_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(ZLIB_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);%(AdditionalLibraryDirectories);</AdditionalLibraryDirectories>
-      <GenerateDebugInformation>true</GenerateDebugInformation>
-      <ImportLibrary>$(OutDir)osgdb_zipd.lib</ImportLibrary>
-      <ProgramDataBaseFile>$(OutDir)$(TargetName).pdb</ProgramDataBaseFile>
-      <SubSystem>Console</SubSystem>
-      <Version>
-      </Version>
-    </Link>
-    <ProjectReference>
-      <LinkLibraryDependencies>false</LinkLibraryDependencies>
-    </ProjectReference>
-  </ItemDefinitionGroup>
-  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='vs2012_Debug|Win32'">
-    <ClCompile>
-      <AdditionalIncludeDirectories>..\..\..\..\include;..\..\..\include;..\..\..\..\..\$(GDAL_DIR)\frmts;..\..\..\..\..\$(GDAL_DIR)\alg;..\..\..\..\..\$(GDAL_DIR)\gcore;..\..\..\..\..\$(GDAL_DIR)\port;..\..\..\..\..\$(GDAL_DIR)\ogr;..\..\..\..\..\$(GDAL_DIR)\ogr\ogrsf_frmts;..\..\..\..\..\$(GDAL_DIR)\frmts\vrt;..\..\..\..\..\$(GDAL_DIR)\ogr\ogrsf_frmts\gpkg;..\..\..\..\..\$(GDAL_DIR)\ogr\ogrsf_frmts\sqlite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
-      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
-      <CompileAs>CompileAsCpp</CompileAs>
-      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
-      <DisableSpecificWarnings>4706;4127;4100</DisableSpecificWarnings>
-      <ExceptionHandling>Sync</ExceptionHandling>
-      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
-      <Optimization>Disabled</Optimization>
-      <PrecompiledHeader>NotUsing</PrecompiledHeader>
-      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
-      <RuntimeTypeInfo>true</RuntimeTypeInfo>
-      <WarningLevel>Level4</WarningLevel>
-      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;ZIP_STD;CMAKE_INTDIR="Debug";osgdb_zip_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <ObjectFileName>$(IntDir)</ObjectFileName>
-    </ClCompile>
-    <ResourceCompile>
-      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;ZIP_STD;CMAKE_INTDIR=\"Debug\";osgdb_zip_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>..\..\..\..\include;..\..\..\include;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
-    </ResourceCompile>
-    <Midl>
-      <AdditionalIncludeDirectories>..\..\..\..\include;..\..\..\include;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
-      <OutputDirectory>$(IntDir)</OutputDirectory>
-      <HeaderFileName>%(Filename).h</HeaderFileName>
-      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
-      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
-      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
-    </Midl>
-    <Link>
-      <AdditionalOptions> /machine:X86 /debug %(AdditionalOptions)</AdditionalOptions>
-      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;OpenThreadsd.lib;osgd.lib;osgDBd.lib;osgUtild.lib;opengl32.lib;gdal_i.lib;zlib.lib</AdditionalDependencies>
-      <AdditionalLibraryDirectories>$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(GDAL_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(ZLIB_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);%(AdditionalLibraryDirectories);</AdditionalLibraryDirectories>
-      <GenerateDebugInformation>true</GenerateDebugInformation>
-      <ImportLibrary>$(OutDir)osgdb_zipd.lib</ImportLibrary>
-      <ProgramDataBaseFile>$(OutDir)$(TargetName).pdb</ProgramDataBaseFile>
-      <SubSystem>Console</SubSystem>
-      <Version>
-      </Version>
-    </Link>
-    <ProjectReference>
-      <LinkLibraryDependencies>false</LinkLibraryDependencies>
-    </ProjectReference>
-  </ItemDefinitionGroup>
-  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='vs2010_Debug|Win32'">
-    <ClCompile>
-      <AdditionalIncludeDirectories>..\..\..\..\include;..\..\..\include;..\..\..\..\..\$(GDAL_DIR)\frmts;..\..\..\..\..\$(GDAL_DIR)\alg;..\..\..\..\..\$(GDAL_DIR)\gcore;..\..\..\..\..\$(GDAL_DIR)\port;..\..\..\..\..\$(GDAL_DIR)\ogr;..\..\..\..\..\$(GDAL_DIR)\ogr\ogrsf_frmts;..\..\..\..\..\$(GDAL_DIR)\frmts\vrt;..\..\..\..\..\$(GDAL_DIR)\ogr\ogrsf_frmts\gpkg;..\..\..\..\..\$(GDAL_DIR)\ogr\ogrsf_frmts\sqlite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
-      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
-      <CompileAs>CompileAsCpp</CompileAs>
-      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
-      <DisableSpecificWarnings>4706;4127;4100</DisableSpecificWarnings>
-      <ExceptionHandling>Sync</ExceptionHandling>
-      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
-      <Optimization>Disabled</Optimization>
-      <PrecompiledHeader>NotUsing</PrecompiledHeader>
-      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
-      <RuntimeTypeInfo>true</RuntimeTypeInfo>
-      <WarningLevel>Level4</WarningLevel>
-      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;ZIP_STD;CMAKE_INTDIR="Debug";osgdb_zip_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <ObjectFileName>$(IntDir)</ObjectFileName>
-    </ClCompile>
-    <ResourceCompile>
-      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;ZIP_STD;CMAKE_INTDIR=\"Debug\";osgdb_zip_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>..\..\..\..\include;..\..\..\include;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
-    </ResourceCompile>
-    <Midl>
-      <AdditionalIncludeDirectories>..\..\..\..\include;..\..\..\include;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
-      <OutputDirectory>$(IntDir)</OutputDirectory>
-      <HeaderFileName>%(Filename).h</HeaderFileName>
-      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
-      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
-      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
-    </Midl>
-    <Link>
-      <AdditionalOptions> /machine:X86 /debug %(AdditionalOptions)</AdditionalOptions>
-      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;OpenThreadsd.lib;osgd.lib;osgDBd.lib;osgUtild.lib;opengl32.lib;gdal_i.lib;zlib.lib</AdditionalDependencies>
-      <AdditionalLibraryDirectories>$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(GDAL_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(ZLIB_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);%(AdditionalLibraryDirectories);</AdditionalLibraryDirectories>
+      <AdditionalDependencies>zip.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;cdbGlobalsd.lib;OpenThreadsd.lib;osgd.lib;osgDBd.lib;osgUtild.lib;opengl32.lib;osgd.lib;OpenThreadsd.lib;zlib.lib;opengl32.lib;</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(LIBZIP_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(GDAL_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(ZLIB_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <ImportLibrary>$(OutDir)osgdb_zipd.lib</ImportLibrary>
       <ProgramDataBaseFile>$(OutDir)$(TargetName).pdb</ProgramDataBaseFile>
@@ -708,12 +519,12 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>..\..\..\..\include;..\..\..\include;..\..\..\..\..\$(GDAL_DIR)\frmts;..\..\..\..\..\$(GDAL_DIR)\alg;..\..\..\..\..\$(GDAL_DIR)\gcore;..\..\..\..\..\$(GDAL_DIR)\port;..\..\..\..\..\$(GDAL_DIR)\ogr;..\..\..\..\..\$(GDAL_DIR)\ogr\ogrsf_frmts;..\..\..\..\..\$(GDAL_DIR)\frmts\vrt;..\..\..\..\..\$(GDAL_DIR)\ogr\ogrsf_frmts\gpkg;..\..\..\..\..\$(GDAL_DIR)\ogr\ogrsf_frmts\sqlite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..\..\include;..\..\..\..\include;..\..\..\..\..\$(LIBZIP_DIR)\lib;..\..\..\..\..\$(LIBZIP_DIR)\msvc;..\..\..\..\..\$(GDAL_DIR)\frmts;..\..\..\..\..\$(GDAL_DIR)\alg;..\..\..\..\..\$(GDAL_DIR)\gcore;..\..\..\..\..\$(GDAL_DIR)\port;..\..\..\..\..\$(GDAL_DIR)\ogr;..\..\..\..\..\$(GDAL_DIR)\ogr\ogrsf_frmts;..\..\..\..\..\$(GDAL_DIR)\frmts\vrt;..\..\..\..\..\$(GDAL_DIR)\ogr\ogrsf_frmts\gpkg;..\..\..\..\..\$(GDAL_DIR)\ogr\ogrsf_frmts\sqlite;..\..\..\..\..\$(SQLITE3_DIR);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <CompileAs>CompileAsCpp</CompileAs>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
-      <DisableSpecificWarnings>4706;4127;4100</DisableSpecificWarnings>
+      <DisableSpecificWarnings>4589;4706;4127;4100</DisableSpecificWarnings>
       <ExceptionHandling>Sync</ExceptionHandling>
       <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
       <Optimization>Disabled</Optimization>
@@ -721,15 +532,15 @@
       <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
       <WarningLevel>Level4</WarningLevel>
-      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;ZIP_STD;CMAKE_INTDIR="Debug";osgdb_zip_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>_WIN32;_WINDOWS;_DEBUG;_WIN32_WINNT=0x0602;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;ZIP_STD;CMAKE_INTDIR="Debug";osgdb_zip_EXPORTS;%(PreprocessorDefinitions);</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
     </ClCompile>
     <ResourceCompile>
-      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;ZIP_STD;CMAKE_INTDIR=\"Debug\";osgdb_zip_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>..\..\..\..\include;..\..\..\include;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_WIN32;_WINDOWS;_DEBUG;_WIN32_WINNT=0x0602;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;ZIP_STD;CMAKE_INTDIR=\"Debug\";osgdb_zip_EXPORTS;%(PreprocessorDefinitions);</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\include;..\..\..\..\include;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>..\..\..\..\include;..\..\..\include;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..\..\include;..\..\..\..\include;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
       <OutputDirectory>$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -738,8 +549,8 @@
     </Midl>
     <Link>
       <AdditionalOptions> /debug %(AdditionalOptions)</AdditionalOptions>
-      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;cdbGlobalsd.lib;OpenThreadsd.lib;osgd.lib;osgDBd.lib;osgUtild.lib;opengl32.lib;gdal_i.lib;zlib.lib</AdditionalDependencies>
-      <AdditionalLibraryDirectories>$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(GDAL_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(ZLIB_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);%(AdditionalLibraryDirectories);</AdditionalLibraryDirectories>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;cdbGlobalsd.lib;OpenThreadsd.lib;osgd.lib;osgDBd.lib;osgUtild.lib;opengl32.lib;osgd.lib;OpenThreadsd.lib;zlib.lib;opengl32.lib;</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(LIBZIP_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(GDAL_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(ZLIB_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <ImportLibrary>$(OutDir)osgdb_zipd.lib</ImportLibrary>
       <ProgramDataBaseFile>$(OutDir)$(TargetName).pdb</ProgramDataBaseFile>
@@ -753,12 +564,12 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='vs2015_Debug|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>..\..\..\..\include;..\..\..\include;..\..\..\..\..\$(GDAL_DIR)\frmts;..\..\..\..\..\$(GDAL_DIR)\alg;..\..\..\..\..\$(GDAL_DIR)\gcore;..\..\..\..\..\$(GDAL_DIR)\port;..\..\..\..\..\$(GDAL_DIR)\ogr;..\..\..\..\..\$(GDAL_DIR)\ogr\ogrsf_frmts;..\..\..\..\..\$(GDAL_DIR)\frmts\vrt;..\..\..\..\..\$(GDAL_DIR)\ogr\ogrsf_frmts\gpkg;..\..\..\..\..\$(GDAL_DIR)\ogr\ogrsf_frmts\sqlite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..\..\include;..\..\..\..\include;..\..\..\..\..\$(LIBZIP_DIR)\lib;..\..\..\..\..\$(LIBZIP_DIR)\msvc;..\..\..\..\..\$(GDAL_DIR)\frmts;..\..\..\..\..\$(GDAL_DIR)\alg;..\..\..\..\..\$(GDAL_DIR)\gcore;..\..\..\..\..\$(GDAL_DIR)\port;..\..\..\..\..\$(GDAL_DIR)\ogr;..\..\..\..\..\$(GDAL_DIR)\ogr\ogrsf_frmts;..\..\..\..\..\$(GDAL_DIR)\frmts\vrt;..\..\..\..\..\$(GDAL_DIR)\ogr\ogrsf_frmts\gpkg;..\..\..\..\..\$(GDAL_DIR)\ogr\ogrsf_frmts\sqlite;..\..\..\..\..\$(SQLITE3_DIR);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <CompileAs>CompileAsCpp</CompileAs>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
-      <DisableSpecificWarnings>4706;4127;4100</DisableSpecificWarnings>
+      <DisableSpecificWarnings>4589;4706;4127;4100</DisableSpecificWarnings>
       <ExceptionHandling>Sync</ExceptionHandling>
       <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
       <Optimization>Disabled</Optimization>
@@ -766,15 +577,15 @@
       <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
       <WarningLevel>Level4</WarningLevel>
-      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;ZIP_STD;CMAKE_INTDIR="Debug";osgdb_zip_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>_WIN32;_WINDOWS;_DEBUG;_WIN32_WINNT=0x0602;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;ZIP_STD;CMAKE_INTDIR="Debug";osgdb_zip_EXPORTS;%(PreprocessorDefinitions);</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
     </ClCompile>
     <ResourceCompile>
-      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;ZIP_STD;CMAKE_INTDIR=\"Debug\";osgdb_zip_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>..\..\..\..\include;..\..\..\include;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_WIN32;_WINDOWS;_DEBUG;_WIN32_WINNT=0x0602;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;ZIP_STD;CMAKE_INTDIR=\"Debug\";osgdb_zip_EXPORTS;%(PreprocessorDefinitions);</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\include;..\..\..\..\include;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>..\..\..\..\include;..\..\..\include;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..\..\include;..\..\..\..\include;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
       <OutputDirectory>$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -783,8 +594,8 @@
     </Midl>
     <Link>
       <AdditionalOptions> /debug %(AdditionalOptions)</AdditionalOptions>
-      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;cdbGlobalsd.lib;OpenThreadsd.lib;osgd.lib;osgDBd.lib;osgUtild.lib;opengl32.lib;gdal_i.lib;zlib.lib</AdditionalDependencies>
-      <AdditionalLibraryDirectories>$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(GDAL_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(ZLIB_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);%(AdditionalLibraryDirectories);</AdditionalLibraryDirectories>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;cdbGlobalsd.lib;OpenThreadsd.lib;osgd.lib;osgDBd.lib;osgUtild.lib;opengl32.lib;osgd.lib;OpenThreadsd.lib;zlib.lib;opengl32.lib;</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(LIBZIP_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(GDAL_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(ZLIB_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <ImportLibrary>$(OutDir)osgdb_zipd.lib</ImportLibrary>
       <ProgramDataBaseFile>$(OutDir)$(TargetName).pdb</ProgramDataBaseFile>
@@ -798,12 +609,12 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>..\..\..\..\include;..\..\..\include;..\..\..\..\..\$(GDAL_DIR)\frmts;..\..\..\..\..\$(GDAL_DIR)\alg;..\..\..\..\..\$(GDAL_DIR)\gcore;..\..\..\..\..\$(GDAL_DIR)\port;..\..\..\..\..\$(GDAL_DIR)\ogr;..\..\..\..\..\$(GDAL_DIR)\ogr\ogrsf_frmts;..\..\..\..\..\$(GDAL_DIR)\frmts\vrt;..\..\..\..\..\$(GDAL_DIR)\ogr\ogrsf_frmts\gpkg;..\..\..\..\..\$(GDAL_DIR)\ogr\ogrsf_frmts\sqlite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..\..\include;..\..\..\..\include;..\..\..\..\..\$(LIBZIP_DIR)\lib;..\..\..\..\..\$(LIBZIP_DIR)\msvc;..\..\..\..\..\$(GDAL_DIR)\frmts;..\..\..\..\..\$(GDAL_DIR)\alg;..\..\..\..\..\$(GDAL_DIR)\gcore;..\..\..\..\..\$(GDAL_DIR)\port;..\..\..\..\..\$(GDAL_DIR)\ogr;..\..\..\..\..\$(GDAL_DIR)\ogr\ogrsf_frmts;..\..\..\..\..\$(GDAL_DIR)\frmts\vrt;..\..\..\..\..\$(GDAL_DIR)\ogr\ogrsf_frmts\gpkg;..\..\..\..\..\$(GDAL_DIR)\ogr\ogrsf_frmts\sqlite;..\..\..\..\..\$(SQLITE3_DIR);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <CompileAs>CompileAsCpp</CompileAs>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
-      <DisableSpecificWarnings>4706;4127;4100</DisableSpecificWarnings>
+      <DisableSpecificWarnings>4589;4706;4127;4100</DisableSpecificWarnings>
       <ExceptionHandling>Sync</ExceptionHandling>
       <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
       <Optimization>Disabled</Optimization>
@@ -811,15 +622,15 @@
       <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
       <WarningLevel>Level4</WarningLevel>
-      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;ZIP_STD;CMAKE_INTDIR="Debug";osgdb_zip_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>_WIN32;_WINDOWS;_DEBUG;_WIN32_WINNT=0x0602;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;ZIP_STD;CMAKE_INTDIR="Debug";osgdb_zip_EXPORTS;%(PreprocessorDefinitions);</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
     </ClCompile>
     <ResourceCompile>
-      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;ZIP_STD;CMAKE_INTDIR=\"Debug\";osgdb_zip_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>..\..\..\..\include;..\..\..\include;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_WIN32;_WINDOWS;_DEBUG;_WIN32_WINNT=0x0602;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;ZIP_STD;CMAKE_INTDIR=\"Debug\";osgdb_zip_EXPORTS;%(PreprocessorDefinitions);</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\include;..\..\..\..\include;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>..\..\..\..\include;..\..\..\include;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..\..\include;..\..\..\..\include;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
       <OutputDirectory>$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -828,8 +639,8 @@
     </Midl>
     <Link>
       <AdditionalOptions> /debug %(AdditionalOptions)</AdditionalOptions>
-      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;cdbGlobalsd.lib;OpenThreadsd.lib;osgd.lib;osgDBd.lib;osgUtild.lib;opengl32.lib;gdal_i.lib;zlib.lib</AdditionalDependencies>
-      <AdditionalLibraryDirectories>$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(GDAL_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(ZLIB_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);%(AdditionalLibraryDirectories);</AdditionalLibraryDirectories>
+      <AdditionalDependencies>zip.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;cdbGlobalsd.lib;gdal_i.lib;OpenThreadsd.lib;osgd.lib;osgDBd.lib;osgUtild.lib;opengl32.lib;osgd.lib;OpenThreadsd.lib;zlib.lib;opengl32.lib;</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(LIBZIP_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(GDAL_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(ZLIB_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <ImportLibrary>$(OutDir)osgdb_zipd.lib</ImportLibrary>
       <ProgramDataBaseFile>$(OutDir)$(TargetName).pdb</ProgramDataBaseFile>
@@ -843,12 +654,12 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>..\..\..\..\include;..\..\..\include;..\..\..\..\..\$(GDAL_DIR)\frmts;..\..\..\..\..\$(GDAL_DIR)\alg;..\..\..\..\..\$(GDAL_DIR)\gcore;..\..\..\..\..\$(GDAL_DIR)\port;..\..\..\..\..\$(GDAL_DIR)\ogr;..\..\..\..\..\$(GDAL_DIR)\ogr\ogrsf_frmts;..\..\..\..\..\$(GDAL_DIR)\frmts\vrt;..\..\..\..\..\$(GDAL_DIR)\ogr\ogrsf_frmts\gpkg;..\..\..\..\..\$(GDAL_DIR)\ogr\ogrsf_frmts\sqlite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..\..\include;..\..\..\..\include;..\..\..\..\..\$(LIBZIP_DIR)\lib;..\..\..\..\..\$(LIBZIP_DIR)\msvc;..\..\..\..\..\$(GDAL_DIR)\frmts;..\..\..\..\..\$(GDAL_DIR)\alg;..\..\..\..\..\$(GDAL_DIR)\gcore;..\..\..\..\..\$(GDAL_DIR)\port;..\..\..\..\..\$(GDAL_DIR)\ogr;..\..\..\..\..\$(GDAL_DIR)\ogr\ogrsf_frmts;..\..\..\..\..\$(GDAL_DIR)\frmts\vrt;..\..\..\..\..\$(GDAL_DIR)\ogr\ogrsf_frmts\gpkg;..\..\..\..\..\$(GDAL_DIR)\ogr\ogrsf_frmts\sqlite;..\..\..\..\..\$(SQLITE3_DIR);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <CompileAs>CompileAsCpp</CompileAs>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
-      <DisableSpecificWarnings>4706;4127;4100</DisableSpecificWarnings>
+      <DisableSpecificWarnings>4589;4706;4127;4100</DisableSpecificWarnings>
       <ExceptionHandling>Sync</ExceptionHandling>
       <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
       <Optimization>Disabled</Optimization>
@@ -856,15 +667,15 @@
       <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
       <WarningLevel>Level4</WarningLevel>
-      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;ZIP_STD;CMAKE_INTDIR="Debug";osgdb_zip_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>_WIN32;_WINDOWS;_DEBUG;_WIN32_WINNT=0x0602;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;ZIP_STD;CMAKE_INTDIR="Debug";osgdb_zip_EXPORTS;%(PreprocessorDefinitions);</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
     </ClCompile>
     <ResourceCompile>
-      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;ZIP_STD;CMAKE_INTDIR=\"Debug\";osgdb_zip_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>..\..\..\..\include;..\..\..\include;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_WIN32;_WINDOWS;_DEBUG;_WIN32_WINNT=0x0602;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;ZIP_STD;CMAKE_INTDIR=\"Debug\";osgdb_zip_EXPORTS;%(PreprocessorDefinitions);</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\include;..\..\..\..\include;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>..\..\..\..\include;..\..\..\include;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..\..\include;..\..\..\..\include;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
       <OutputDirectory>$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -873,8 +684,8 @@
     </Midl>
     <Link>
       <AdditionalOptions> /debug %(AdditionalOptions)</AdditionalOptions>
-      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;cdbGlobalsd.lib;OpenThreadsd.lib;osgd.lib;osgDBd.lib;osgUtild.lib;opengl32.lib;gdal_i.lib;zlib.lib</AdditionalDependencies>
-      <AdditionalLibraryDirectories>$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(GDAL_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(ZLIB_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);%(AdditionalLibraryDirectories);</AdditionalLibraryDirectories>
+      <AdditionalDependencies>zip.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;cdbGlobalsd.lib;gdal_i.lib;OpenThreadsd.lib;osgd.lib;osgDBd.lib;osgUtild.lib;opengl32.lib;osgd.lib;OpenThreadsd.lib;zlib.lib;opengl32.lib;</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(LIBZIP_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(GDAL_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(ZLIB_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <ImportLibrary>$(OutDir)osgdb_zipd.lib</ImportLibrary>
       <ProgramDataBaseFile>$(OutDir)$(TargetName).pdb</ProgramDataBaseFile>
@@ -888,12 +699,12 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='vs2022_Debug|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>..\..\..\..\include;..\..\..\include;..\..\..\..\..\$(GDAL_DIR)\frmts;..\..\..\..\..\$(GDAL_DIR)\alg;..\..\..\..\..\$(GDAL_DIR)\gcore;..\..\..\..\..\$(GDAL_DIR)\port;..\..\..\..\..\$(GDAL_DIR)\ogr;..\..\..\..\..\$(GDAL_DIR)\ogr\ogrsf_frmts;..\..\..\..\..\$(GDAL_DIR)\frmts\vrt;..\..\..\..\..\$(GDAL_DIR)\ogr\ogrsf_frmts\gpkg;..\..\..\..\..\$(GDAL_DIR)\ogr\ogrsf_frmts\sqlite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..\..\include;..\..\..\..\include;..\..\..\..\..\$(LIBZIP_DIR)\lib;..\..\..\..\..\$(LIBZIP_DIR)\msvc;..\..\..\..\..\$(GDAL_DIR)\frmts;..\..\..\..\..\$(GDAL_DIR)\alg;..\..\..\..\..\$(GDAL_DIR)\gcore;..\..\..\..\..\$(GDAL_DIR)\port;..\..\..\..\..\$(GDAL_DIR)\ogr;..\..\..\..\..\$(GDAL_DIR)\ogr\ogrsf_frmts;..\..\..\..\..\$(GDAL_DIR)\frmts\vrt;..\..\..\..\..\$(GDAL_DIR)\ogr\ogrsf_frmts\gpkg;..\..\..\..\..\$(GDAL_DIR)\ogr\ogrsf_frmts\sqlite;..\..\..\..\..\$(SQLITE3_DIR);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <CompileAs>CompileAsCpp</CompileAs>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
-      <DisableSpecificWarnings>4706;4127;4100</DisableSpecificWarnings>
+      <DisableSpecificWarnings>4589;4706;4127;4100</DisableSpecificWarnings>
       <ExceptionHandling>Sync</ExceptionHandling>
       <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
       <Optimization>Disabled</Optimization>
@@ -901,15 +712,16 @@
       <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
       <WarningLevel>Level4</WarningLevel>
-      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;ZIP_STD;CMAKE_INTDIR="Debug";osgdb_zip_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;_WIN32_WINNT=0x0602;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;ZIP_STD;CMAKE_INTDIR="Debug";osgdb_zip_EXPORTS;%(PreprocessorDefinitions);</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ShowIncludes>false</ShowIncludes>
     </ClCompile>
     <ResourceCompile>
-      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;ZIP_STD;CMAKE_INTDIR=\"Debug\";osgdb_zip_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>..\..\..\..\include;..\..\..\include;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_WIN32;_WINDOWS;_DEBUG;_WIN32_WINNT=0x0602;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;ZIP_STD;CMAKE_INTDIR=\"Debug\";osgdb_zip_EXPORTS;%(PreprocessorDefinitions);</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\include;..\..\..\..\include;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>..\..\..\..\include;..\..\..\include;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..\..\include;..\..\..\..\include;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
       <OutputDirectory>$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -918,98 +730,8 @@
     </Midl>
     <Link>
       <AdditionalOptions> /debug %(AdditionalOptions)</AdditionalOptions>
-      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;cdbGlobalsd.lib;OpenThreadsd.lib;osgd.lib;osgDBd.lib;osgUtild.lib;opengl32.lib;gdal_i.lib;zlib.lib</AdditionalDependencies>
-      <AdditionalLibraryDirectories>$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(GDAL_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(ZLIB_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);%(AdditionalLibraryDirectories);</AdditionalLibraryDirectories>
-      <GenerateDebugInformation>true</GenerateDebugInformation>
-      <ImportLibrary>$(OutDir)osgdb_zipd.lib</ImportLibrary>
-      <ProgramDataBaseFile>$(OutDir)$(TargetName).pdb</ProgramDataBaseFile>
-      <SubSystem>Console</SubSystem>
-      <Version>
-      </Version>
-    </Link>
-    <ProjectReference>
-      <LinkLibraryDependencies>false</LinkLibraryDependencies>
-    </ProjectReference>
-  </ItemDefinitionGroup>
-  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='vs2012_Debug|x64'">
-    <ClCompile>
-      <AdditionalIncludeDirectories>..\..\..\..\include;..\..\..\include;..\..\..\..\..\$(GDAL_DIR)\frmts;..\..\..\..\..\$(GDAL_DIR)\alg;..\..\..\..\..\$(GDAL_DIR)\gcore;..\..\..\..\..\$(GDAL_DIR)\port;..\..\..\..\..\$(GDAL_DIR)\ogr;..\..\..\..\..\$(GDAL_DIR)\ogr\ogrsf_frmts;..\..\..\..\..\$(GDAL_DIR)\frmts\vrt;..\..\..\..\..\$(GDAL_DIR)\ogr\ogrsf_frmts\gpkg;..\..\..\..\..\$(GDAL_DIR)\ogr\ogrsf_frmts\sqlite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
-      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
-      <CompileAs>CompileAsCpp</CompileAs>
-      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
-      <DisableSpecificWarnings>4706;4127;4100</DisableSpecificWarnings>
-      <ExceptionHandling>Sync</ExceptionHandling>
-      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
-      <Optimization>Disabled</Optimization>
-      <PrecompiledHeader>NotUsing</PrecompiledHeader>
-      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
-      <RuntimeTypeInfo>true</RuntimeTypeInfo>
-      <WarningLevel>Level4</WarningLevel>
-      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;ZIP_STD;CMAKE_INTDIR="Debug";osgdb_zip_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <ObjectFileName>$(IntDir)</ObjectFileName>
-    </ClCompile>
-    <ResourceCompile>
-      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;ZIP_STD;CMAKE_INTDIR=\"Debug\";osgdb_zip_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>..\..\..\..\include;..\..\..\include;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
-    </ResourceCompile>
-    <Midl>
-      <AdditionalIncludeDirectories>..\..\..\..\include;..\..\..\include;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
-      <OutputDirectory>$(IntDir)</OutputDirectory>
-      <HeaderFileName>%(Filename).h</HeaderFileName>
-      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
-      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
-      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
-    </Midl>
-    <Link>
-      <AdditionalOptions> /debug %(AdditionalOptions)</AdditionalOptions>
-      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;OpenThreadsd.lib;osgd.lib;osgDBd.lib;osgUtild.lib;opengl32.lib;gdal_i.lib;zlib.lib</AdditionalDependencies>
-      <AdditionalLibraryDirectories>$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(GDAL_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(ZLIB_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);%(AdditionalLibraryDirectories);</AdditionalLibraryDirectories>
-      <GenerateDebugInformation>true</GenerateDebugInformation>
-      <ImportLibrary>$(OutDir)osgdb_zipd.lib</ImportLibrary>
-      <ProgramDataBaseFile>$(OutDir)$(TargetName).pdb</ProgramDataBaseFile>
-      <SubSystem>Console</SubSystem>
-      <Version>
-      </Version>
-    </Link>
-    <ProjectReference>
-      <LinkLibraryDependencies>false</LinkLibraryDependencies>
-    </ProjectReference>
-  </ItemDefinitionGroup>
-  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='vs2010_Debug|x64'">
-    <ClCompile>
-      <AdditionalIncludeDirectories>..\..\..\..\include;..\..\..\include;..\..\..\..\..\$(GDAL_DIR)\frmts;..\..\..\..\..\$(GDAL_DIR)\alg;..\..\..\..\..\$(GDAL_DIR)\gcore;..\..\..\..\..\$(GDAL_DIR)\port;..\..\..\..\..\$(GDAL_DIR)\ogr;..\..\..\..\..\$(GDAL_DIR)\ogr\ogrsf_frmts;..\..\..\..\..\$(GDAL_DIR)\frmts\vrt;..\..\..\..\..\$(GDAL_DIR)\ogr\ogrsf_frmts\gpkg;..\..\..\..\..\$(GDAL_DIR)\ogr\ogrsf_frmts\sqlite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
-      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
-      <CompileAs>CompileAsCpp</CompileAs>
-      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
-      <DisableSpecificWarnings>4706;4127;4100</DisableSpecificWarnings>
-      <ExceptionHandling>Sync</ExceptionHandling>
-      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
-      <Optimization>Disabled</Optimization>
-      <PrecompiledHeader>NotUsing</PrecompiledHeader>
-      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
-      <RuntimeTypeInfo>true</RuntimeTypeInfo>
-      <WarningLevel>Level4</WarningLevel>
-      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;ZIP_STD;CMAKE_INTDIR="Debug";osgdb_zip_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <ObjectFileName>$(IntDir)</ObjectFileName>
-    </ClCompile>
-    <ResourceCompile>
-      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;ZIP_STD;CMAKE_INTDIR=\"Debug\";osgdb_zip_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>..\..\..\..\include;..\..\..\include;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
-    </ResourceCompile>
-    <Midl>
-      <AdditionalIncludeDirectories>..\..\..\..\include;..\..\..\include;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
-      <OutputDirectory>$(IntDir)</OutputDirectory>
-      <HeaderFileName>%(Filename).h</HeaderFileName>
-      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
-      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
-      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
-    </Midl>
-    <Link>
-      <AdditionalOptions> /debug %(AdditionalOptions)</AdditionalOptions>
-      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;OpenThreadsd.lib;osgd.lib;osgDBd.lib;osgUtild.lib;opengl32.lib;gdal_i.lib;zlib.lib</AdditionalDependencies>
-      <AdditionalLibraryDirectories>$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(GDAL_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(ZLIB_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);%(AdditionalLibraryDirectories);</AdditionalLibraryDirectories>
+      <AdditionalDependencies>zip.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;cdbGlobalsd.lib;gdal_i.lib;OpenThreadsd.lib;osgd.lib;osgDBd.lib;osgUtild.lib;opengl32.lib;osgd.lib;OpenThreadsd.lib;zlib.lib;opengl32.lib;</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(LIBZIP_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(GDAL_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(ZLIB_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <ImportLibrary>$(OutDir)osgdb_zipd.lib</ImportLibrary>
       <ProgramDataBaseFile>$(OutDir)$(TargetName).pdb</ProgramDataBaseFile>
@@ -1023,10 +745,10 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
-      <AdditionalIncludeDirectories>..\..\..\..\include;..\..\..\include;..\..\..\..\..\$(GDAL_DIR)\frmts;..\..\..\..\..\$(GDAL_DIR)\alg;..\..\..\..\..\$(GDAL_DIR)\gcore;..\..\..\..\..\$(GDAL_DIR)\port;..\..\..\..\..\$(GDAL_DIR)\ogr;..\..\..\..\..\$(GDAL_DIR)\ogr\ogrsf_frmts;..\..\..\..\..\$(GDAL_DIR)\frmts\vrt;..\..\..\..\..\$(GDAL_DIR)\ogr\ogrsf_frmts\gpkg;..\..\..\..\..\$(GDAL_DIR)\ogr\ogrsf_frmts\sqlite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..\..\include;..\..\..\..\include;..\..\..\..\..\$(LIBZIP_DIR)\lib;..\..\..\..\..\$(LIBZIP_DIR)\msvc;..\..\..\..\..\$(GDAL_DIR)\frmts;..\..\..\..\..\$(GDAL_DIR)\alg;..\..\..\..\..\$(GDAL_DIR)\gcore;..\..\..\..\..\$(GDAL_DIR)\port;..\..\..\..\..\$(GDAL_DIR)\ogr;..\..\..\..\..\$(GDAL_DIR)\ogr\ogrsf_frmts;..\..\..\..\..\$(GDAL_DIR)\frmts\vrt;..\..\..\..\..\$(GDAL_DIR)\ogr\ogrsf_frmts\gpkg;..\..\..\..\..\$(GDAL_DIR)\ogr\ogrsf_frmts\sqlite;..\..\..\..\..\$(SQLITE3_DIR);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <CompileAs>CompileAsCpp</CompileAs>
-      <DisableSpecificWarnings>4706;4127;4100</DisableSpecificWarnings>
+      <DisableSpecificWarnings>4589;4706;4127;4100</DisableSpecificWarnings>
       <ExceptionHandling>Sync</ExceptionHandling>
       <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
       <Optimization>MaxSpeed</Optimization>
@@ -1036,15 +758,15 @@
       <WarningLevel>Level4</WarningLevel>
       <DebugInformationFormat>
       </DebugInformationFormat>
-      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;ZIP_STD;CMAKE_INTDIR="Release";osgdb_zip_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>_WIN32;_WINDOWS;NDEBUG;_WIN32_WINNT=0x0602;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;ZIP_STD;CMAKE_INTDIR="Release";osgdb_zip_EXPORTS;%(PreprocessorDefinitions);</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
     </ClCompile>
     <ResourceCompile>
-      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;ZIP_STD;CMAKE_INTDIR=\"Release\";osgdb_zip_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>..\..\..\..\include;..\..\..\include;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_WIN32;_WINDOWS;NDEBUG;_WIN32_WINNT=0x0602;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;ZIP_STD;CMAKE_INTDIR=\"Release\";osgdb_zip_EXPORTS;%(PreprocessorDefinitions);</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\include;..\..\..\..\include;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>..\..\..\..\include;..\..\..\include;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..\..\include;..\..\..\..\include;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
       <OutputDirectory>$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -1053,8 +775,8 @@
     </Midl>
     <Link>
       <AdditionalOptions> /machine:X86 %(AdditionalOptions)</AdditionalOptions>
-      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;cdbGlobals.lib;OpenThreads.lib;osg.lib;osgDB.lib;osgUtil.lib;opengl32.lib;gdal_i.lib;zlib.lib</AdditionalDependencies>
-      <AdditionalLibraryDirectories>$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(GDAL_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(ZLIB_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);%(AdditionalLibraryDirectories);</AdditionalLibraryDirectories>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;cdbGlobals.lib;OpenThreads.lib;osg.lib;osgDB.lib;osgUtil.lib;opengl32.lib;osg.lib;OpenThreads.lib;zlib.lib;opengl32.lib;</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(LIBZIP_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(GDAL_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(ZLIB_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>false</GenerateDebugInformation>
       <ImportLibrary>$(OutDir)osgdb_zip.lib</ImportLibrary>
       <ProgramDataBaseFile>$(OutDir)$(TargetName).pdb</ProgramDataBaseFile>
@@ -1068,10 +790,10 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='vs2015_Release|Win32'">
     <ClCompile>
-      <AdditionalIncludeDirectories>..\..\..\..\include;..\..\..\include;..\..\..\..\..\$(GDAL_DIR)\frmts;..\..\..\..\..\$(GDAL_DIR)\alg;..\..\..\..\..\$(GDAL_DIR)\gcore;..\..\..\..\..\$(GDAL_DIR)\port;..\..\..\..\..\$(GDAL_DIR)\ogr;..\..\..\..\..\$(GDAL_DIR)\ogr\ogrsf_frmts;..\..\..\..\..\$(GDAL_DIR)\frmts\vrt;..\..\..\..\..\$(GDAL_DIR)\ogr\ogrsf_frmts\gpkg;..\..\..\..\..\$(GDAL_DIR)\ogr\ogrsf_frmts\sqlite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..\..\include;..\..\..\..\include;..\..\..\..\..\$(LIBZIP_DIR)\lib;..\..\..\..\..\$(LIBZIP_DIR)\msvc;..\..\..\..\..\$(GDAL_DIR)\frmts;..\..\..\..\..\$(GDAL_DIR)\alg;..\..\..\..\..\$(GDAL_DIR)\gcore;..\..\..\..\..\$(GDAL_DIR)\port;..\..\..\..\..\$(GDAL_DIR)\ogr;..\..\..\..\..\$(GDAL_DIR)\ogr\ogrsf_frmts;..\..\..\..\..\$(GDAL_DIR)\frmts\vrt;..\..\..\..\..\$(GDAL_DIR)\ogr\ogrsf_frmts\gpkg;..\..\..\..\..\$(GDAL_DIR)\ogr\ogrsf_frmts\sqlite;..\..\..\..\..\$(SQLITE3_DIR);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <CompileAs>CompileAsCpp</CompileAs>
-      <DisableSpecificWarnings>4706;4127;4100</DisableSpecificWarnings>
+      <DisableSpecificWarnings>4589;4706;4127;4100</DisableSpecificWarnings>
       <ExceptionHandling>Sync</ExceptionHandling>
       <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
       <Optimization>MaxSpeed</Optimization>
@@ -1081,15 +803,15 @@
       <WarningLevel>Level4</WarningLevel>
       <DebugInformationFormat>
       </DebugInformationFormat>
-      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;ZIP_STD;CMAKE_INTDIR="Release";osgdb_zip_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>_WIN32;_WINDOWS;NDEBUG;_WIN32_WINNT=0x0602;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;ZIP_STD;CMAKE_INTDIR="Release";osgdb_zip_EXPORTS;%(PreprocessorDefinitions);</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
     </ClCompile>
     <ResourceCompile>
-      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;ZIP_STD;CMAKE_INTDIR=\"Release\";osgdb_zip_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>..\..\..\..\include;..\..\..\include;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_WIN32;_WINDOWS;NDEBUG;_WIN32_WINNT=0x0602;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;ZIP_STD;CMAKE_INTDIR=\"Release\";osgdb_zip_EXPORTS;%(PreprocessorDefinitions);</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\include;..\..\..\..\include;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>..\..\..\..\include;..\..\..\include;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..\..\include;..\..\..\..\include;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
       <OutputDirectory>$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -1098,8 +820,8 @@
     </Midl>
     <Link>
       <AdditionalOptions> /machine:X86 %(AdditionalOptions)</AdditionalOptions>
-      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;cdbGlobals.lib;OpenThreads.lib;osg.lib;osgDB.lib;osgUtil.lib;opengl32.lib;gdal_i.lib;zlib.lib</AdditionalDependencies>
-      <AdditionalLibraryDirectories>$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(GDAL_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(ZLIB_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);%(AdditionalLibraryDirectories);</AdditionalLibraryDirectories>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;cdbGlobals.lib;OpenThreads.lib;osg.lib;osgDB.lib;osgUtil.lib;opengl32.lib;osg.lib;OpenThreads.lib;zlib.lib;opengl32.lib;</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(LIBZIP_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(GDAL_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(ZLIB_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>false</GenerateDebugInformation>
       <ImportLibrary>$(OutDir)osgdb_zip.lib</ImportLibrary>
       <ProgramDataBaseFile>$(OutDir)$(TargetName).pdb</ProgramDataBaseFile>
@@ -1113,10 +835,10 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|Win32'">
     <ClCompile>
-      <AdditionalIncludeDirectories>..\..\..\..\include;..\..\..\include;..\..\..\..\..\$(GDAL_DIR)\frmts;..\..\..\..\..\$(GDAL_DIR)\alg;..\..\..\..\..\$(GDAL_DIR)\gcore;..\..\..\..\..\$(GDAL_DIR)\port;..\..\..\..\..\$(GDAL_DIR)\ogr;..\..\..\..\..\$(GDAL_DIR)\ogr\ogrsf_frmts;..\..\..\..\..\$(GDAL_DIR)\frmts\vrt;..\..\..\..\..\$(GDAL_DIR)\ogr\ogrsf_frmts\gpkg;..\..\..\..\..\$(GDAL_DIR)\ogr\ogrsf_frmts\sqlite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..\..\include;..\..\..\..\include;..\..\..\..\..\$(LIBZIP_DIR)\lib;..\..\..\..\..\$(LIBZIP_DIR)\msvc;..\..\..\..\..\$(GDAL_DIR)\frmts;..\..\..\..\..\$(GDAL_DIR)\alg;..\..\..\..\..\$(GDAL_DIR)\gcore;..\..\..\..\..\$(GDAL_DIR)\port;..\..\..\..\..\$(GDAL_DIR)\ogr;..\..\..\..\..\$(GDAL_DIR)\ogr\ogrsf_frmts;..\..\..\..\..\$(GDAL_DIR)\frmts\vrt;..\..\..\..\..\$(GDAL_DIR)\ogr\ogrsf_frmts\gpkg;..\..\..\..\..\$(GDAL_DIR)\ogr\ogrsf_frmts\sqlite;..\..\..\..\..\$(SQLITE3_DIR);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <CompileAs>CompileAsCpp</CompileAs>
-      <DisableSpecificWarnings>4706;4127;4100</DisableSpecificWarnings>
+      <DisableSpecificWarnings>4589;4706;4127;4100</DisableSpecificWarnings>
       <ExceptionHandling>Sync</ExceptionHandling>
       <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
       <Optimization>MaxSpeed</Optimization>
@@ -1126,15 +848,15 @@
       <WarningLevel>Level4</WarningLevel>
       <DebugInformationFormat>
       </DebugInformationFormat>
-      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;ZIP_STD;CMAKE_INTDIR="Release";osgdb_zip_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>_WIN32;_WINDOWS;NDEBUG;_WIN32_WINNT=0x0602;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;ZIP_STD;CMAKE_INTDIR="Release";osgdb_zip_EXPORTS;%(PreprocessorDefinitions);</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
     </ClCompile>
     <ResourceCompile>
-      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;ZIP_STD;CMAKE_INTDIR=\"Release\";osgdb_zip_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>..\..\..\..\include;..\..\..\include;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_WIN32;_WINDOWS;NDEBUG;_WIN32_WINNT=0x0602;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;ZIP_STD;CMAKE_INTDIR=\"Release\";osgdb_zip_EXPORTS;%(PreprocessorDefinitions);</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\include;..\..\..\..\include;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>..\..\..\..\include;..\..\..\include;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..\..\include;..\..\..\..\include;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
       <OutputDirectory>$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -1143,8 +865,8 @@
     </Midl>
     <Link>
       <AdditionalOptions> /machine:X86 %(AdditionalOptions)</AdditionalOptions>
-      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;cdbGlobals.lib;OpenThreads.lib;osg.lib;osgDB.lib;osgUtil.lib;opengl32.lib;gdal_i.lib;zlib.lib</AdditionalDependencies>
-      <AdditionalLibraryDirectories>$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(GDAL_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(ZLIB_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);%(AdditionalLibraryDirectories);</AdditionalLibraryDirectories>
+      <AdditionalDependencies>zip.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;cdbGlobals.lib;OpenThreads.lib;osg.lib;osgDB.lib;osgUtil.lib;opengl32.lib;osg.lib;OpenThreads.lib;zlib.lib;opengl32.lib;</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(LIBZIP_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(GDAL_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(ZLIB_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>false</GenerateDebugInformation>
       <ImportLibrary>$(OutDir)osgdb_zip.lib</ImportLibrary>
       <ProgramDataBaseFile>$(OutDir)$(TargetName).pdb</ProgramDataBaseFile>
@@ -1158,10 +880,10 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|Win32'">
     <ClCompile>
-      <AdditionalIncludeDirectories>..\..\..\..\include;..\..\..\include;..\..\..\..\..\$(GDAL_DIR)\frmts;..\..\..\..\..\$(GDAL_DIR)\alg;..\..\..\..\..\$(GDAL_DIR)\gcore;..\..\..\..\..\$(GDAL_DIR)\port;..\..\..\..\..\$(GDAL_DIR)\ogr;..\..\..\..\..\$(GDAL_DIR)\ogr\ogrsf_frmts;..\..\..\..\..\$(GDAL_DIR)\frmts\vrt;..\..\..\..\..\$(GDAL_DIR)\ogr\ogrsf_frmts\gpkg;..\..\..\..\..\$(GDAL_DIR)\ogr\ogrsf_frmts\sqlite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..\..\include;..\..\..\..\include;..\..\..\..\..\$(LIBZIP_DIR)\lib;..\..\..\..\..\$(LIBZIP_DIR)\msvc;..\..\..\..\..\$(GDAL_DIR)\frmts;..\..\..\..\..\$(GDAL_DIR)\alg;..\..\..\..\..\$(GDAL_DIR)\gcore;..\..\..\..\..\$(GDAL_DIR)\port;..\..\..\..\..\$(GDAL_DIR)\ogr;..\..\..\..\..\$(GDAL_DIR)\ogr\ogrsf_frmts;..\..\..\..\..\$(GDAL_DIR)\frmts\vrt;..\..\..\..\..\$(GDAL_DIR)\ogr\ogrsf_frmts\gpkg;..\..\..\..\..\$(GDAL_DIR)\ogr\ogrsf_frmts\sqlite;..\..\..\..\..\$(SQLITE3_DIR);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <CompileAs>CompileAsCpp</CompileAs>
-      <DisableSpecificWarnings>4706;4127;4100</DisableSpecificWarnings>
+      <DisableSpecificWarnings>4589;4706;4127;4100</DisableSpecificWarnings>
       <ExceptionHandling>Sync</ExceptionHandling>
       <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
       <Optimization>MaxSpeed</Optimization>
@@ -1171,15 +893,15 @@
       <WarningLevel>Level4</WarningLevel>
       <DebugInformationFormat>
       </DebugInformationFormat>
-      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;ZIP_STD;CMAKE_INTDIR="Release";osgdb_zip_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>_WIN32;_WINDOWS;NDEBUG;_WIN32_WINNT=0x0602;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;ZIP_STD;CMAKE_INTDIR="Release";osgdb_zip_EXPORTS;%(PreprocessorDefinitions);</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
     </ClCompile>
     <ResourceCompile>
-      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;ZIP_STD;CMAKE_INTDIR=\"Release\";osgdb_zip_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>..\..\..\..\include;..\..\..\include;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_WIN32;_WINDOWS;NDEBUG;_WIN32_WINNT=0x0602;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;ZIP_STD;CMAKE_INTDIR=\"Release\";osgdb_zip_EXPORTS;%(PreprocessorDefinitions);</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\include;..\..\..\..\include;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>..\..\..\..\include;..\..\..\include;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..\..\include;..\..\..\..\include;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
       <OutputDirectory>$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -1188,8 +910,8 @@
     </Midl>
     <Link>
       <AdditionalOptions> /machine:X86 %(AdditionalOptions)</AdditionalOptions>
-      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;cdbGlobals.lib;OpenThreads.lib;osg.lib;osgDB.lib;osgUtil.lib;opengl32.lib;gdal_i.lib;zlib.lib</AdditionalDependencies>
-      <AdditionalLibraryDirectories>$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(GDAL_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(ZLIB_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);%(AdditionalLibraryDirectories);</AdditionalLibraryDirectories>
+      <AdditionalDependencies>zip.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;cdbGlobals.lib;OpenThreads.lib;osg.lib;osgDB.lib;osgUtil.lib;opengl32.lib;osg.lib;OpenThreads.lib;zlib.lib;opengl32.lib;</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(LIBZIP_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(GDAL_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(ZLIB_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>false</GenerateDebugInformation>
       <ImportLibrary>$(OutDir)osgdb_zip.lib</ImportLibrary>
       <ProgramDataBaseFile>$(OutDir)$(TargetName).pdb</ProgramDataBaseFile>
@@ -1203,10 +925,10 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|Win32'">
     <ClCompile>
-      <AdditionalIncludeDirectories>..\..\..\..\include;..\..\..\include;..\..\..\..\..\$(GDAL_DIR)\frmts;..\..\..\..\..\$(GDAL_DIR)\alg;..\..\..\..\..\$(GDAL_DIR)\gcore;..\..\..\..\..\$(GDAL_DIR)\port;..\..\..\..\..\$(GDAL_DIR)\ogr;..\..\..\..\..\$(GDAL_DIR)\ogr\ogrsf_frmts;..\..\..\..\..\$(GDAL_DIR)\frmts\vrt;..\..\..\..\..\$(GDAL_DIR)\ogr\ogrsf_frmts\gpkg;..\..\..\..\..\$(GDAL_DIR)\ogr\ogrsf_frmts\sqlite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..\..\include;..\..\..\..\include;..\..\..\..\..\$(LIBZIP_DIR)\lib;..\..\..\..\..\$(LIBZIP_DIR)\msvc;..\..\..\..\..\$(GDAL_DIR)\frmts;..\..\..\..\..\$(GDAL_DIR)\alg;..\..\..\..\..\$(GDAL_DIR)\gcore;..\..\..\..\..\$(GDAL_DIR)\port;..\..\..\..\..\$(GDAL_DIR)\ogr;..\..\..\..\..\$(GDAL_DIR)\ogr\ogrsf_frmts;..\..\..\..\..\$(GDAL_DIR)\frmts\vrt;..\..\..\..\..\$(GDAL_DIR)\ogr\ogrsf_frmts\gpkg;..\..\..\..\..\$(GDAL_DIR)\ogr\ogrsf_frmts\sqlite;..\..\..\..\..\$(SQLITE3_DIR);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <CompileAs>CompileAsCpp</CompileAs>
-      <DisableSpecificWarnings>4706;4127;4100</DisableSpecificWarnings>
+      <DisableSpecificWarnings>4589;4706;4127;4100</DisableSpecificWarnings>
       <ExceptionHandling>Sync</ExceptionHandling>
       <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
       <Optimization>MaxSpeed</Optimization>
@@ -1216,15 +938,15 @@
       <WarningLevel>Level4</WarningLevel>
       <DebugInformationFormat>
       </DebugInformationFormat>
-      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;ZIP_STD;CMAKE_INTDIR="Release";osgdb_zip_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>_WIN32;_WINDOWS;NDEBUG;_WIN32_WINNT=0x0602;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;ZIP_STD;CMAKE_INTDIR="Release";osgdb_zip_EXPORTS;%(PreprocessorDefinitions);</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
     </ClCompile>
     <ResourceCompile>
-      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;ZIP_STD;CMAKE_INTDIR=\"Release\";osgdb_zip_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>..\..\..\..\include;..\..\..\include;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_WIN32;_WINDOWS;NDEBUG;_WIN32_WINNT=0x0602;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;ZIP_STD;CMAKE_INTDIR=\"Release\";osgdb_zip_EXPORTS;%(PreprocessorDefinitions);</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\include;..\..\..\..\include;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>..\..\..\..\include;..\..\..\include;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..\..\include;..\..\..\..\include;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
       <OutputDirectory>$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -1233,98 +955,8 @@
     </Midl>
     <Link>
       <AdditionalOptions> /machine:X86 %(AdditionalOptions)</AdditionalOptions>
-      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;cdbGlobals.lib;OpenThreads.lib;osg.lib;osgDB.lib;osgUtil.lib;opengl32.lib;gdal_i.lib;zlib.lib</AdditionalDependencies>
-      <AdditionalLibraryDirectories>$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(GDAL_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(ZLIB_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);%(AdditionalLibraryDirectories);</AdditionalLibraryDirectories>
-      <GenerateDebugInformation>false</GenerateDebugInformation>
-      <ImportLibrary>$(OutDir)osgdb_zip.lib</ImportLibrary>
-      <ProgramDataBaseFile>$(OutDir)$(TargetName).pdb</ProgramDataBaseFile>
-      <SubSystem>Console</SubSystem>
-      <Version>
-      </Version>
-    </Link>
-    <ProjectReference>
-      <LinkLibraryDependencies>false</LinkLibraryDependencies>
-    </ProjectReference>
-  </ItemDefinitionGroup>
-  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='vs2012_Release|Win32'">
-    <ClCompile>
-      <AdditionalIncludeDirectories>..\..\..\..\include;..\..\..\include;..\..\..\..\..\$(GDAL_DIR)\frmts;..\..\..\..\..\$(GDAL_DIR)\alg;..\..\..\..\..\$(GDAL_DIR)\gcore;..\..\..\..\..\$(GDAL_DIR)\port;..\..\..\..\..\$(GDAL_DIR)\ogr;..\..\..\..\..\$(GDAL_DIR)\ogr\ogrsf_frmts;..\..\..\..\..\$(GDAL_DIR)\frmts\vrt;..\..\..\..\..\$(GDAL_DIR)\ogr\ogrsf_frmts\gpkg;..\..\..\..\..\$(GDAL_DIR)\ogr\ogrsf_frmts\sqlite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
-      <CompileAs>CompileAsCpp</CompileAs>
-      <DisableSpecificWarnings>4706;4127;4100</DisableSpecificWarnings>
-      <ExceptionHandling>Sync</ExceptionHandling>
-      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
-      <Optimization>MaxSpeed</Optimization>
-      <PrecompiledHeader>NotUsing</PrecompiledHeader>
-      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
-      <RuntimeTypeInfo>true</RuntimeTypeInfo>
-      <WarningLevel>Level4</WarningLevel>
-      <DebugInformationFormat>
-      </DebugInformationFormat>
-      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;ZIP_STD;CMAKE_INTDIR="Release";osgdb_zip_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <ObjectFileName>$(IntDir)</ObjectFileName>
-    </ClCompile>
-    <ResourceCompile>
-      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;ZIP_STD;CMAKE_INTDIR=\"Release\";osgdb_zip_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>..\..\..\..\include;..\..\..\include;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
-    </ResourceCompile>
-    <Midl>
-      <AdditionalIncludeDirectories>..\..\..\..\include;..\..\..\include;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
-      <OutputDirectory>$(IntDir)</OutputDirectory>
-      <HeaderFileName>%(Filename).h</HeaderFileName>
-      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
-      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
-      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
-    </Midl>
-    <Link>
-      <AdditionalOptions> /machine:X86 %(AdditionalOptions)</AdditionalOptions>
-      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;OpenThreads.lib;osg.lib;osgDB.lib;osgUtil.lib;opengl32.lib;gdal_i.lib;zlib.lib</AdditionalDependencies>
-      <AdditionalLibraryDirectories>$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(GDAL_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(ZLIB_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);%(AdditionalLibraryDirectories);</AdditionalLibraryDirectories>
-      <GenerateDebugInformation>false</GenerateDebugInformation>
-      <ImportLibrary>$(OutDir)osgdb_zip.lib</ImportLibrary>
-      <ProgramDataBaseFile>$(OutDir)$(TargetName).pdb</ProgramDataBaseFile>
-      <SubSystem>Console</SubSystem>
-      <Version>
-      </Version>
-    </Link>
-    <ProjectReference>
-      <LinkLibraryDependencies>false</LinkLibraryDependencies>
-    </ProjectReference>
-  </ItemDefinitionGroup>
-  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='vs2010_Release|Win32'">
-    <ClCompile>
-      <AdditionalIncludeDirectories>..\..\..\..\include;..\..\..\include;..\..\..\..\..\$(GDAL_DIR)\frmts;..\..\..\..\..\$(GDAL_DIR)\alg;..\..\..\..\..\$(GDAL_DIR)\gcore;..\..\..\..\..\$(GDAL_DIR)\port;..\..\..\..\..\$(GDAL_DIR)\ogr;..\..\..\..\..\$(GDAL_DIR)\ogr\ogrsf_frmts;..\..\..\..\..\$(GDAL_DIR)\frmts\vrt;..\..\..\..\..\$(GDAL_DIR)\ogr\ogrsf_frmts\gpkg;..\..\..\..\..\$(GDAL_DIR)\ogr\ogrsf_frmts\sqlite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
-      <CompileAs>CompileAsCpp</CompileAs>
-      <DisableSpecificWarnings>4706;4127;4100</DisableSpecificWarnings>
-      <ExceptionHandling>Sync</ExceptionHandling>
-      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
-      <Optimization>MaxSpeed</Optimization>
-      <PrecompiledHeader>NotUsing</PrecompiledHeader>
-      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
-      <RuntimeTypeInfo>true</RuntimeTypeInfo>
-      <WarningLevel>Level4</WarningLevel>
-      <DebugInformationFormat>
-      </DebugInformationFormat>
-      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;ZIP_STD;CMAKE_INTDIR="Release";osgdb_zip_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <ObjectFileName>$(IntDir)</ObjectFileName>
-    </ClCompile>
-    <ResourceCompile>
-      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;ZIP_STD;CMAKE_INTDIR=\"Release\";osgdb_zip_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>..\..\..\..\include;..\..\..\include;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
-    </ResourceCompile>
-    <Midl>
-      <AdditionalIncludeDirectories>..\..\..\..\include;..\..\..\include;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
-      <OutputDirectory>$(IntDir)</OutputDirectory>
-      <HeaderFileName>%(Filename).h</HeaderFileName>
-      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
-      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
-      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
-    </Midl>
-    <Link>
-      <AdditionalOptions> /machine:X86 %(AdditionalOptions)</AdditionalOptions>
-      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;OpenThreads.lib;osg.lib;osgDB.lib;osgUtil.lib;opengl32.lib;gdal_i.lib;zlib.lib</AdditionalDependencies>
-      <AdditionalLibraryDirectories>$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(GDAL_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(ZLIB_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);%(AdditionalLibraryDirectories);</AdditionalLibraryDirectories>
+      <AdditionalDependencies>zip.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;cdbGlobals.lib;OpenThreads.lib;osg.lib;osgDB.lib;osgUtil.lib;opengl32.lib;osg.lib;OpenThreads.lib;zlib.lib;opengl32.lib;</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(LIBZIP_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(GDAL_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(ZLIB_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>false</GenerateDebugInformation>
       <ImportLibrary>$(OutDir)osgdb_zip.lib</ImportLibrary>
       <ProgramDataBaseFile>$(OutDir)$(TargetName).pdb</ProgramDataBaseFile>
@@ -1338,10 +970,10 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>..\..\..\..\include;..\..\..\include;..\..\..\..\..\$(GDAL_DIR)\frmts;..\..\..\..\..\$(GDAL_DIR)\alg;..\..\..\..\..\$(GDAL_DIR)\gcore;..\..\..\..\..\$(GDAL_DIR)\port;..\..\..\..\..\$(GDAL_DIR)\ogr;..\..\..\..\..\$(GDAL_DIR)\ogr\ogrsf_frmts;..\..\..\..\..\$(GDAL_DIR)\frmts\vrt;..\..\..\..\..\$(GDAL_DIR)\ogr\ogrsf_frmts\gpkg;..\..\..\..\..\$(GDAL_DIR)\ogr\ogrsf_frmts\sqlite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..\..\include;..\..\..\..\include;..\..\..\..\..\$(LIBZIP_DIR)\lib;..\..\..\..\..\$(LIBZIP_DIR)\msvc;..\..\..\..\..\$(GDAL_DIR)\frmts;..\..\..\..\..\$(GDAL_DIR)\alg;..\..\..\..\..\$(GDAL_DIR)\gcore;..\..\..\..\..\$(GDAL_DIR)\port;..\..\..\..\..\$(GDAL_DIR)\ogr;..\..\..\..\..\$(GDAL_DIR)\ogr\ogrsf_frmts;..\..\..\..\..\$(GDAL_DIR)\frmts\vrt;..\..\..\..\..\$(GDAL_DIR)\ogr\ogrsf_frmts\gpkg;..\..\..\..\..\$(GDAL_DIR)\ogr\ogrsf_frmts\sqlite;..\..\..\..\..\$(SQLITE3_DIR);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <CompileAs>CompileAsCpp</CompileAs>
-      <DisableSpecificWarnings>4706;4127;4100</DisableSpecificWarnings>
+      <DisableSpecificWarnings>4589;4706;4127;4100</DisableSpecificWarnings>
       <ExceptionHandling>Sync</ExceptionHandling>
       <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
       <Optimization>MaxSpeed</Optimization>
@@ -1351,15 +983,15 @@
       <WarningLevel>Level4</WarningLevel>
       <DebugInformationFormat>
       </DebugInformationFormat>
-      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;ZIP_STD;CMAKE_INTDIR="Release";osgdb_zip_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>_WIN32;_WINDOWS;NDEBUG;_WIN32_WINNT=0x0602;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;ZIP_STD;CMAKE_INTDIR="Release";osgdb_zip_EXPORTS;%(PreprocessorDefinitions);</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
     </ClCompile>
     <ResourceCompile>
-      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;ZIP_STD;CMAKE_INTDIR=\"Release\";osgdb_zip_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>..\..\..\..\include;..\..\..\include;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_WIN32;_WINDOWS;NDEBUG;_WIN32_WINNT=0x0602;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;ZIP_STD;CMAKE_INTDIR=\"Release\";osgdb_zip_EXPORTS;%(PreprocessorDefinitions);</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\include;..\..\..\..\include;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>..\..\..\..\include;..\..\..\include;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..\..\include;..\..\..\..\include;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
       <OutputDirectory>$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -1368,8 +1000,8 @@
     </Midl>
     <Link>
       <AdditionalOptions> %(AdditionalOptions)</AdditionalOptions>
-      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;cdbGlobals.lib;OpenThreads.lib;osg.lib;osgDB.lib;osgUtil.lib;opengl32.lib;gdal_i.lib;zlib.lib</AdditionalDependencies>
-      <AdditionalLibraryDirectories>$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(GDAL_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(ZLIB_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);%(AdditionalLibraryDirectories);</AdditionalLibraryDirectories>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;cdbGlobals.lib;OpenThreads.lib;osg.lib;osgDB.lib;osgUtil.lib;opengl32.lib;osg.lib;OpenThreads.lib;zlib.lib;opengl32.lib;</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(LIBZIP_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(GDAL_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(ZLIB_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>false</GenerateDebugInformation>
       <ImportLibrary>$(OutDir)osgdb_zip.lib</ImportLibrary>
       <ProgramDataBaseFile>$(OutDir)$(TargetName).pdb</ProgramDataBaseFile>
@@ -1383,10 +1015,10 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='vs2015_Release|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>..\..\..\..\include;..\..\..\include;..\..\..\..\..\$(GDAL_DIR)\frmts;..\..\..\..\..\$(GDAL_DIR)\alg;..\..\..\..\..\$(GDAL_DIR)\gcore;..\..\..\..\..\$(GDAL_DIR)\port;..\..\..\..\..\$(GDAL_DIR)\ogr;..\..\..\..\..\$(GDAL_DIR)\ogr\ogrsf_frmts;..\..\..\..\..\$(GDAL_DIR)\frmts\vrt;..\..\..\..\..\$(GDAL_DIR)\ogr\ogrsf_frmts\gpkg;..\..\..\..\..\$(GDAL_DIR)\ogr\ogrsf_frmts\sqlite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..\..\include;..\..\..\..\include;..\..\..\..\..\$(LIBZIP_DIR)\lib;..\..\..\..\..\$(LIBZIP_DIR)\msvc;..\..\..\..\..\$(GDAL_DIR)\frmts;..\..\..\..\..\$(GDAL_DIR)\alg;..\..\..\..\..\$(GDAL_DIR)\gcore;..\..\..\..\..\$(GDAL_DIR)\port;..\..\..\..\..\$(GDAL_DIR)\ogr;..\..\..\..\..\$(GDAL_DIR)\ogr\ogrsf_frmts;..\..\..\..\..\$(GDAL_DIR)\frmts\vrt;..\..\..\..\..\$(GDAL_DIR)\ogr\ogrsf_frmts\gpkg;..\..\..\..\..\$(GDAL_DIR)\ogr\ogrsf_frmts\sqlite;..\..\..\..\..\$(SQLITE3_DIR);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <CompileAs>CompileAsCpp</CompileAs>
-      <DisableSpecificWarnings>4706;4127;4100</DisableSpecificWarnings>
+      <DisableSpecificWarnings>4589;4706;4127;4100</DisableSpecificWarnings>
       <ExceptionHandling>Sync</ExceptionHandling>
       <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
       <Optimization>MaxSpeed</Optimization>
@@ -1396,15 +1028,15 @@
       <WarningLevel>Level4</WarningLevel>
       <DebugInformationFormat>
       </DebugInformationFormat>
-      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;ZIP_STD;CMAKE_INTDIR="Release";osgdb_zip_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>_WIN32;_WINDOWS;NDEBUG;_WIN32_WINNT=0x0602;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;ZIP_STD;CMAKE_INTDIR="Release";osgdb_zip_EXPORTS;%(PreprocessorDefinitions);</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
     </ClCompile>
     <ResourceCompile>
-      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;ZIP_STD;CMAKE_INTDIR=\"Release\";osgdb_zip_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>..\..\..\..\include;..\..\..\include;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_WIN32;_WINDOWS;NDEBUG;_WIN32_WINNT=0x0602;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;ZIP_STD;CMAKE_INTDIR=\"Release\";osgdb_zip_EXPORTS;%(PreprocessorDefinitions);</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\include;..\..\..\..\include;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>..\..\..\..\include;..\..\..\include;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..\..\include;..\..\..\..\include;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
       <OutputDirectory>$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -1413,8 +1045,8 @@
     </Midl>
     <Link>
       <AdditionalOptions> %(AdditionalOptions)</AdditionalOptions>
-      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;cdbGlobals.lib;OpenThreads.lib;osg.lib;osgDB.lib;osgUtil.lib;opengl32.lib;gdal_i.lib;zlib.lib</AdditionalDependencies>
-      <AdditionalLibraryDirectories>$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(GDAL_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(ZLIB_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);%(AdditionalLibraryDirectories);</AdditionalLibraryDirectories>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;cdbGlobals.lib;OpenThreads.lib;osg.lib;osgDB.lib;osgUtil.lib;opengl32.lib;osg.lib;OpenThreads.lib;zlib.lib;opengl32.lib;</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(LIBZIP_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(GDAL_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(ZLIB_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>false</GenerateDebugInformation>
       <ImportLibrary>$(OutDir)osgdb_zip.lib</ImportLibrary>
       <ProgramDataBaseFile>$(OutDir)$(TargetName).pdb</ProgramDataBaseFile>
@@ -1428,10 +1060,10 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>..\..\..\..\include;..\..\..\include;..\..\..\..\..\$(GDAL_DIR)\frmts;..\..\..\..\..\$(GDAL_DIR)\alg;..\..\..\..\..\$(GDAL_DIR)\gcore;..\..\..\..\..\$(GDAL_DIR)\port;..\..\..\..\..\$(GDAL_DIR)\ogr;..\..\..\..\..\$(GDAL_DIR)\ogr\ogrsf_frmts;..\..\..\..\..\$(GDAL_DIR)\frmts\vrt;..\..\..\..\..\$(GDAL_DIR)\ogr\ogrsf_frmts\gpkg;..\..\..\..\..\$(GDAL_DIR)\ogr\ogrsf_frmts\sqlite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..\..\include;..\..\..\..\include;..\..\..\..\..\$(LIBZIP_DIR)\lib;..\..\..\..\..\$(LIBZIP_DIR)\msvc;..\..\..\..\..\$(GDAL_DIR)\frmts;..\..\..\..\..\$(GDAL_DIR)\alg;..\..\..\..\..\$(GDAL_DIR)\gcore;..\..\..\..\..\$(GDAL_DIR)\port;..\..\..\..\..\$(GDAL_DIR)\ogr;..\..\..\..\..\$(GDAL_DIR)\ogr\ogrsf_frmts;..\..\..\..\..\$(GDAL_DIR)\frmts\vrt;..\..\..\..\..\$(GDAL_DIR)\ogr\ogrsf_frmts\gpkg;..\..\..\..\..\$(GDAL_DIR)\ogr\ogrsf_frmts\sqlite;..\..\..\..\..\$(SQLITE3_DIR);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <CompileAs>CompileAsCpp</CompileAs>
-      <DisableSpecificWarnings>4706;4127;4100</DisableSpecificWarnings>
+      <DisableSpecificWarnings>4589;4706;4127;4100</DisableSpecificWarnings>
       <ExceptionHandling>Sync</ExceptionHandling>
       <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
       <Optimization>MaxSpeed</Optimization>
@@ -1441,15 +1073,15 @@
       <WarningLevel>Level4</WarningLevel>
       <DebugInformationFormat>
       </DebugInformationFormat>
-      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;ZIP_STD;CMAKE_INTDIR="Release";osgdb_zip_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>_WIN32;_WINDOWS;NDEBUG;_WIN32_WINNT=0x0602;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;ZIP_STD;CMAKE_INTDIR="Release";osgdb_zip_EXPORTS;%(PreprocessorDefinitions);</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
     </ClCompile>
     <ResourceCompile>
-      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;ZIP_STD;CMAKE_INTDIR=\"Release\";osgdb_zip_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>..\..\..\..\include;..\..\..\include;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_WIN32;_WINDOWS;NDEBUG;_WIN32_WINNT=0x0602;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;ZIP_STD;CMAKE_INTDIR=\"Release\";osgdb_zip_EXPORTS;%(PreprocessorDefinitions);</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\include;..\..\..\..\include;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>..\..\..\..\include;..\..\..\include;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..\..\include;..\..\..\..\include;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
       <OutputDirectory>$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -1458,8 +1090,8 @@
     </Midl>
     <Link>
       <AdditionalOptions> %(AdditionalOptions)</AdditionalOptions>
-      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;cdbGlobals.lib;OpenThreads.lib;osg.lib;osgDB.lib;osgUtil.lib;opengl32.lib;gdal_i.lib;zlib.lib</AdditionalDependencies>
-      <AdditionalLibraryDirectories>$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(GDAL_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(ZLIB_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);%(AdditionalLibraryDirectories);</AdditionalLibraryDirectories>
+      <AdditionalDependencies>zip.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;cdbGlobals.lib;gdal_i.lib;OpenThreads.lib;osg.lib;osgDB.lib;osgUtil.lib;opengl32.lib;osg.lib;OpenThreads.lib;zlib.lib;opengl32.lib;</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(LIBZIP_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(GDAL_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(ZLIB_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>false</GenerateDebugInformation>
       <ImportLibrary>$(OutDir)osgdb_zip.lib</ImportLibrary>
       <ProgramDataBaseFile>$(OutDir)$(TargetName).pdb</ProgramDataBaseFile>
@@ -1473,10 +1105,10 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>..\..\..\..\include;..\..\..\include;..\..\..\..\..\$(GDAL_DIR)\frmts;..\..\..\..\..\$(GDAL_DIR)\alg;..\..\..\..\..\$(GDAL_DIR)\gcore;..\..\..\..\..\$(GDAL_DIR)\port;..\..\..\..\..\$(GDAL_DIR)\ogr;..\..\..\..\..\$(GDAL_DIR)\ogr\ogrsf_frmts;..\..\..\..\..\$(GDAL_DIR)\frmts\vrt;..\..\..\..\..\$(GDAL_DIR)\ogr\ogrsf_frmts\gpkg;..\..\..\..\..\$(GDAL_DIR)\ogr\ogrsf_frmts\sqlite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..\..\include;..\..\..\..\include;..\..\..\..\..\$(LIBZIP_DIR)\lib;..\..\..\..\..\$(LIBZIP_DIR)\msvc;..\..\..\..\..\$(GDAL_DIR)\frmts;..\..\..\..\..\$(GDAL_DIR)\alg;..\..\..\..\..\$(GDAL_DIR)\gcore;..\..\..\..\..\$(GDAL_DIR)\port;..\..\..\..\..\$(GDAL_DIR)\ogr;..\..\..\..\..\$(GDAL_DIR)\ogr\ogrsf_frmts;..\..\..\..\..\$(GDAL_DIR)\frmts\vrt;..\..\..\..\..\$(GDAL_DIR)\ogr\ogrsf_frmts\gpkg;..\..\..\..\..\$(GDAL_DIR)\ogr\ogrsf_frmts\sqlite;..\..\..\..\..\$(SQLITE3_DIR);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <CompileAs>CompileAsCpp</CompileAs>
-      <DisableSpecificWarnings>4706;4127;4100</DisableSpecificWarnings>
+      <DisableSpecificWarnings>4589;4706;4127;4100</DisableSpecificWarnings>
       <ExceptionHandling>Sync</ExceptionHandling>
       <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
       <Optimization>MaxSpeed</Optimization>
@@ -1486,15 +1118,15 @@
       <WarningLevel>Level4</WarningLevel>
       <DebugInformationFormat>
       </DebugInformationFormat>
-      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;ZIP_STD;CMAKE_INTDIR="Release";osgdb_zip_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>_WIN32;_WINDOWS;NDEBUG;_WIN32_WINNT=0x0602;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;ZIP_STD;CMAKE_INTDIR="Release";osgdb_zip_EXPORTS;%(PreprocessorDefinitions);</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
     </ClCompile>
     <ResourceCompile>
-      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;ZIP_STD;CMAKE_INTDIR=\"Release\";osgdb_zip_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>..\..\..\..\include;..\..\..\include;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_WIN32;_WINDOWS;NDEBUG;_WIN32_WINNT=0x0602;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;ZIP_STD;CMAKE_INTDIR=\"Release\";osgdb_zip_EXPORTS;%(PreprocessorDefinitions);</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\include;..\..\..\..\include;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>..\..\..\..\include;..\..\..\include;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..\..\include;..\..\..\..\include;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
       <OutputDirectory>$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -1503,8 +1135,8 @@
     </Midl>
     <Link>
       <AdditionalOptions> %(AdditionalOptions)</AdditionalOptions>
-      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;cdbGlobals.lib;OpenThreads.lib;osg.lib;osgDB.lib;osgUtil.lib;opengl32.lib;gdal_i.lib;zlib.lib</AdditionalDependencies>
-      <AdditionalLibraryDirectories>$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(GDAL_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(ZLIB_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);%(AdditionalLibraryDirectories);</AdditionalLibraryDirectories>
+      <AdditionalDependencies>zip.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;cdbGlobals.lib;gdal_i.lib;OpenThreads.lib;osg.lib;osgDB.lib;osgUtil.lib;opengl32.lib;osg.lib;OpenThreads.lib;zlib.lib;opengl32.lib;</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(LIBZIP_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(GDAL_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(ZLIB_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>false</GenerateDebugInformation>
       <ImportLibrary>$(OutDir)osgdb_zip.lib</ImportLibrary>
       <ProgramDataBaseFile>$(OutDir)$(TargetName).pdb</ProgramDataBaseFile>
@@ -1518,10 +1150,10 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='vs2022_Release|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>..\..\..\..\include;..\..\..\include;..\..\..\..\..\$(GDAL_DIR)\frmts;..\..\..\..\..\$(GDAL_DIR)\alg;..\..\..\..\..\$(GDAL_DIR)\gcore;..\..\..\..\..\$(GDAL_DIR)\port;..\..\..\..\..\$(GDAL_DIR)\ogr;..\..\..\..\..\$(GDAL_DIR)\ogr\ogrsf_frmts;..\..\..\..\..\$(GDAL_DIR)\frmts\vrt;..\..\..\..\..\$(GDAL_DIR)\ogr\ogrsf_frmts\gpkg;..\..\..\..\..\$(GDAL_DIR)\ogr\ogrsf_frmts\sqlite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..\..\include;..\..\..\..\include;..\..\..\..\..\$(LIBZIP_DIR)\lib;..\..\..\..\..\$(LIBZIP_DIR)\msvc;..\..\..\..\..\$(GDAL_DIR)\frmts;..\..\..\..\..\$(GDAL_DIR)\alg;..\..\..\..\..\$(GDAL_DIR)\gcore;..\..\..\..\..\$(GDAL_DIR)\port;..\..\..\..\..\$(GDAL_DIR)\ogr;..\..\..\..\..\$(GDAL_DIR)\ogr\ogrsf_frmts;..\..\..\..\..\$(GDAL_DIR)\frmts\vrt;..\..\..\..\..\$(GDAL_DIR)\ogr\ogrsf_frmts\gpkg;..\..\..\..\..\$(GDAL_DIR)\ogr\ogrsf_frmts\sqlite;..\..\..\..\..\$(SQLITE3_DIR);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <CompileAs>CompileAsCpp</CompileAs>
-      <DisableSpecificWarnings>4706;4127;4100</DisableSpecificWarnings>
+      <DisableSpecificWarnings>4589;4706;4127;4100</DisableSpecificWarnings>
       <ExceptionHandling>Sync</ExceptionHandling>
       <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
       <Optimization>MaxSpeed</Optimization>
@@ -1531,15 +1163,15 @@
       <WarningLevel>Level4</WarningLevel>
       <DebugInformationFormat>
       </DebugInformationFormat>
-      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;ZIP_STD;CMAKE_INTDIR="Release";osgdb_zip_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_WIN32_WINNT=0x0602;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;ZIP_STD;CMAKE_INTDIR="Release";osgdb_zip_EXPORTS;%(PreprocessorDefinitions);</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
     </ClCompile>
     <ResourceCompile>
-      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;ZIP_STD;CMAKE_INTDIR=\"Release\";osgdb_zip_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>..\..\..\..\include;..\..\..\include;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_WIN32;_WINDOWS;NDEBUG;_WIN32_WINNT=0x0602;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;ZIP_STD;CMAKE_INTDIR=\"Release\";osgdb_zip_EXPORTS;%(PreprocessorDefinitions);</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\include;..\..\..\..\include;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>..\..\..\..\include;..\..\..\include;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..\..\include;..\..\..\..\include;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
       <OutputDirectory>$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -1548,98 +1180,8 @@
     </Midl>
     <Link>
       <AdditionalOptions> %(AdditionalOptions)</AdditionalOptions>
-      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;cdbGlobals.lib;OpenThreads.lib;osg.lib;osgDB.lib;osgUtil.lib;opengl32.lib;gdal_i.lib;zlib.lib</AdditionalDependencies>
-      <AdditionalLibraryDirectories>$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(GDAL_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(ZLIB_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);%(AdditionalLibraryDirectories);</AdditionalLibraryDirectories>
-      <GenerateDebugInformation>false</GenerateDebugInformation>
-      <ImportLibrary>$(OutDir)osgdb_zip.lib</ImportLibrary>
-      <ProgramDataBaseFile>$(OutDir)$(TargetName).pdb</ProgramDataBaseFile>
-      <SubSystem>Console</SubSystem>
-      <Version>
-      </Version>
-    </Link>
-    <ProjectReference>
-      <LinkLibraryDependencies>false</LinkLibraryDependencies>
-    </ProjectReference>
-  </ItemDefinitionGroup>
-  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='vs2012_Release|x64'">
-    <ClCompile>
-      <AdditionalIncludeDirectories>..\..\..\..\include;..\..\..\include;..\..\..\..\..\$(GDAL_DIR)\frmts;..\..\..\..\..\$(GDAL_DIR)\alg;..\..\..\..\..\$(GDAL_DIR)\gcore;..\..\..\..\..\$(GDAL_DIR)\port;..\..\..\..\..\$(GDAL_DIR)\ogr;..\..\..\..\..\$(GDAL_DIR)\ogr\ogrsf_frmts;..\..\..\..\..\$(GDAL_DIR)\frmts\vrt;..\..\..\..\..\$(GDAL_DIR)\ogr\ogrsf_frmts\gpkg;..\..\..\..\..\$(GDAL_DIR)\ogr\ogrsf_frmts\sqlite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
-      <CompileAs>CompileAsCpp</CompileAs>
-      <DisableSpecificWarnings>4706;4127;4100</DisableSpecificWarnings>
-      <ExceptionHandling>Sync</ExceptionHandling>
-      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
-      <Optimization>MaxSpeed</Optimization>
-      <PrecompiledHeader>NotUsing</PrecompiledHeader>
-      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
-      <RuntimeTypeInfo>true</RuntimeTypeInfo>
-      <WarningLevel>Level4</WarningLevel>
-      <DebugInformationFormat>
-      </DebugInformationFormat>
-      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;ZIP_STD;CMAKE_INTDIR="Release";osgdb_zip_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <ObjectFileName>$(IntDir)</ObjectFileName>
-    </ClCompile>
-    <ResourceCompile>
-      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;ZIP_STD;CMAKE_INTDIR=\"Release\";osgdb_zip_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>..\..\..\..\include;..\..\..\include;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
-    </ResourceCompile>
-    <Midl>
-      <AdditionalIncludeDirectories>..\..\..\..\include;..\..\..\include;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
-      <OutputDirectory>$(IntDir)</OutputDirectory>
-      <HeaderFileName>%(Filename).h</HeaderFileName>
-      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
-      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
-      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
-    </Midl>
-    <Link>
-      <AdditionalOptions> %(AdditionalOptions)</AdditionalOptions>
-      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;OpenThreads.lib;osg.lib;osgDB.lib;osgUtil.lib;opengl32.lib;gdal_i.lib;zlib.lib</AdditionalDependencies>
-      <AdditionalLibraryDirectories>$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(GDAL_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(ZLIB_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);%(AdditionalLibraryDirectories);</AdditionalLibraryDirectories>
-      <GenerateDebugInformation>false</GenerateDebugInformation>
-      <ImportLibrary>$(OutDir)osgdb_zip.lib</ImportLibrary>
-      <ProgramDataBaseFile>$(OutDir)$(TargetName).pdb</ProgramDataBaseFile>
-      <SubSystem>Console</SubSystem>
-      <Version>
-      </Version>
-    </Link>
-    <ProjectReference>
-      <LinkLibraryDependencies>false</LinkLibraryDependencies>
-    </ProjectReference>
-  </ItemDefinitionGroup>
-  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='vs2010_Release|x64'">
-    <ClCompile>
-      <AdditionalIncludeDirectories>..\..\..\..\include;..\..\..\include;..\..\..\..\..\$(GDAL_DIR)\frmts;..\..\..\..\..\$(GDAL_DIR)\alg;..\..\..\..\..\$(GDAL_DIR)\gcore;..\..\..\..\..\$(GDAL_DIR)\port;..\..\..\..\..\$(GDAL_DIR)\ogr;..\..\..\..\..\$(GDAL_DIR)\ogr\ogrsf_frmts;..\..\..\..\..\$(GDAL_DIR)\frmts\vrt;..\..\..\..\..\$(GDAL_DIR)\ogr\ogrsf_frmts\gpkg;..\..\..\..\..\$(GDAL_DIR)\ogr\ogrsf_frmts\sqlite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
-      <CompileAs>CompileAsCpp</CompileAs>
-      <DisableSpecificWarnings>4706;4127;4100</DisableSpecificWarnings>
-      <ExceptionHandling>Sync</ExceptionHandling>
-      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
-      <Optimization>MaxSpeed</Optimization>
-      <PrecompiledHeader>NotUsing</PrecompiledHeader>
-      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
-      <RuntimeTypeInfo>true</RuntimeTypeInfo>
-      <WarningLevel>Level4</WarningLevel>
-      <DebugInformationFormat>
-      </DebugInformationFormat>
-      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;ZIP_STD;CMAKE_INTDIR="Release";osgdb_zip_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <ObjectFileName>$(IntDir)</ObjectFileName>
-    </ClCompile>
-    <ResourceCompile>
-      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;ZIP_STD;CMAKE_INTDIR=\"Release\";osgdb_zip_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>..\..\..\..\include;..\..\..\include;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
-    </ResourceCompile>
-    <Midl>
-      <AdditionalIncludeDirectories>..\..\..\..\include;..\..\..\include;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
-      <OutputDirectory>$(IntDir)</OutputDirectory>
-      <HeaderFileName>%(Filename).h</HeaderFileName>
-      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
-      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
-      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
-    </Midl>
-    <Link>
-      <AdditionalOptions> %(AdditionalOptions)</AdditionalOptions>
-      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;OpenThreads.lib;osg.lib;osgDB.lib;osgUtil.lib;opengl32.lib;gdal_i.lib;zlib.lib</AdditionalDependencies>
-      <AdditionalLibraryDirectories>$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(GDAL_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(ZLIB_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);%(AdditionalLibraryDirectories);</AdditionalLibraryDirectories>
+      <AdditionalDependencies>zip.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;cdbGlobals.lib;gdal_i.lib;OpenThreads.lib;osg.lib;osgDB.lib;osgUtil.lib;opengl32.lib;osg.lib;OpenThreads.lib;zlib.lib;opengl32.lib;</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(LIBZIP_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(GDAL_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(ZLIB_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>false</GenerateDebugInformation>
       <ImportLibrary>$(OutDir)osgdb_zip.lib</ImportLibrary>
       <ProgramDataBaseFile>$(OutDir)$(TargetName).pdb</ProgramDataBaseFile>
@@ -1652,25 +1194,23 @@
     </ProjectReference>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\..\..\src\osgPlugins\zip\unzip.h" />
     <ClInclude Include="..\..\..\..\src\osgPlugins\zip\ZipArchive.h" />
-    <ClCompile Include="..\..\..\..\src\osgPlugins\zip\unzip.cpp" />
     <ClCompile Include="..\..\..\..\src\osgPlugins\zip\ZipArchive.cpp" />
     <ClCompile Include="..\..\..\..\src\osgPlugins\zip\ReaderWriterZIP.cpp" />
     <ResourceCompile Include="..\..\..\PlatformSpecifics\Windows\OpenSceneGraphVersionInfo.rc" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\OpenThreads\win32\OpenThreads.vcxproj">
-      <Project>CBCEB35E-E9CB-4693-A420-8B9256CE45C4</Project>
+      <Project>44391EE7-4D43-4F8A-A981-FE1F9DDE2952</Project>
     </ProjectReference>
     <ProjectReference Include="..\..\osg\osg.vcxproj">
-      <Project>3295F007-83A5-4D0A-BCB9-A9CF2011F7DB</Project>
+      <Project>5C87E6F7-7E71-428F-9142-474F4B0FAC14</Project>
     </ProjectReference>
     <ProjectReference Include="..\..\osgDB\osgDB.vcxproj">
-      <Project>ADB77B4D-48DE-4477-96E8-BF031EDE63FC</Project>
+      <Project>C366B098-7194-40D3-BBA5-9DE6BA8CAA1E</Project>
     </ProjectReference>
     <ProjectReference Include="..\..\osgUtil\osgUtil.vcxproj">
-      <Project>0CB912B2-9F0C-4C01-9E6D-CA964A208158</Project>
+      <Project>AD8A5F6A-9ACE-4B3B-AF18-4A43028F36C7</Project>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

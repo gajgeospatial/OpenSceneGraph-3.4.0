@@ -1,14 +1,14 @@
 #ifndef OSGDB_ZIPARCHIVE
 #define OSGDB_ZIPARCHIVE 1
 
+
 #include <osgDB/ReaderWriter>
 #include <osgDB/FileUtils>
 
 #include <osgDB/Archive>
 #include <OpenThreads/Mutex>
 
-#include "unzip.h"
-
+#include <zip.h>
 
 class ZipArchive : public osgDB::Archive
 {
@@ -55,42 +55,38 @@ class ZipArchive : public osgDB::Archive
         virtual osgDB::ReaderWriter::ReadResult readHeightField(const std::string& /*fileName*/,const osgDB::ReaderWriter::Options* =NULL) const;
         virtual osgDB::ReaderWriter::ReadResult readNode(const std::string& /*fileName*/, const osgDB::ReaderWriter::Options* =NULL) const;
         virtual osgDB::ReaderWriter::ReadResult readShader(const std::string& /*fileName*/, const osgDB::ReaderWriter::Options* =NULL) const;
+        virtual osgDB::ReaderWriter::ReadResult readScript(const std::string& /*fileName*/, const osgDB::ReaderWriter::Options* =NULL) const;
 
         virtual osgDB::ReaderWriter::WriteResult writeObject(const osg::Object& /*obj*/, const std::string& /*fileName*/,const osgDB::ReaderWriter::Options* =NULL) const;
         virtual osgDB::ReaderWriter::WriteResult writeImage(const osg::Image& /*image*/, const std::string& /*fileName*/,const osgDB::ReaderWriter::Options* =NULL) const;
         virtual osgDB::ReaderWriter::WriteResult writeHeightField(const osg::HeightField& /*heightField*/, const std::string& /*fileName*/,const osgDB::ReaderWriter::Options* =NULL) const;
         virtual osgDB::ReaderWriter::WriteResult writeNode(const osg::Node& /*node*/, const std::string& /*fileName*/,const osgDB::ReaderWriter::Options* =NULL) const;
         virtual osgDB::ReaderWriter::WriteResult writeShader(const osg::Shader& /*shader*/, const std::string& /*fileName*/,const osgDB::ReaderWriter::Options* =NULL) const;
+        virtual osgDB::ReaderWriter::WriteResult writeScript(const osg::Script& /*script*/, const std::string& /*fileName*/,const osgDB::ReaderWriter::Options* =NULL) const;
 
     protected:
 
-        osgDB::ReaderWriter* ReadFromZipEntry(const ZIPENTRY* ze, const osgDB::ReaderWriter::Options* options, std::stringstream& streamIn) const;
-
-        void IndexZipFiles(HZIP hz);
-        const ZIPENTRY* GetZipEntry(const std::string& filename) const;
-        ZIPENTRY* GetZipEntry(const std::string& filename);
-
+        void IndexZipFiles(zip_t* zip);
+        bool GetZipIndex(const std::string& filename, zip_uint64_t& idx) const;
+        osgDB::ReaderWriter* ReadFromZipIndex(const std::string& filename, const osgDB::ReaderWriter::Options* options, std::stringstream& streamIn) const;
         std::string ReadPassword(const osgDB::ReaderWriter::Options* options) const;
-        bool CheckZipErrorCode(ZRESULT result) const;
 
     private:
 
-
-        typedef std::pair<std::string, ZIPENTRY*> ZipEntryMapping;
-        typedef std::map<std::string, ZIPENTRY*> ZipEntryMap;
+        typedef std::pair<std::string, zip_uint64_t > ZipEntryMapping;
+        typedef std::map<std::string, zip_uint64_t > ZipEntryMap;
 
         std::string _filename, _password, _membuffer;
 
         OpenThreads::Mutex _zipMutex;
         bool               _zipLoaded;
-        ZipEntryMap        _zipIndex;
-        ZIPENTRY           _mainRecord;
+        ZipEntryMap        _zipIndex;        
 
         struct PerThreadData {
-            HZIP _zipHandle;
+            zip_t* _zipHandle;
         };
 
-        typedef std::map<OpenThreads::Thread*, PerThreadData> PerThreadDataMap;
+        typedef std::map<size_t, PerThreadData> PerThreadDataMap;
         PerThreadDataMap _perThreadData;
 
         const PerThreadData& getData() const;
