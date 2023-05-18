@@ -31,6 +31,7 @@ using namespace Imath;
  * For patches, bugs and new features
  * please send them direct to the OSG dev team.
  **********************************************************************/
+#define Int64 uint64_t;
 class C_IStream: public Imf::IStream
 {
 public:
@@ -41,11 +42,11 @@ public:
       {
         return _inStream->read(c,n).good();
       };
-      virtual Int64    tellg ()
+      virtual uint64_t    tellg ()
       {
           return _inStream->tellg();
       };
-      virtual void    seekg (Int64 pos)
+      virtual void    seekg (uint64_t pos)
       {
         _inStream->seekg(pos);
       };
@@ -69,11 +70,11 @@ public:
       {
         _outStream->write(c,n);
       };
-      virtual Int64    tellp ()
+      virtual uint64_t    tellp ()
       {
         return _outStream->tellp();
       };
-      virtual void seekp (Int64 pos)
+      virtual void seekp (uint64_t pos)
       {
         _outStream->seekp(pos);
       };
