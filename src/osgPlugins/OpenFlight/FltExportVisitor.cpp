@@ -50,6 +50,16 @@
 #include <osgSim/LightPointNode>
 #include <osgSim/ObjectRecordData>
 #include <osg/ValueObject>
+#include <osgAnimation/AnimationManagerBase>
+#include <osgAnimation/Bone>
+#include <osgAnimation/Skeleton>
+#include <osgAnimation/StackedMatrixElement>
+#include <osgAnimation/StackedQuaternionElement>
+#include <osgAnimation/StackedRotateAxisElement>
+#include <osgAnimation/StackedScaleElement>
+#include <osgAnimation/StackedTranslateElement>
+#include <osgAnimation/UpdateBone>
+#include <osgAnimation/StackedTransform>
 
 #ifdef _MSC_VER
 // Disable this warning. It's OK for us to use 'this' in initializer list,
@@ -132,7 +142,10 @@ void
 FltExportVisitor::apply( osg::Group& node )
 {
     ScopedStatePushPop guard( this, node.getStateSet() );
-
+#ifdef _DEBUG
+    std::string name = node.getName();
+    int fubar = 0;
+#endif
     if (_firstNode)
     {
         // On input, a FLT header creates a Group node.
@@ -144,6 +157,14 @@ FltExportVisitor::apply( osg::Group& node )
         traverse( node );
         return;
     }
+
+    osg::Callback* Cb = node.getUpdateCallback();
+#ifdef _DEBUG
+    if(Cb)
+    {
+        ++fubar;
+    }
+#endif
 
     // A Group node could indicate one of many possible records.
     //   Header record -- Don't need to support this here. We always output a header.
@@ -185,6 +206,9 @@ FltExportVisitor::apply( osg::Group& node )
 void
 FltExportVisitor::apply( osg::Sequence& node )
 {
+#ifdef _DEBUG
+    std::string name = node.getName();
+#endif
     _firstNode = false;
     ScopedStatePushPop guard( this, node.getStateSet() );
 
@@ -197,6 +221,9 @@ FltExportVisitor::apply( osg::Sequence& node )
 void
 FltExportVisitor::apply( osg::Switch& node )
 {
+#ifdef _DEBUG
+    std::string name = node.getName();
+#endif
     _firstNode = false;
     ScopedStatePushPop guard( this, node.getStateSet() );
 
@@ -210,6 +237,9 @@ FltExportVisitor::apply( osg::Switch& node )
 void
 FltExportVisitor::apply( osg::LOD& lodNode )
 {
+#ifdef _DEBUG
+    std::string name = lodNode.getName();
+#endif
     _firstNode = false;
     ScopedStatePushPop guard( this, lodNode.getStateSet() );
 
@@ -247,8 +277,20 @@ FltExportVisitor::apply( osg::MatrixTransform& node )
     //   MatrixTransform in each child's UserData. Each child then checks
     //   UserData and writes a Matrix record if UserData is a MatrixTransform.
 
+#ifdef _DEBUG
+    std::string name = node.getName();
+    int fubar = 0;
+#endif
     _firstNode = false;
     ScopedStatePushPop guard( this, node.getStateSet() );
+
+    osg::Callback* Cb = node.getUpdateCallback();
+#ifdef _DEBUG
+    if (Cb)
+    {
+        ++fubar;
+    }
+#endif
 
     osg::ref_ptr< osg::RefMatrix > m = new osg::RefMatrix;
     m->set( node.getMatrix() );
@@ -282,6 +324,9 @@ FltExportVisitor::apply( osg::MatrixTransform& node )
 void
 FltExportVisitor::apply( osg::PositionAttitudeTransform& node )
 {
+#ifdef _DEBUG
+    std::string name = node.getName();
+#endif
     _firstNode = false;
     ScopedStatePushPop guard( this, node.getStateSet() );
 
@@ -315,6 +360,9 @@ FltExportVisitor::apply( osg::PositionAttitudeTransform& node )
 void
 FltExportVisitor::apply( osg::Transform& node )
 {
+#ifdef _DEBUG
+    std::string name = node.getName();
+#endif
     _firstNode = false;
     ScopedStatePushPop guard( this, node.getStateSet() );
 
@@ -333,6 +381,9 @@ FltExportVisitor::apply( osg::Transform& node )
 void
 FltExportVisitor::apply( osg::LightSource& node )
 {
+#ifdef _DEBUG
+    std::string name = node.getName();
+#endif
     _firstNode = false;
     ScopedStatePushPop guard( this, node.getStateSet() );
 
@@ -349,6 +400,9 @@ FltExportVisitor::apply( osg::LightSource& node )
 void
 FltExportVisitor::apply( osg::Geode& node )
 {
+#ifdef _DEBUG
+    std::string name = node.getName();
+#endif
     _firstNode = false;
     ScopedStatePushPop guard( this, node.getStateSet() );
 
@@ -369,6 +423,9 @@ void FltExportVisitor::apply(osg::Drawable& node)
 
 void FltExportVisitor::processDrawable(osg::Drawable& node)
 {
+#ifdef _DEBUG
+    std::string name = node.getName();
+#endif
     osg::Geometry* geom = node.asGeometry();
     if (!geom)
     {
@@ -454,6 +511,8 @@ void FltExportVisitor::processDrawable(osg::Drawable& node)
         writePop();
     }
 
+    // Would traverse here if this node could have children.
+    //   traverse( (osg::Node&)node );
 }
 
 void
@@ -702,8 +761,12 @@ FltExportVisitor::writeATTRFile( int unit, const osg::Texture2D* texture ) const
                 break;
             }
         }
-
-        osgDB::writeObjectFile( ad, name, _fltOpt.get() );
+        //Stop usless write error messages
+        //Consider adding option to bypass attr creation
+        size_t ipos = name.find_last_of("/");
+        std::string names_dir = name.substr(0,ipos);
+        if(osgDB::fileExists(names_dir))
+            osgDB::writeObjectFile( ad, name, _fltOpt.get() );
     }
 }
 
