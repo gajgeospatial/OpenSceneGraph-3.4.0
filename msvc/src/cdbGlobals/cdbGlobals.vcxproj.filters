@@ -15,6 +15,9 @@
     <ClInclude Include="..\..\..\include\cdbGlobals\cdbGlobals_Library.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\..\include\cdbGlobals\base64.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Text Include="ReadMe.txt" />
@@ -29,6 +32,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="..\..\..\include\cdbGlobals\cdbGlobals">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="..\..\..\include\cdbGlobals\CDB_Tile_Extent">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="..\..\..\include\cdbGlobals\CDB_Tile_Types">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="..\..\..\include\cdbGlobals\cdbGeomTypes">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="..\..\..\include\cdbGlobals\ModelFeatureDefs">
       <Filter>Header Files</Filter>
     </None>
   </ItemGroup>
