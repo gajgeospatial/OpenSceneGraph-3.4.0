@@ -29,6 +29,7 @@
 
 #include <sstream>
 #include <cstdio>
+#include <thread>
 
 #if !defined(S_ISDIR)
 #  if defined( _S_IFDIR) && !defined( __S_IFDIR)
@@ -594,7 +595,10 @@ ZipArchive::getDataNoLock() const
     size_t current = 0;
     if(CurTh)
         current = OpenThreads::Thread::CurrentThread()->getThreadId();
-
+    else
+    {
+        current = std::hash<std::thread::id>{}(std::this_thread::get_id());
+    }
     PerThreadDataMap::const_iterator i = _perThreadData.find( current );
 
     if ( i == _perThreadData.end() || i->second._zipHandle == NULL )
