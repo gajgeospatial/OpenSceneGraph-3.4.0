@@ -50,15 +50,13 @@ Document::Document() :
 	_shaderPoolParent(false),
 	_textureInarchive(false),
 	_remap2Directory(false),
-	_Archive(NULL),
-	_Archive_FileName(""),
-	_Archive_KeyName(""),
 	_TextureRemapDirectory(""),
 	_ModelHomeDirectory(""),
 	_ActiveArchive(NULL),
 	_CDB_Verify(false),
 	_SwapDDS2PNG(false),
-	_CDBModel_Has_Sigsize(false)
+	_CDBModel_Has_Sigsize(false),
+	_Archive_KeyName("")
 {
     _subsurfaceDepth = new osg::Depth(osg::Depth::LESS, 0.0, 1.0,false);
 }
@@ -144,26 +142,51 @@ osg::PolygonOffset* Document::getSubSurfacePolygonOffset(int level)
 
 std::string Document::ArchiveFileName(void)
 {
-	return _Archive_FileName;
+	std::string name = "";
+	for (int i = 0; i < _Archive.size(); ++i)
+	{
+		if (_Archive[i] == _ActiveArchive)
+		{
+			name = _Archive_FileName[i];
+			break;
+		}
+	}
+	return name;
+}
+
+int Document::ArchiveIndex(void)
+{
+	int idx = -1;
+	for (int i = 0; i < _Archive.size(); ++i)
+	{
+		if (_Archive[i] == _ActiveArchive)
+		{
+			idx = i;
+			break;
+		}
+	}
+	return idx;
 }
 
 bool Document::OpenArchive(std::string ArchiveName)
 {
-	_Archive = osgDB::openArchive(ArchiveName, osgDB::ReaderWriter::READ);
-	if (_Archive)
+	osg::ref_ptr<osgDB::Archive> Archive;
+	osgDB::Archive::FileNameList Archive_FileList;
+	Archive = osgDB::openArchive(ArchiveName, osgDB::ReaderWriter::READ);
+	if (Archive)
 	{
-		_ActiveArchive = _Archive;
-		_Archive->getFileNames(_Archive_FileList);
-		_Archive_FileName = ArchiveName;
-		if (_Archive_FileName.substr(0, 5) == "gpkg:")
+		_ActiveArchive = Archive;
+		Archive->getFileNames(Archive_FileList);
+		std::string Archive_FileName = ArchiveName;
+		if (Archive_FileName.substr(0, 5) == "gpkg:")
 		{
-			size_t posx = _Archive_FileName.find("GTModel");
+			size_t posx = Archive_FileName.find("GTModel");
 			if (posx == std::string::npos)
 			{
 
-				if (_Archive_FileList.size() > 0)
+				if (Archive_FileList.size() > 0)
 				{
-					std::string temp = _Archive_FileList[0];
+					std::string temp = Archive_FileList[0];
 					size_t pos0 = temp.find_first_of("/");
 					if (pos0 != std::string::npos)
 						temp = temp.substr(pos0 + 1);
@@ -182,10 +205,10 @@ bool Document::OpenArchive(std::string ArchiveName)
 		}
 		else
 		{
-			size_t pos = _Archive_FileName.rfind(".");
+			size_t pos = Archive_FileName.rfind(".");
 			if (pos != std::string::npos)
 			{
-				_Archive_KeyName = _Archive_FileName.substr(0, pos);
+				_Archive_KeyName = Archive_FileName.substr(0, pos);
 				size_t pos2 = _Archive_KeyName.rfind("\\");
 				if ((pos2 != std::string::npos) && (pos2 + 1 < _Archive_KeyName.length()))
 				{
@@ -193,9 +216,12 @@ bool Document::OpenArchive(std::string ArchiveName)
 				}
 			}
 			else
-				_Archive_KeyName = _Archive_FileName;
+				_Archive_KeyName = Archive_FileName;
 		}
-		_Archive->getFileNames(_Archive_FileList);
+
+		_Archive.push_back(Archive);
+		_Archive_FileName.push_back(Archive_FileName);
+		_Archive_FileList.push_back(Archive_FileList);
 		return true;
 	}
 	return false;
@@ -203,12 +229,17 @@ bool Document::OpenArchive(std::string ArchiveName)
 
 bool Document::SetTexture2MapDirectory(std::string DirectoryName, std::string ModelName)
 {
+	int arIndex = ArchiveIndex();
+	if (arIndex < 0)
+		return false;
+
 	_TextureRemapDirectory = DirectoryName;
 	size_t pos = ModelName.rfind("\\");
 	bool ret = false;
+
 	if ((pos != std::string::npos) && (pos + 1 < ModelName.length()))
 	{
-		_Archive_KeyName = ModelName.substr(pos+1);
+		_Archive_KeyName = ModelName.substr(pos + 1);
 		size_t pos2 = _Archive_KeyName.find("_R");
 		if ((pos2 != std::string::npos) && (pos2 + 1 < _Archive_KeyName.length()))
 		{
@@ -226,12 +257,15 @@ bool Document::SetTexture2MapDirectory(std::string DirectoryName, std::string Mo
 		}
 	}
 	else
-		_Archive_KeyName = _Archive_FileName;
+		_Archive_KeyName = _Archive_FileName[arIndex];
 	return ret;
 }
 
 bool Document::MapTextureName2Directory(std::string &textureName)
 {
+	int arIndex = ArchiveIndex();
+	if(arIndex < 0)
+		return false;
 	if (!_TextureRemapDirectory.empty())
 	{
 		if (_Archive_KeyName.empty())
@@ -287,7 +321,10 @@ bool flt::Document::SetModelExportTextureDirectory(std::string DirectoryName, st
 
 bool Document::MapTextureName2Archive(std::string &textureName)
 {
-	if (_Archive)
+	int arIndex = ArchiveIndex();
+	if(arIndex < 0)
+		return false;
+	if (_Archive.size() > 0)
 	{
 		for (std::string::iterator it = textureName.begin(); it != textureName.end(); ++it)
 		{
@@ -297,7 +334,7 @@ bool Document::MapTextureName2Archive(std::string &textureName)
 		size_t pos0 = textureName.find("501_GTModelTexture");
 		if (pos0 != std::string::npos)
 		{
-			textureName = textureName.substr(pos0 + 18);
+			textureName = textureName.substr(pos0 + 19);
 		}
 		else
 		{
@@ -331,16 +368,25 @@ bool Document::MapTextureName2Archive(std::string &textureName)
 std::string  Document::archive_findDataFile(std::string &filename)
 {
 	std::string result = "";
-	for (osgDB::Archive::FileNameList::const_iterator f = _Archive_FileList.begin(); f != _Archive_FileList.end(); ++f)
-	{
-		const std::string comp = *f;
-		if (comp.find(filename) != std::string::npos)
+	for(int i = 0; i < _Archive_FileList.size(); ++i)
+	{ 
+		for (osgDB::Archive::FileNameList::const_iterator f = _Archive_FileList[i].begin(); f != _Archive_FileList[i].end(); ++f)
 		{
-			_ActiveArchive = _Archive;
-			return comp;
+			const std::string comp = *f;
+			if (comp.find(filename) != std::string::npos)
+			{
+				_ActiveArchive = _Archive[i];
+				return comp;
+			}
+#if 0
+			else if (filename.find(comp) != std::string::npos)
+			{
+				_ActiveArchive = _Archive[i];
+				return comp;
+			}
+#endif
 		}
 	}
-
 	return result;
 }
 
@@ -400,6 +446,9 @@ bool Document::Have_Ext_Archive(std::string ArchiveName, EArchives &ArchiveRec)
 
 bool Document::ParseTexnameToArchive(std::string &Rawtexturename, std::string &ArchiveName, std::string &ArchiveKey, std::string &textureName)
 {
+	int arIndex = ArchiveIndex();
+	if(arIndex < 0)
+		return false;
 	std::string mytextureName = osgDB::getSimpleFileName(Rawtexturename);
 	size_t fpos = Rawtexturename.find(mytextureName);
 	if (fpos == std::string::npos)
@@ -413,10 +462,10 @@ bool Document::ParseTexnameToArchive(std::string &Rawtexturename, std::string &A
 	size_t tilepos1 = RelitiveArchiveName.find("\\Tiles");
 	if (tilepos1 == std::string::npos)
 		return false;
-	size_t tilepos2 = _Archive_FileName.find("\\Tiles");
+	size_t tilepos2 = _Archive_FileName[arIndex].find("\\Tiles");
 	if (tilepos2 == std::string::npos)
 		return false;
-	ArchiveName = _Archive_FileName.substr(0, tilepos2) + RelitiveArchiveName.substr(tilepos1);
+	ArchiveName = _Archive_FileName[arIndex].substr(0, tilepos2) + RelitiveArchiveName.substr(tilepos1);
 	size_t tpos = ArchiveNameOnly.find(".zip");
 	if (tpos == std::string::npos)
 		return false;
@@ -465,7 +514,12 @@ bool Document::ArchiveNameFromTexName(std::string &textureName, std::string &Arc
 osg::ref_ptr<osg::Image> Document::readArchiveImage(const std::string filename)
 {
 	if (_ActiveArchive == NULL)
-		_ActiveArchive = _Archive;
+	{ 
+		int arIndex = ArchiveIndex();
+		if(arIndex < 0)
+			return NULL;
+		_ActiveArchive = _Archive[arIndex];
+	}
 	if (_ActiveArchive)
 	{
 		osgDB::ReaderWriter::ReadResult r = _ActiveArchive->readImage(filename, getOptions());
@@ -480,13 +534,16 @@ osg::ref_ptr<osg::Image> Document::readArchiveImage(const std::string filename)
 
 void Document::archiveRelease(void)
 {
-	if (_Archive)
+	if (_Archive.size() > 0)
 	{
 //
 //		osgDB::closeArchive(_Archive, false);
 //
-		_Archive.release();
-		_Archive = NULL;
+		for(int i = 0; i < _Archive.size(); ++i)
+		{ 
+			_Archive[i].release();
+		}
+		_Archive.clear();
 	}
 	for each (EArchives E in _Extended_Archives)
 	{

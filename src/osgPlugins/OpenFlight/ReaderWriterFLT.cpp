@@ -512,8 +512,7 @@ class FLTReaderWriter : public ReaderWriter
 						unsigned int pos = aname.rfind(".zip");
 						if (pos == aname.length() - 4)
 						{
-							if (document.OpenArchive(aname))
-								break;
+							document.OpenArchive(aname);
 						}
 					}
 					document.setRemap2Directory(false);
