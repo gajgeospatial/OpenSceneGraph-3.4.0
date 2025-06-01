@@ -122,6 +122,12 @@ class OSG_EXPORT LOD : public Group
 
         virtual BoundingSphere computeBound() const;
 
+        void setSigSize(double value) {_SigSize = value; _SigSizeSet = true;}
+
+        bool sigSizeIsSet() {return _SigSizeSet; }
+
+        double getSigSize() {return _SigSize;}
+
     protected :
         virtual ~LOD() {}
 
@@ -131,6 +137,9 @@ class OSG_EXPORT LOD : public Group
 
         RangeMode                       _rangeMode;
         RangeList                       _rangeList;
+
+        double                          _SigSize;
+        bool                            _SigSizeSet;
 
 };
 

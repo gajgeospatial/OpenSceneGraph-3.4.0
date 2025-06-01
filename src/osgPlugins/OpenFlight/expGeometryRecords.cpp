@@ -432,6 +432,8 @@ FltExportVisitor::writeMesh( const osg::Node& geode, const osg::Geometry& geom )
                 ss->getAttribute(osg::StateAttribute::CULLFACE) );
             if( cullFace->getMode() == osg::CullFace::BACK )
                 drawType = SOLID_BACKFACE;
+            else if(cullFace->getMode() == osg::CullFace::FRONT_AND_BACK)
+                drawType = SOLID_BACKFACE;
 
             // Note: OpenFlt can't handle FRONT or FRONT_AND_BACK settings, so ignore these(??)
         }

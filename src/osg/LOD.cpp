@@ -20,7 +20,9 @@ using namespace osg;
 LOD::LOD():
     _centerMode(USE_BOUNDING_SPHERE_CENTER),
     _radius(-1.0f),
-    _rangeMode(DISTANCE_FROM_EYE_POINT)
+    _rangeMode(DISTANCE_FROM_EYE_POINT),
+    _SigSize(0.0),
+    _SigSizeSet(false)
 {
 }
 
@@ -30,7 +32,9 @@ LOD::LOD(const LOD& lod,const CopyOp& copyop):
         _userDefinedCenter(lod._userDefinedCenter),
         _radius(lod._radius),
         _rangeMode(lod._rangeMode),
-        _rangeList(lod._rangeList)
+        _rangeList(lod._rangeList),
+        _SigSize(lod._SigSize),
+        _SigSizeSet(lod._SigSizeSet)
 {
 }
 
