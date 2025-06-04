@@ -510,6 +510,10 @@ protected:
         _lod = new osg::LOD;
         _lod->setName(id);
         _lod->setCenter(center*document.unitScale());
+        if (significatSize > 0.0)
+        {
+            _lod->setSigSize(significatSize);
+        }
 
         _impChild0 = new osg::Group;
         _impChild0->setName("LOD child0");

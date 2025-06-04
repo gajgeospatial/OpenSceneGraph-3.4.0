@@ -256,7 +256,15 @@ FltExportVisitor::apply( osg::LOD& lodNode )
         double switchInDist = lodNode.getMaxRange(i);
         double switchOutDist = lodNode.getMinRange(i);
 		lodNode.computeBound();
-		double sigsize = lodNode.getRadius();
+        double sigsize = 0.0;
+        if(lodNode.sigSizeIsSet())
+        {
+            sigsize = lodNode.getSigSize();
+        }
+        else
+        {
+		    sigsize = lodNode.getRadius();
+        }
 
         writeLevelOfDetail( lodNode, center, switchInDist, switchOutDist, sigsize);
         writeMatrix( lodNode.getUserData() );
